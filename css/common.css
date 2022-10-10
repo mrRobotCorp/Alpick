@@ -1,2 +1,25 @@
-.inner { width: 1440px; }
+@import './reset.css';
+
+.inner { width: 1440px; margin: 0 auto; }
 .blind { display: none; }
+
+body { font-family: Pmedium; text-align: center; }
+a { text-decoration: none; }
+section { height: 100vh;}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background-color: #212121; border-radius: 10px; }
+::-webkit-scrollbar-track { background-color: transparent;}
+::selection { background-color: #01CF88; color: #fff; } 
+
+/* -------------------------------------------- */
+.menuBanner { height: 200px; background: #d1d1d1; display: flex; align-items: center;}
+.menuBanner div { display: flex;  justify-content: space-between; }
+
+
+/* scrollTop */
+#scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: 50px; height: 50px; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
+#scrollTop:hover { transition: 0.5s ease; background-color: #dededee9; } 
+#scrollTop::before { content: "\2303"; position: absolute; width: 50px; top: 7px; left: 0; color: #000; font-size: 18px; } 
+#scrollTop .topTxt { display: block; margin-top: 21px; font-size: 11px; } 
+
