@@ -29,9 +29,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.querySelector("header").style.top = "-76px"
                 }
             }
-
         }
     }
+
+    window.onresize();
 
     // -------------------------- progress indicator ---------------------------------
     window.addEventListener("scroll", () => {

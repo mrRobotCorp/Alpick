@@ -20,6 +20,9 @@ a { text-decoration: none; color: #000; }
 .menuBanner { height: 200px; background: #939393; display: flex; align-items: center;}
 .menuBanner div { display: flex;  justify-content: space-between; }
 
+/* ------------------------------- footer ------------------------------------ */
+footer { font-size: 12px; font-family: Plight; }
+footer #team li { display: inline-block; margin: 20px; }
 
 /* scrollTop */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); font-family: Plight; box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: 50px; height: 50px; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
