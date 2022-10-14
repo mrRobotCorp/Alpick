@@ -50,12 +50,6 @@ footer .member li { margin: 10px 0; }
     .desktop {
         display: block;
     }
-    header {
-        /* position: static; */
-    }
-    nav h1 {
-        float: left;
-    }
     nav #gnb {
         position: static;
         width: auto;
