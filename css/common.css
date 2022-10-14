@@ -1,25 +1,78 @@
 @import './reset.css';
 
 .inner { width: 1440px; margin: 0 auto; }
-.blind { display: none; }
+.blind { display: none !important; }
 
-body { font-family: Pmedium; text-align: center; }
-a { text-decoration: none; }
+body { font-family: Pmedium; text-align: center; overflow-x: hidden; }
+a { text-decoration: none; color: #000; }
 .section { height: 100vh;}
 
-::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-thumb { background-color: #212121; border-radius: 10px; }
-::-webkit-scrollbar-track { background-color: transparent;}
+::-webkit-scrollbar-track { background-color: transparent; z-index: -10;}
 ::selection { background-color: #01CF88; color: #fff; } 
 
+/* ----------------------- mouse -------------------------- */
+.cursor { width: 18px; height: 18px; border-radius: 50%; background-color: #000; position: absolute; z-index: 2; top: 0; right: 0; transform: translate(-50%, -50%); transform-origin: 100% 100%; transition: transform 0.3s ease; transition-property: background, transform; }
+.cursor_follower { position: absolute; width: 50px; height: 50px;  background: transparent; z-index: 1; opacity: .4; border: 1px solid #000; border-radius: 50%; user-select: none; pointer-events: none; transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out; }
+
 /* -------------------------------------------- */
-.menuBanner { height: 200px; background: #d1d1d1; display: flex; align-items: center;}
+.menuBanner { height: 200px; background: #939393; display: flex; align-items: center;}
 .menuBanner div { display: flex;  justify-content: space-between; }
 
 
 /* scrollTop */
-#scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: 50px; height: 50px; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
+#scrollTop { background-color: rgba(255, 255, 255, 0.925); font-family: Plight; box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: 50px; height: 50px; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
 #scrollTop:hover { transition: 0.5s ease; background-color: #dededee9; } 
-#scrollTop::before { content: "\2303"; position: absolute; width: 50px; top: 7px; left: 0; color: #000; font-size: 18px; } 
-#scrollTop .topTxt { display: block; margin-top: 21px; font-size: 11px; } 
+#scrollTop::before { content: "\2303"; position: absolute; width: 50px; top: 10px; left: 0; color: #000; font-size: 18px; } 
+#scrollTop .topTxt { display: block; margin-top: 23px; font-size: 11px; } 
 
+
+/* ------------------------- responsive --------------------------- */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #6c6c6c;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: #a8a8a8;
+    }
+
+    .desktop {
+        display: block;
+    }
+    header {
+        /* position: static; */
+    }
+    nav h1 {
+        float: left;
+    }
+    nav #gnb {
+        position: static;
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+        text-align: right;
+        padding: 0;
+    }
+    nav #gnb li {
+        display: inline-block;
+        margin: 0 20px;
+        padding: 0;
+    }
+    .menu-trigger {
+        /* margin-top: -20px; */
+        display: none;
+    }
+    footer {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: #cfcfcf;
+    }
+}
