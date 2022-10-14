@@ -22,6 +22,8 @@ a { text-decoration: none; color: #000; }
 
 /* ------------------------------- footer ------------------------------------ */
 footer { padding: 30px; font-size: 12px; font-family: Plight; background-color: #212121; color: #fff; }
+footer h3 { font-size: 17px; font-family: semiBold;}
+footer #tools li { display: inline-block; }
 footer #team > li { display: inline-block; margin: 20px; }
 footer .member li { margin: 10px 0;}
 
