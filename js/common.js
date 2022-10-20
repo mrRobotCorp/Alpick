@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// after scrolling
+// ---------------- after scrolling -------------------
 $(document).ready(function(){
     var Height = $("#scrollTop").height(); 
     $("#scrollTop").hide();
