@@ -67,6 +67,14 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("mousemove", Trailer);
 
     // ------------------ scroll move ------------------------------
+    document.getElementById("logoTop").onclick = function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
     document.getElementById("menu0").onclick = function () {
         window.scrollTo({
             top: 750,
@@ -106,6 +114,9 @@ document.addEventListener("DOMContentLoaded", function() {
             behavior: 'smooth'
         });
     }
+
+    // ------------------------------------------------------
+    // document.getElementById("easyVegan").innerText = "쉬운 비건, 쉬운 실천!";
 
 });
 
