@@ -22,20 +22,30 @@ document.addEventListener("DOMContentLoaded", function() {
                 // } else {
                 //     document.querySelector("header").style.top = "0px";
                 // }
-                if ( document.querySelector("html").scrollTop > 750) {
-                    document.querySelector("header").style.hegiht = "40px";
-                } else {
-                    document.querySelector("header").style.height = "80px";
+                if ( document.querySelector("html").scrollTop === 0) {
+                    document.querySelector("header").style.top = "0";
+                    document.querySelector("header div").style.marginBottom = "15px";
                 }
+                if ( document.querySelector("html").scrollTop > 750) {
+                    document.querySelector("header").style.top = "-30px";
+                    document.querySelector("header div").style.marginBottom = "0";
+                } else {
+                    document.querySelector("header").style.top = "0";
+                    document.querySelector("header div").style.marginBottom = "15px";
+                }
+
             }
             window.onmousemove = function(e) {
-                if ( e.clientY < 80 ) {
-                    document.querySelector("header").style.height = "80px"
-                } else {
-                    document.querySelector("header").style.hegiht = "40px"
+                if ( e.clientY < 70 ) {
+                    document.querySelector("header").style.top = "0";
+                    document.querySelector("header div").style.marginBottom = "15px";
+                } else if (document.querySelector("html").scrollTop !== 0) {
+                    document.querySelector("header").style.top = "-30px"
+                    document.querySelector("header div").style.marginBottom = "0";
                 }
             }
         }
+
     }
 
     window.onresize();
