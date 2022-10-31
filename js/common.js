@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.querySelector("header").style.top = "0";
                     document.querySelector("header div").style.marginBottom = "15px";
                 }
-                if ( document.querySelector("html").scrollTop > 750) {
+                
+                if ( document.querySelector("html").scrollTop > 740) {
                     document.querySelector("header").style.top = "-30px";
                     document.querySelector("header div").style.marginBottom = "0";
                 } else {
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if ( e.clientY < 70 ) {
                     document.querySelector("header").style.top = "0";
                     document.querySelector("header div").style.marginBottom = "15px";
-                } else if (document.querySelector("html").scrollTop !== 0) {
+                } else if (document.querySelector("html").scrollTop > 740) {
                     document.querySelector("header").style.top = "-30px"
                     document.querySelector("header div").style.marginBottom = "0";
                 }
