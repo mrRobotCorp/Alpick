@@ -15,18 +15,24 @@ document.addEventListener("DOMContentLoaded", function() {
         var innerWidth = window.innerWidth;
         if (innerWidth > 1024) {
             window.onscroll = function() {
-                console.log(document.querySelector("html").scrollTop);
-                if ( document.querySelector("html").scrollTop > 100) {
-                    document.querySelector("header").style.top = "-76px";
+                // 스크롤위치
+                console.log(document.querySelector("html").scrollTop); 
+                // if ( document.querySelector("html").scrollTop > 100) {
+                //     document.querySelector("header").style.top = "-76px";
+                // } else {
+                //     document.querySelector("header").style.top = "0px";
+                // }
+                if ( document.querySelector("html").scrollTop > 750) {
+                    document.querySelector("header").style.hegiht = "40px";
                 } else {
-                    document.querySelector("header").style.top = "0px";
+                    document.querySelector("header").style.height = "80px";
                 }
             }
             window.onmousemove = function(e) {
                 if ( e.clientY < 80 ) {
-                    document.querySelector("header").style.top = "0px"
+                    document.querySelector("header").style.height = "80px"
                 } else {
-                    document.querySelector("header").style.top = "-76px"
+                    document.querySelector("header").style.hegiht = "40px"
                 }
             }
         }

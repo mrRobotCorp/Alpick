@@ -1,6 +1,6 @@
 @import './reset.css';
 
-.inner { width: 1440px; margin: 0 auto; }
+.inner { width: 1400px; margin: 0 auto; }
 .blind { display: none !important; }
 
 body { font-family: Pmedium; text-align: center; overflow-x: hidden; }
@@ -20,12 +20,19 @@ a { text-decoration: none; color: #000; }
 .cursor_follower { position: absolute; width: 50px; height: 50px;  background: transparent; z-index: 1; opacity: .4; border: 1px solid #000; border-radius: 50%; user-select: none; pointer-events: none; transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out; }
 
 /* ----------------------------------------------------------------- */
+.section0 { background: url(../source/mainBg.png) no-repeat center center; background-size: cover; z-index: -70; }
+.section0 article { height: 100vh; display: flex; justify-content: space-around; align-items: stretch; flex-direction: column; }
+.section0 article #biInfo { text-align: left; margin-top: 260px;}
+.section0 article #biInfo #serviceInfo { font-family: semiBold; font-size: 20px; letter-spacing: 2px;}
+.section0 article #tools { text-align: left; margin-top: 200px; width: 155px;}
 .section0 article #tools li { display: inline-block; }
-.section0 article #mainMockup { position: absolute; }
-.section0 #mainInfo { display: flex; align-items: flex-end; justify-content: space-between; }
-.section0 #mainInfo dl { display: inline-block; margin-right: 10px; text-align: left; font-size: 15px; }
-.section0 #mainInfo dl .infoType { font-family: Plight; }
-.section0 #mainInfo dl .infoCon { font-family: semiBold; }
+.section0 article #tools li img { width: 80%;}
+.section0 article #mainMockup { position: absolute; right: 0; bottom: 0; height: 80vh; }
+.section0 #mainInfo { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 70px; z-index: 10; }
+.section0 #mainInfo #infoLeft { display: flex; align-items: flex-start;}
+.section0 #mainInfo ul { display: inline-block; margin-right: 10px; text-align: left; font-size: 15px; }
+.section0 #mainInfo ul .infoType { font-family: Plight; }
+.section0 #mainInfo ul .infoCon { font-family: semiBold; }
 
 /* ---------------------------------------------------------------- */
 .section1 article { display: flex; }
@@ -45,7 +52,6 @@ a { text-decoration: none; color: #000; }
 footer { padding: 30px; font-size: 12px; font-family: Plight; background-color: #212121; color: #fff; }
 footer .inner { display: flex; flex-direction: column; }
 footer h3 { font-size: 17px; font-family: semiBold;}
-footer #tools li { display: inline-block; margin: 20px; }
 footer #team > li { display: inline-block; margin: 20px; }
 footer .member li { margin: 10px 0; }
 
