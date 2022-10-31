@@ -7,6 +7,7 @@ body { font-family: Pmedium; overflow-x: hidden; }
 a { text-decoration: none; color: #000; }
 .section { height: 100vh;}
 .section h2 { font-family: Pbold; }
+.highlight { background: #FBC33A; }
 
 /* :root {
     --bg-color: hsl(59, 50%, 53%);
@@ -100,7 +101,6 @@ section .subTitle { position: relative; font-size: 25px; }
 .section3 { margin-top: 150px; }
 .section3 .subTitle::before { content: ''; background-color: #FF6948; position: absolute; margin-left: -7px; top: -11px; width: 13px; height: 24px; transform: rotate(-25deg); z-index: -10; }
 .section3 article #sec3_txt { text-align: center; margin: 0 auto; padding-top: 70px; font-size: 27px; font-family: Pbold; line-height: 135%;}
-.section3 article #sec3_txt .highlight { background: #FBC33A; }
 /* .active {
     padding: 0 5px;
     color: var(--color-text-highlight);
@@ -129,6 +129,7 @@ section .subTitle { position: relative; font-size: 25px; }
 /* ----------------------------------------------------------------- */
 .section5 { background: #f2f2f2; text-align: center; padding-top: 100px; }
 .section5 h3 { display: flex; align-items: center; justify-content: center; width: 400px; height: 400px; background: #fff; margin: 0 auto; border-radius: 50%; font-size: 35px; font-family: Pbold; box-shadow: 3.3637e-15px 54.9333px 109.867px rgba(51, 51, 51, 0.149), inset -8.52136e-16px -13.9164px 13.9164px #F2F2F2, inset 8.52136e-16px 13.9164px 13.9164px #FFFFFF;}
+.section5 h3::before { content: url(../source/sec5_icon.png); width:120px; position: absolute; margin: -280px 0 0 -80px;}
 .section5 .sec5_box { width: 350px; height: 120px; position: absolute; padding-top: 40px; font-size: 25px; font-family: Pbold; }
 .section5 .sec5_box0, .sec5_box2 { background: url(../source/chatBox2.png) no-repeat center center; }
 .section5 .sec5_box3, .sec5_box4 { background: url(../source/chatBox_ny.png) no-repeat center center; }
@@ -150,14 +151,21 @@ section .subTitle { position: relative; font-size: 25px; }
 .section6 #sec6_txt #sec6_txt1 { color: #666; font-size: 18px; font-family: regular; line-height: 120%; }
 
 .section6 article #sec6_bottom { display: flex; justify-content: space-around; margin-top: 100px; font-size: 27px; }
-.section6 #sec6_bottom p {margin-top: 40px; line-height: 130%; }
+.section6 #sec6_bottom p {margin-top: 40px; line-height: 150%; }
 .section6 #sec6_bottom #asIs { display: inline-block;}
 .section6 #sec6_bottom #asIs #asIs_title { display: inline-block; width: 220px; color: #fff; background: #373151; padding: 20px; border-radius: 0 20px 20px 0; }
 .section6 #sec6_bottom #asIs p { font-family: Plight;}
 .section6 #sec6_bottom #asIs .sec6_bold { font-family: semiBold; }
 .section6 #sec6_bottom #toBe { display: inline-block; }
 .section6 #sec6_bottom #toBe #toBe_title { display: inline-block; width: 220px; font-family: Pbold; color: #373151; background: #FF6948; padding: 20px; border-radius: 0 20px 20px 0; }
-.section6 #sec6_bottom #toBe p { font-family: semiBold;}
+.section6 #sec6_bottom #toBe p { font-family: semiBold; }
+
+/* --------------------------------------------------------------- */
+#banner { height: 65vh; background: #373151; }
+#banner .inner { display: flex; flex-direction: column; justify-content: space-around; height: 100%; background: url(../source/banner_img.png) no-repeat center 20%;}
+#banner #banner_main { display: flex; justify-content: space-between; margin: 120px 0 0 100px; color: #fff; font-size: 80px; font-family: Pbold; z-index: 10;}
+#banner #banner_main:first-child::before { content: url(../source/banner_chat.png); position: absolute; margin: -20px 0 0 -150px;}
+#banner #banner_txt { display: inline-block; margin: 60px auto 0 auto; background: #fff; padding: 10px 50px; border-radius: 15px; text-align: center;}
 
 /* ------------------------------- footer ------------------------------------ */
 footer { padding: 30px; font-size: 12px; font-family: Plight; background-color: #212121; color: #fff; }
