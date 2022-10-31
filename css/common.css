@@ -6,7 +6,22 @@
 body { font-family: Pmedium; overflow-x: hidden; }
 a { text-decoration: none; color: #000; }
 .section { height: 100vh;}
-.section h2 { font-family: blod; }
+.section h2 { font-family: Pbold; }
+
+/* :root {
+    --bg-color: hsl(59, 50%, 53%);
+    --bg-main-color: hsl(0, 0%, 92%);
+    --bg-color-highlight: hsl(77, 80%, 60%);
+    --color-text: hsl(192, 14%, 20%);
+    --color-text-highlight: hsl(192, 14%, 0%);
+    --page-width: 90ch;
+    --block-font-size: min(max(1.2rem, 4vw), 1.4rem);
+    --h1-font-size: min(max(2rem, 8vw), 4rem);
+    --h2-font-size: min(max(2rem, 8vw), 1.5rem);
+    --padding: 8vmin;
+    --duration: 5s;
+    --ease: cubic-bezier(0.25, 1, 0.5, 1);
+} */
 
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-thumb { background-color: #212121; border-radius: 10px; }
@@ -44,15 +59,15 @@ section .subTitle { position: relative; font-size: 25px; }
 .section1 article { display: flex; flex-direction: column; }
 .section1 article .sec1_card { display: flex; align-items: center; }
 .section1 article .sec1_card:first-child { margin: 70px 0;}
-.section1 article .sec1_card .iconBox { display: inline-block; padding: 20px 10px; background: #373151; border-radius: 40px 0 0 40px; text-align: center; }
+.section1 article .sec1_card .iconBox { display: inline-block; padding: 30px 10px; background: #373151; border-radius: 40px 0 0 40px; text-align: center; }
 .section1 article .sec1_card .iconBox img { width: 80%; }
-.section1 article .sec1_card .sec1_txt { display: flex; flex-direction: column; justify-content: center; width: 300px; height: 140px; padding: 0 20px 0 40px; background: #fff; border-radius: 0 30px 30px 0; text-align: left;  }
-.section1 article .sec1_card .sec1_txt h3 { font-size: 23px; font-family: blod; line-height: 180%; }
+.section1 article .sec1_card .sec1_txt { display: flex; flex-direction: column; justify-content: center; width: 300px; height: 160px; padding: 0 20px 0 40px; background: #fff; border-radius: 0 30px 30px 0; text-align: left; box-shadow: 10px 20px 80px #a0a0a08f, inset -1.23444e-15px -20.16px 20.16px #ECECEC, inset 1.23444e-15px 20.16px 20.16px #FFFFFF;  }
+.section1 article .sec1_card .sec1_txt h3 { font-size: 23px; font-family: Pbold; line-height: 180%; }
 .section1 article .sec1_card .sec1_txt p { color: #929292; font-size: 13px; font-family: regular; margin-top: 15px; line-height: 130%;}
 
 .section1 article .sec1_right { position: absolute; right: 20%; margin-top: 160px; }
 .section1 article .sec1_right::after { content: url(../source/sec1_arrow.png); display: block; width: 300px; height: 5px; left: -50px; margin-top: 40px;}
-.section1 .sec1_right span { font-size: 23px; font-family: blod; }
+.section1 .sec1_right span { font-size: 23px; font-family: Pbold; }
 .section1 .sec1_right span#gray0 { color: #606060; margin: 0 40px;}
 .section1 .sec1_right span#gray1 { color: #828282;}
 
@@ -68,11 +83,11 @@ section .subTitle { position: relative; font-size: 25px; }
 /* ---------------------------------------------------------------- */
 .section2 { margin-top: 150px; }
 .section2 { height: 120vh; background: url(../source/sec2_bg.png) center bottom no-repeat; background-size: cover; z-index: -100; }
-.section2 .subTitle::before { content: ''; background-color: #FF6948; position: absolute; top: -10px; width: 12px; height: 24px; transform: rotate(-17deg); z-index: -10; }
+.section2 .subTitle::before { content: ''; background-color: #FF6948; position: absolute; margin-left: -7px; top: -11px; width: 13px; height: 24px; transform: rotate(-17deg); z-index: -10; }
 .section2 article { display: flex; align-items: center; justify-content: center; margin-top: 70px; }
 .section2 article #sec2_icon { display: inline-block; width: 180px; text-align: center; background: #fff; padding: 25px 0; box-shadow: 5px 10px 20px rgba(88, 88, 88, 0.441), inset -5.08002e-16px -8.2963px 8.2963px #ECECEC, inset 5.08002e-16px 8.2963px 8.2963px #FFFFFF;; border-radius: 30px;}
 .section2 article #sec2_txt { display: inline-block; margin-left: 40px;}
-.section2 article #sec2_txt h3 { font-size: 27px; font-family: blod; margin-bottom: 20px;}
+.section2 article #sec2_txt h3 { font-size: 27px; font-family: Pbold; margin-bottom: 20px;}
 .section2 article #sec2_txt p { width: 570px; color: #666; font-size: 17px; font-family: semiBold; line-height: 135%;}
 
 .section2 #sec2_bottom { display: flex; justify-content: center; text-align: center; font-size: 32px; font-family: semiBold; margin-top: 200px;}
@@ -82,15 +97,39 @@ section .subTitle { position: relative; font-size: 25px; }
 .section2 #sec2_bottom #sec2_circle p { display: inline-block; padding: 0 20px;}
 
 /* ----------------------------------------------------------------- */
-.section3 { margin-top: 150px;}
-.section3 .subTitle::before { content: ''; background-color: #FF6948; position: absolute; top: -10px; width: 12px; height: 24px; transform: rotate(-17deg); z-index: -10; }
-.section3 article #sec3_txt { text-align: center; margin: 0 auto; padding-top: 70px; font-size: 27px; font-family: blod; line-height: 135%;}
-.section3 article #sec3_txt .highlight::after { content: ''; position: absolute; top: 0; width: 100%; height: 20px; background: #FBC33A; }
+.section3 { margin-top: 150px; }
+.section3 .subTitle::before { content: ''; background-color: #FF6948; position: absolute; margin-left: -7px; top: -11px; width: 13px; height: 24px; transform: rotate(-25deg); z-index: -10; }
+.section3 article #sec3_txt { text-align: center; margin: 0 auto; padding-top: 70px; font-size: 27px; font-family: Pbold; line-height: 135%;}
+.section3 article #sec3_txt .highlight { background: #FBC33A; }
+/* .active {
+    padding: 0 5px;
+    color: var(--color-text-highlight);
+    background-size: 100% 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-color-highlight)), to(var(--bg-color-highlight)));
+    background-image: linear-gradient(var(--bg-color-highlight), var(--bg-color-highlight));
+} */
+.section3 #interviewAll { display: inline-block; position: absolute; margin: 150px 0; }
+.section3 #interviewAll .interview { display: flex; align-items: center; padding: 20px 40px; margin: 0 30px; width: 680px; background: #fff; border-radius: 30px; box-shadow: 10px 50px 120px rgba(133, 133, 133, 0.637), inset -1.23444e-15px -20.16px 20.16px #ECECEC, inset 1.23444e-15px 20.16px 20.16px #FFFFFF; }
+.section3 #interviewAll .interview ul { display: inline-block; margin: 20px 0; font-family: semiBold; }
+.section3 #interviewAll .interview ul li { display: inline; padding: 0 20px; }
+.section3 #interviewAll .interview ul li:first-child { padding: 0 20px 0 0 !important; border-right: 2px solid #000; }
+.section3 #interviewAll .interview ul .jobBg { color: #fff; background: #404040; padding: 5px 8px;}
+.section3 #interviewAll .interview p { font-size: 20px; font-family: regular; line-height: 130%; }
+
 /* ----------------------------------------------------------------- */
+.section4 { height: 100vh;}
+.section4 .subTitle::before { content: '02'; padding: 15px 25px 25px 15px; border-radius: 50%; font-size: 10px; font-family: Plight; position: absolute; top: -30px; background-color: #FF6948; z-index: -10;  } 
 .section4 article { display: flex; justify-content: space-around; text-align: left; }
-.section4 article h3 { font-size: 25px; }
-.section4 #sec4_con { width: 650px;}
-.section4 article #sec4_img { width: 300px; height: 300px;}
+.section4 article #sec4_txt { width: 650px; margin-top: 70px; }
+.section4 article #sec4_txt div:first-child { margin-bottom: 50px; }
+.section4 article #sec4_txt h3 { font-size: 25px; font-family: Pbold; }
+.section4 article #sec4_txt p { color: #666; margin-top: 40px; font-size: 20px; font-family: regular; line-height: 130%; }
+.section4 article #sec4_img { margin-top: 70px; }
+
+/* ----------------------------------------------------------------- */
+.section5 { background: #f2f2f2; text-align: center; }
+.section5 .sec5_box { font-size: 25px; font-family: Pbold; }
+.section5 h3 { display: flex; align-items: center; justify-content: center; width: 400px; height: 400px; margin: 0 auto; border-radius: 50%; box-shadow: 3.3637e-15px 54.9333px 109.867px rgba(51, 51, 51, 0.149), inset -8.52136e-16px -13.9164px 13.9164px #F2F2F2, inset 8.52136e-16px 13.9164px 13.9164px #FFFFFF;}
 
 /* ------------------------------- footer ------------------------------------ */
 footer { padding: 30px; font-size: 12px; font-family: Plight; background-color: #212121; color: #fff; }

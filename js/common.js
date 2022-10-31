@@ -130,18 +130,18 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
     })
 
-    // ----------------------------------------------------------
-    const highlight = document.querySelector("#highlight-style");
+    // -------------------------- text highlight --------------------------------
+    // const highlight = document.querySelector("#sec3_txt");
 
-    gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray(".text-highlight").forEach((highlight) => {
-        ScrollTrigger.create({
-            trigger: highlight,
-            start: "-100px center",
-            onEnter: () => highlight.classList.add("active")
-        });
-    });
+    // gsap.utils.toArray(".text-highlight").forEach((highlight) => {
+    //     ScrollTrigger.create({
+    //         trigger: highlight,
+    //         start: "-100px center",
+    //         onEnter: () => highlight.classList.add("active")
+    //     });
+    // });
 
 });
 
