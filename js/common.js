@@ -124,6 +124,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // ------------------------------------------------------
     // document.getElementById("easyVegan").innerText = "쉬운 비건, 쉬운 실천!";
 
+    // ------------------ prevent event ------------------------------
+    const mainMockup = document.querySelector('#mainMockup');
+    mainMockup.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+    })
+
 });
 
 // ---------------- after scrolling -------------------
