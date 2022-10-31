@@ -168,13 +168,28 @@ section .subTitle { position: relative; font-size: 25px; }
 #banner #banner_txt { display: inline-block; margin: 60px auto 0 auto; background: #fff; padding: 10px 50px; border-radius: 15px; text-align: center;}
 
 /* ---------------------------------------------------------------------- */
-.section7 { padding-top: 200px; }
-.section7 #sec7_box { display: flex; justify-content: space-around;}
-.section7 .sec7_chat { display: flex; align-items: center; justify-content: center; text-align: center; width: 660px; height: 200px; background: #fff; font-size: 36px; line-height: 140%; border-radius: 40px; box-shadow: 3.96786e-15px 64.8px 129.6px rgba(51, 51, 51, 0.24), inset -1.23444e-15px -20.16px 20.16px #ECECEC, inset 1.23444e-15px 20.16px 20.16px #FFFFFF;}
-.section7 article { display: flex; justify-content: space-around; align-items: center; margin-top: 200px; }
-.section7 article h3 { font-size: 28px; font-family: Pbold; line-height: 130%; }
-.section7 article h3::before { content: url(../source/sec7_icon.png); position: absolute; margin: -150px 0 0 -50px;}
-.section7 article p { width: 500px; color: #323232; margin-top: 40px; font-size: 20px; line-height: 140%; }
+.section7 { text-align: center; }
+.section7 .subTitle { margin-top: 100px; }
+.section7 .subTitle::before { content: '02'; padding: 15px 25px 25px 15px; border-radius: 50%; font-size: 10px; font-family: Plight; position: absolute; top: -30px; background-color: #FCC33A; z-index: -10; }
+.section7 article #serviceLine { margin-top: 50px; }
+
+.section7 #serviceLine .lineSet { width: 1000px; display: flex; align-items: center; justify-content: space-between; }
+.section7 #serviceLine .lineSet span { padding: 0 20px; }
+.section7 #serviceLine #line0 { width: 680px; content: url(../source/sec7_line0.png); }
+.section7 #serviceLine #line1 { width: 680px; content: url(../source/sec7_line1.png); }
+.section7 #serviceLine #line2 { width: 680px; content: url(../source/sec7_line2.png); }
+
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+.section9 { padding-top: 200px; }
+.section9 #sec9_box { display: flex; justify-content: space-around;}
+.section9 .sec9_chat { display: flex; align-items: center; justify-content: center; text-align: center; width: 660px; height: 200px; background: #fff; font-size: 36px; line-height: 140%; border-radius: 40px; box-shadow: 3.96786e-15px 64.8px 129.6px rgba(51, 51, 51, 0.24), inset -1.23444e-15px -20.16px 20.16px #ECECEC, inset 1.23444e-15px 20.16px 20.16px #FFFFFF;}
+.section9 article { display: flex; justify-content: space-around; align-items: center; margin-top: 200px; }
+.section9 article h3 { font-size: 28px; font-family: Pbold; line-height: 130%; }
+.section9 article h3::before { content: url(../source/sec9_icon.png); position: absolute; margin: -150px 0 0 -50px;}
+.section9 article p { width: 500px; color: #323232; margin-top: 40px; font-size: 20px; line-height: 140%; }
 
 /* ------------------------------- footer ------------------------------------ */
 footer { padding: 30px; font-size: 12px; font-family: Plight; background-color: #212121; color: #fff; }
