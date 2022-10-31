@@ -39,21 +39,47 @@ section .subTitle { position: relative; font-size: 25px; }
 .section0 #mainInfo ul .infoCon { font-family: semiBold; }
 
 /* ---------------------------------------------------------------- */
-.section1 .subTitle { margin-top: 60px; }
+.section1 .subTitle { margin-top: 80px; }
 .section1 .subTitle::before { content: '01'; padding: 15px 25px 25px 15px; border-radius: 50%; font-size: 10px; font-family: Plight; position: absolute; top: -30px; background-color: #FF6948; z-index: -10;  }
 .section1 article { display: flex; flex-direction: column; }
 .section1 article .sec1_card { display: flex; align-items: center; }
-.section1 article>.sec1_card { margin-bottom: 100px;}
+.section1 article .sec1_card:first-child { margin: 70px 0;}
 .section1 article .sec1_card .iconBox { display: inline-block; padding: 20px 10px; background: #373151; border-radius: 40px 0 0 40px; text-align: center; }
 .section1 article .sec1_card .iconBox img { width: 80%; }
 .section1 article .sec1_card .sec1_txt { display: flex; flex-direction: column; justify-content: center; width: 300px; height: 140px; padding: 0 20px 0 40px; background: #fff; border-radius: 0 30px 30px 0; text-align: left;  }
 .section1 article .sec1_card .sec1_txt h3 { font-size: 23px; font-family: blod; line-height: 180%; }
 .section1 article .sec1_card .sec1_txt p { color: #929292; font-size: 13px; font-family: regular; margin-top: 15px; line-height: 130%;}
 
+.section1 article .sec1_right { position: absolute; right: 20%; margin-top: 160px; }
+.section1 article .sec1_right::after { content: url(../source/sec1_arrow.png); display: block; width: 300px; height: 5px; left: -50px; margin-top: 40px;}
+.section1 .sec1_right span { font-size: 23px; font-family: blod; }
+.section1 .sec1_right span#gray0 { color: #606060; margin: 0 40px;}
+.section1 .sec1_right span#gray1 { color: #828282;}
+
+.section1 .chatBoxL, .chatBoxR  { text-align: center; width: 350px; height: 120px; position: absolute; font-size: 14px; line-height: 120%;}
+.section1 .chatBoxL { background: url(../source/chatBox.png) no-repeat center center; padding-top: 50px ; }
+.section1 .chatBoxR { background: url(../source/chatBox2.png) no-repeat center center; padding-top: 30px ;}
+.section1 .chatBox0 { left: 25%; margin-top: 70px;}
+.section1 .chatBox0::after { content: url(../source/sec1_icon2.png); position: absolute; top: 40px; right: 15px; z-index: 10;}
+.section1 .chatBox1 { left: 40%; margin-top: 240px; }
+.section1 .chatBox2 { right: 25%; }
+.section1 .chatBox3 { right: 10%; margin-top: 160px;}
+
 /* ---------------------------------------------------------------- */
-.section2 { background: url(../source/sec2_bg.png) center bottom no-repeat; background-size: cover; }
-.section2 #sec2_icon { width: 200px; height: 200px; background: #fff; box-shadow: 5px 10px 20px rgba(63, 63, 63, 0.541); border-radius: 30px;}
-.section2 article h3 { font-size: 30px; }
+.section2 { margin-top: 150px; }
+.section2 { height: 120vh; background: url(../source/sec2_bg.png) center bottom no-repeat; background-size: cover; z-index: -100; }
+.section2 .subTitle::before { content: ''; background-color: #FF6948; position: absolute; top: -8px; width: 12px; height: 22px; transform: rotate(-17deg); z-index: -10; }
+.section2 article { display: flex; align-items: center; justify-content: center; margin-top: 70px; }
+.section2 article #sec2_icon { display: inline-block; width: 180px; text-align: center; background: #fff; padding: 25px 0; box-shadow: 5px 10px 20px rgba(88, 88, 88, 0.441), inset -5.08002e-16px -8.2963px 8.2963px #ECECEC, inset 5.08002e-16px 8.2963px 8.2963px #FFFFFF;; border-radius: 30px;}
+.section2 article #sec2_txt { display: inline-block; margin-left: 40px;}
+.section2 article #sec2_txt h3 { font-size: 27px; font-family: blod; margin-bottom: 20px;}
+.section2 article #sec2_txt p { width: 570px; color: #666; font-size: 17px; font-family: semiBold; line-height: 135%;}
+
+.section2 #sec2_bottom { display: flex; justify-content: center; text-align: center; font-size: 32px; font-family: semiBold; margin-top: 100px;}
+.section2 #sec2_bottom #sec2_arrow { display: flex; align-items: center; justify-content: center; color: #fff; background: #303444; border-radius: 50%; width: 260px; height: 260px;}
+.section2 #sec2_bottom #sec2_arrow::before { content: url(../source/sec2_arrow.png)}
+.section2 #sec2_bottom #sec2_circle { display: flex; align-items: center; justify-content: center;  background: url(../source/sec2_circle.png) no-repeat center center; width: 770px; height: 265px;}
+.section2 #sec2_bottom #sec2_circle p { display: inline-block; padding: 0 20px;}
 
 /* ----------------------------------------------------------------- */
 .section4 article { display: flex; justify-content: space-around; text-align: left; }
