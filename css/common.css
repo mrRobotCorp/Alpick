@@ -3,7 +3,7 @@
 .inner { width: 1400px; margin: 0 auto; }
 .blind { display: none !important; }
 
-body { font-family: Pmedium; text-align: center; overflow-x: hidden; }
+body { font-family: Pmedium; overflow-x: hidden; }
 a { text-decoration: none; color: #000; }
 .section { height: 100vh;}
 .section h2 { font-family: blod; }
@@ -39,9 +39,16 @@ section .subTitle { position: relative; font-size: 25px; }
 .section0 #mainInfo ul .infoCon { font-family: semiBold; }
 
 /* ---------------------------------------------------------------- */
-.section1 article { display: flex; }
 .section1 .subTitle { margin-top: 60px; }
 .section1 .subTitle::before { content: '01'; padding: 15px 25px 25px 15px; border-radius: 50%; font-size: 10px; font-family: Plight; position: absolute; top: -30px; background-color: #FF6948; z-index: -10;  }
+.section1 article { display: flex; flex-direction: column; }
+.section1 article .sec1_card { display: flex; align-items: center; }
+.section1 article>.sec1_card { margin-bottom: 100px;}
+.section1 article .sec1_card .iconBox { display: inline-block; padding: 20px 10px; background: #373151; border-radius: 40px 0 0 40px; text-align: center; }
+.section1 article .sec1_card .iconBox img { width: 80%; }
+.section1 article .sec1_card .sec1_txt { display: flex; flex-direction: column; justify-content: center; width: 300px; height: 140px; padding: 0 20px 0 40px; background: #fff; border-radius: 0 30px 30px 0; text-align: left;  }
+.section1 article .sec1_card .sec1_txt h3 { font-size: 23px; font-family: blod; line-height: 180%; }
+.section1 article .sec1_card .sec1_txt p { color: #929292; font-size: 13px; font-family: regular; margin-top: 15px; line-height: 130%;}
 
 /* ---------------------------------------------------------------- */
 .section2 { background: url(../source/sec2_bg.png) center bottom no-repeat; background-size: cover; }
