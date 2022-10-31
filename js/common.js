@@ -17,11 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             window.onscroll = function() {
                 // 스크롤위치
                 console.log(document.querySelector("html").scrollTop); 
-                // if ( document.querySelector("html").scrollTop > 100) {
-                //     document.querySelector("header").style.top = "-76px";
-                // } else {
-                //     document.querySelector("header").style.top = "0px";
-                // }
+
                 if ( document.querySelector("html").scrollTop === 0) {
                     document.querySelector("header").style.top = "0";
                     document.querySelector("header div").style.marginBottom = "15px";
