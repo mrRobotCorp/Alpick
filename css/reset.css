@@ -44,35 +44,37 @@ table {
 
 /* -------------------- font ------------------------- */
 
+/* @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'); */
+
 @font-face {
 	font-family: blackBlod;
-	src: url(/source/Pretendard-Black.otf);
+	src: url(/source/Pretendard-Black.woff);
 }
 @font-face {
 	font-family: Pbold;
-	src: url(/source/Pretendard-Bold.otf);
+	src: url(/source/Pretendard-Bold.woff);
 }
 @font-face {
 	font-family: extraBlod;
-	src: url(/source/Pretendard-ExtraBold.otf);
+	src: url(/source/Pretendard-ExtraBold.woff);
 }
 @font-face {
 	font-family: extraLight;
-	src: url(/source/Pretendard-ExtraLight.otf);
+	src: url(/source/Pretendard-ExtraLight.woff);
 }
 @font-face {
 	font-family: Plight;
-	src: url(/source/Pretendard-Light.otf);
+	src: url(/source/Pretendard-Light.woff);
 }
 @font-face {
 	font-family: Pmedium;
-	src: url(/source/Pretendard-Medium.otf);
+	src: url(/source/Pretendard-Medium.woff);
 }
 @font-face {
 	font-family: regular;
-	src: url(/source/Pretendard-Regular.otf);
+	src: url(/source/Pretendard-Regular.woff);
 }
 @font-face {
 	font-family: semiBold;
-	src: url(/source/Pretendard-SemiBold.otf);
+	src: url(/source/Pretendard-SemiBold.woff);
 }
