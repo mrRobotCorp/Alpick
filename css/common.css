@@ -187,9 +187,13 @@ section .subTitle { position: relative; text-align: center; font-size: 30px; }
 .section5 article #handMockup { margin: 0 auto; }
 
 /* ----------------------------------------------------------------- */
-.section6 { background: #312D40 ; text-align: center; display: flex; align-items: center; padding-top: 100px; } 
+.section6 { height: 150vh; background: #312D40 ; text-align: center; display: flex; align-items: center; padding-top: 100px; } 
+.section6::before { content: ''; background: #312D40; width: 100vw; height: 170vh; position: absolute; margin-top: -3200px; z-index: -100; }
 .section6 .subTitle { color: #fff; }
 .section6 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: -30px; width: 14px; height: 14px; margin-left: -95px; border-radius: 10px; z-index: 10; }
+.section6 article { display: flex; align-items: center; justify-content: space-between; }
+.section6 article .sec6_con { display: flex; flex-direction: column; }
+.section6 article .sec6_con p { color: #fff; }
 
 /* ----------------------------------------------------------------- */
 .section7 { padding-top: 100px; height: 100vh; } 
