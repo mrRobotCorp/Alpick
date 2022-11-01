@@ -81,13 +81,14 @@ a { text-decoration: none; color: #000; }
 .cursor { width: 18px; height: 18px; border-radius: 50%; background-color: #FF6948; position: absolute; z-index: 150; top: 0; right: 0; transform: translate(-50%, -50%); transform-origin: 100% 100%; transition: transform 0.3s ease; transition-property: background, transform; } 
 .cursor_follower { position: absolute; width: 50px; height: 50px; background: transparent; z-index: 120; opacity: .4; border: 1px solid #000; border-radius: 50%; user-select: none; pointer-events: none; transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out; } 
 
-section .subTitle { position: relative; font-size: 25px; } 
+section .subTitle { position: relative; font-size: 30px; } 
 /* ----------------------------------------------------------------- */
 .section0 { background: #FF552F; background-size: cover; z-index: -70; } 
 .section0 article { height: 100vh; display: flex; justify-content: space-around; align-items: stretch; flex-direction: column; } 
-.section0 article #biInfo { text-align: left; margin-top: 260px; } 
+.section0 article #biInfo { text-align: left; margin-top: 220px; } 
 .section0 article #biInfo img { -webkit-user-drag: none; } 
 .section0 article #biInfo #serviceInfo { font-family: semiBold; color: #373151; font-size: 20px; letter-spacing: 2px; } 
+.section0 article #biInfo #serviceInfo::after { content: url(../source/sec0_app.png); position: absolute; margin: 20px 0 0 -290px;}
 .section0 article #tools { text-align: left; margin-top: 200px; width: 155px; } 
 .section0 article #tools li { display: inline-block; } 
 .section0 article #tools li img { width: 80%; }
@@ -102,11 +103,29 @@ section .subTitle { position: relative; font-size: 25px; }
 
 /* ---------------------------------------------------------------- */
 .section1 { margin-top: 150px; text-align: center; } 
-.section1 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: -10px; width: 10px; height: 10px; border-radius: 5px; z-index: -10; } 
-.section1 article { display: flex; align-items: center; justify-content: center; margin-top: 70px; } 
+.section1 .subTitle { color: #474747; font-size: 30px;}
+.section1 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: -30px; width: 14px; height: 14px; margin-left: -95px; border-radius: 10px; z-index: -10; } 
+.section1 article { display: flex; align-items: center; justify-content: center; margin-top: 150px; } 
 .section1 article #sec1_txt { display: inline-block; margin-left: 40px; } 
-.section1 article #sec1_txt h3 { font-size: 27px; font-family: Pbold; margin-bottom: 20px; line-height: 140%; } 
-.section1 article #sec1_txt p { width: 1200px; color: #666; font-size: 17px; font-family: semiBold; line-height: 135%; } 
+.section1 article #sec1_txt h3 { font-size: 66px; font-family: semiBold; margin-bottom: 20px; line-height: 140%; } 
+.section1 article #sec1_txt p { width: 1300px; color: #666; font-size: 22px; font-family: semiBold; line-height: 150%; } 
+.colorOR { color: #FF6948;}
+
+/* ----------------------------------------------------------------- */
+.section2 { height: 100vh; } 
+.section2 .subTitle { text-align: center; }
+.section2 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: -30px; width: 14px; height: 14px; margin-left: -75px; border-radius: 10px; z-index: -10; } 
+.section2 article { text-align: left; } 
+.section2 article #sec2_txt { display: flex;  justify-content: space-between; width: 1300px; margin-top: 200px; } 
+.section2 article #sec2_txt div { width: 630px; }
+.section2 article #sec2_txt h3 { font-size: 28px; font-family: Plight; } 
+.section2 article .sec2_bold { font-family: Pbold; }
+.section2 article #sec2_txt p { color: #666; margin-top: 40px; font-size: 20px; font-family: regular; line-height: 130%; } 
+
+.section2 article #sec2_box { display: flex; justify-content: space-between; margin-top: 180px; }
+.section2 article #sec2_box div { display: flex; align-items: center; flex-direction: column; justify-content: center; background: #303444; width: 420px; height: 420px; border-radius: 50%; }
+.section2 article #sec2_box .sec2_boxTxt { color: #fff; font-size: 46px; font-family: Pbold;}
+.section2 article #sec2_box .sec2_subTxt { color: #868686; font-size: 24px; font-family: regular; margin-top: 20px;}
 
 /* -------------------------------------------------------------------------- */
 .section3 { height: 100vh; overflow-y: hidden; margin-top: 200px; } 
@@ -145,16 +164,7 @@ section .subTitle { position: relative; font-size: 25px; }
 .section4 #interviewAll .interview ul .jobBg { color: #fff; background: #404040; padding: 5px 8px; } 
 .section4 #interviewAll .interview p { font-size: 20px; font-family: regular; line-height: 130%; } 
 
-/* ----------------------------------------------------------------- */
-.section5 { height: 100vh; } 
-.section5 .subTitle::before { content: '02'; padding: 15px 25px 25px 15px; border-radius: 50%; font-size: 10px; font-family: Plight; position: absolute; top: -30px; background-color: #FF6948; z-index: -10; } 
-.section5 article { display: flex; justify-content: space-around; text-align: left; } 
-.section5 article #sec5_txt { width: 650px; margin-top: 70px; } 
-.section5 article #sec5_txt div:first-child { margin-bottom: 50px; } 
-.section5 article #sec5_txt h3 { font-size: 28px; font-family: Pbold; } 
-.section5 article #sec5_txt p { color: #666; margin-top: 40px; font-size: 20px; font-family: regular; line-height: 130%; } 
-.section5 article #sec5_img { margin-top: 70px; } 
-.section5 article #sec5_img img { -webkit-user-drag: none; } 
+
 
 /* ----------------------------------------------------------------- */
 .section6 { background: #f2f2f2; text-align: center; display: flex; align-items: center; padding-top: 100px; } 
