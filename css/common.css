@@ -197,12 +197,12 @@ section .subTitle { position: relative; text-align: center; font-size: 32px; }
 .section6 article .sec6_con p { color: #fff; width: 365px; font-size: 22px; font-family: regular; line-height: 150%; }
 
 .section6 h4 { color: #fff; font-size: 32px; font-family: Pbold; margin-top: 200px;}
-.section6 #serviceBox { background: #fff; margin-top: 150px; padding: 100px 30px; border-radius: 200px; }
+.section6 #serviceBox { background: #fff; margin-top: 150px; padding: 100px 30px; border-radius: 230px; }
 .section6 #serviceBox #servieceOR { color: #FF6948 !important; }
 .section6 #serviceBox ul { display: inline-block; width: 330px;}
-.section6 #serviceBox ul .serviceTitle { color: #312D40; font-size: 30px; font-family: Pbold; }
-.section6 #serviceBox ul .servieceEG { color: #979797; font-size: 18px; font-family: regular;}
-
+.section6 #serviceBox ul .serviceTitle { color: #312D40; margin: 20px 0; font-size: 30px; font-family: Pbold; }
+.section6 #serviceBox ul .servieceEG { color: #979797; font-size: 18px; font-family: regular; line-height: 130%;}
+.section6::after { content: ''; background: #312D40; width: 100vw; height: 170vh; position: absolute; z-index: -100; }
 
 
 /* ----------------------------------------------------------------- */
