@@ -69,7 +69,6 @@ section .subTitle { position: relative; font-size: 25px; }
 
 /* ---------------------------------------------------------------- */
 .section2 { margin-top: 150px; } 
-.section2 { height: 120vh; background: url(../source/sec2_bg.png) center bottom no-repeat; background-size: cover; z-index: -100; } 
 .section2 .subTitle::before { content: ''; background-color: #FF6948; position: absolute; margin-left: -7px; top: -11px; width: 13px; height: 24px; transform: rotate(-17deg); z-index: -10; } 
 .section2 article { display: flex; align-items: center; justify-content: center; margin-top: 70px; } 
 .section2 article #sec2_icon { display: inline-block; width: 180px; text-align: center; background: #fff; padding: 25px 0; box-shadow: 5px 10px 20px rgba(88, 88, 88, 0.441), inset -5.08002e-16px -8.2963px 8.2963px #ECECEC, inset 5.08002e-16px 8.2963px 8.2963px #FFFFFF;; border-radius: 30px; } 

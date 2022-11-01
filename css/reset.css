@@ -48,33 +48,33 @@ table {
 
 @font-face {
 	font-family: blackBlod;
-	src: url(/source/Pretendard-Black.woff);
+	src: url(../source/Pretendard-Black.woff);
 }
 @font-face {
 	font-family: Pbold;
-	src: url(/source/Pretendard-Bold.woff);
+	src: url(../source/Pretendard-Bold.woff);
 }
 @font-face {
 	font-family: extraBlod;
-	src: url(/source/Pretendard-ExtraBold.woff);
+	src: url(../source/Pretendard-ExtraBold.woff);
 }
 @font-face {
 	font-family: extraLight;
-	src: url(/source/Pretendard-ExtraLight.woff);
+	src: url(../source/Pretendard-ExtraLight.woff);
 }
 @font-face {
 	font-family: Plight;
-	src: url(/source/Pretendard-Light.woff);
+	src: url(../source/Pretendard-Light.woff);
 }
 @font-face {
 	font-family: Pmedium;
-	src: url(/source/Pretendard-Medium.woff);
+	src: url(../source/Pretendard-Medium.woff);
 }
 @font-face {
 	font-family: regular;
-	src: url(/source/Pretendard-Regular.woff);
+	src: url(../source/Pretendard-Regular.woff);
 }
 @font-face {
 	font-family: semiBold;
-	src: url(/source/Pretendard-SemiBold.woff);
+	src: url(../source/Pretendard-SemiBold.woff);
 }
