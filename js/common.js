@@ -61,6 +61,16 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".progress").style.width = percentage + "%"; //프로그래스바 너비 변경
     }
 
+    const arrow0 = document.createElement('div');
+    arrow0.setAttribute('id', 'arrow0');
+    const arrow1 = document.createElement('div');
+    arrow1.setAttribute('id', 'arrow1');
+    const arrow2 = document.createElement('div');
+    arrow2.setAttribute('id', 'arrow2');
+    
+    const arrowAll = document.querySelector('#sec2_arrow');
+    arrowAll.prepend(arrow0, arrow1, arrow2);
+
     // --------------------custom mouse ---------------------------
     const cursor = document.createElement("div");
     cursor.setAttribute("class", "cursor");
