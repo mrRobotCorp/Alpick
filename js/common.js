@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (innerWidth > 1024) {
             window.onscroll = function() {
                 // 스크롤위치
-                console.log(document.querySelector("html").scrollTop); 
+                // console.log(document.querySelector("html").scrollTop); 
 
                 if ( document.querySelector("html").scrollTop === 0) {
                     document.querySelector("header").style.top = "0";
