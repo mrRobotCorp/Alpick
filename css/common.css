@@ -152,14 +152,14 @@ section .subTitle { position: relative; font-size: 25px; }
 .section7 article { display: flex; flex-direction: column; justify-content: space-between; } 
 .section7 article #sec7_txt { margin-top: 50px; } 
 .section7 #sec7_txt #sec7_txt0 { font-size: 25px; font-family: regular; line-height: 130%; } 
-.section7 #sec7_txt #sec7_txt1 { margin-top: 200px; color: #666; font-size: 18px; font-family: regular; line-height: 120%; } 
+.section7 #sec7_txt #sec7_txt1 { margin-top: 10px; color: #666; font-size: 18px; font-family: regular; line-height: 120%; } 
 
 .section7 article #sec7_bottom { display: flex; justify-content: space-around; margin-top: 100px; font-size: 27px; } 
 .section7 #sec7_bottom p { margin-top: 40px; line-height: 150%; } 
 .section7 #sec7_bottom #asIs { display: inline-block; } 
 .section7 #sec7_bottom #asIs #asIs_title { display: inline-block; width: 220px; color: #fff; background: #373151; padding: 20px; border-radius: 0 20px 20px 0; } 
 .section7 #sec7_bottom #asIs p { font-family: Plight; } 
-.section7 #sec7_bottom #asIs .sec6_bold { font-family: semiBold; } 
+.section7 #sec7_bottom #asIs .sec7_bold { font-family: semiBold; } 
 .section7 #sec7_bottom #toBe { display: inline-block; } 
 .section7 #sec7_bottom #toBe #toBe_title { display: inline-block; width: 220px; font-family: Pbold; color: #373151; background: #FF6948; padding: 20px; border-radius: 0 20px 20px 0; } 
 .section7 #sec7_bottom #toBe p { font-family: semiBold; } 
@@ -168,7 +168,7 @@ section .subTitle { position: relative; font-size: 25px; }
 .section8 .subTitle { margin-top: 100px; } 
 .section8 .subTitle::before { content: '02'; padding: 15px 25px 25px 15px; border-radius: 50%; font-size: 10px; font-family: Plight; position: absolute; top: -30px; background-color: #FCC33A; z-index: -10; } 
 .section8 article { text-align: center; } 
-.section8 article p { margin-top: 50px; font-size: 14px; line-height: 150%; } 
+.section8 article p { margin-top: 50px; font-size: 17px; line-height: 150%; } 
 .section8 article #serviceLine { height: 360px; margin-top: 100px; display: flex; align-items: center; justify-content: space-between; flex-direction: column; } 
 
 .section8 #serviceLine .lineSet { width: 1000px; display: flex; align-items: center; justify-content: center; } 
