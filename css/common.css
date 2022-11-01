@@ -118,10 +118,10 @@ section .subTitle { position: relative; text-align: center; font-size: 32px; }
 .section2 article #sec2_txt h3 { font-size: 38px; font-family: Pbold; } 
 .section2 article #sec2_txt p { color: #666; width: 600px; font-size: 22px; font-family: semiBold; line-height: 130%; } 
 
-.section2 article #sec2_box { display: flex; justify-content: space-between; margin: 180px 0 100px -20px; } 
+.section2 article #sec2_box { display: flex; justify-content: space-between; margin: 200px 0 100px -20px; } 
 .section2 article #sec2_box div { display: flex; align-items: flex-end; justify-content: space-between; width: 420px; height: 420px; border-radius: 50%; } 
 .section2 article #sec2_box div:first-child { margin-right: 55px; }
-.section2 article #sec2_box div:first-child::after { content: ''; border-top: 3px solid #303444; width: 620px; margin: -60px -920px 0 0; } 
+.section2 article #sec2_box div:first-child::after { content: ''; border-top: 3px solid #303444; position: absolute; width: 630px; margin-left: 440px; z-index: 0; } 
 .section2 article #sec2_box div img { -webkit-user-drag: none; }
 .section2 article #sec2_box .sec2_boxTxt { color: #fff; font-size: 46px; font-family: Pbold; } 
 .section2 article #sec2_box .sec2_subTxt { color: #868686; font-size: 24px; font-family: regular; margin-top: 20px; } 
