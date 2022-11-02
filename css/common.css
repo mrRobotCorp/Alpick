@@ -157,29 +157,45 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .wrapper input:checked ~ .text > span::after { -webkit-clip-path: var(--clip-path-clicked); clip-path: var(--clip-path-clicked); } 
 
 /* ----------------------------------------------------------------- */
-.section4 { padding-top: calc( 100vw * 150 / 1920); background: #F4F3F9; } 
+.section4 { height: 130vh; padding-top: calc( 100vw * 150 / 1920); background: #F4F3F9; } 
 .section4 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -110 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; } 
 .section4 #interviewAll { display: inline-block; position: relative; width: 100%; overflow: hidden; margin: calc( 100vw * 150 / 1920) 0; } 
 
-.section4 #interviewAll .interviewLine { display: flex; white-space: nowrap; will-change: transform; justify-content: space-around; animation: bannermove 5s linear infinite; } 
+.section4 #interviewAll .interviewLine { display: flex; white-space: nowrap; will-change: transform; justify-content: space-around;  animation: scrolling 10s linear infinite; /* animation: bannermove 5s linear infinite; */ } 
 .section4 #interviewAll .interviewLine:hover { animation-play-state: paused; -moz-animation-play-state: paused; -webkit-animation-play-state: paused; }
 .section4 #interviewAll .interviewLine img { margin: calc( 100vw * 10 / 1920) calc( 100vw * 30 / 1920); } 
 
-.section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; }
-.section4 #interviewAll .profileAll .profile { display: none; flex-direction: column; justify-content: space-around; height: calc( 100vw * 190 / 1920); padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920); background: #fff; border-radius: 0 calc( 100vw * 90 / 1920) calc( 100vw * 90 / 1920) calc( 100vw * 90 / 1920); transition: all 1s; }
-.section4 #interviewAll .interviewLine .profileAll0:hover .profile0 { display: flex; }
-.section4 #interviewAll .interviewLine .profileAll1:hover .profile1 { display: flex; }
-.section4 #interviewAll .interviewLine .profileAll2:hover .profile2 { display: flex; }
-.section4 #interviewAll .interviewLine .profileAll3:hover .profile3 { display: flex; }
-.section4 #interviewAll .interviewLine .profileAll4:hover .profile4 { display: flex; }
-.section4 #interviewAll .interviewLine .profileAll5:hover .profile5 { display: flex; }
-.section4 #interviewAll .interviewLine .profileAll6:hover .profile6 { display: flex; }
+.section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); }
+.section4 #interviewAll .profileAll .profileImg { }
+
+.section4 #interviewAll .profileAll .profile { display: none; white-space: nowrap; overflow: hidden; flex-direction: column; justify-content: space-around; height: calc( 100vw * 190 / 1920); padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920) ; background: #fff; border-radius: 0 calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920); animation: profile .6s; }
+.section4 #interviewAll .interviewLine .profileAll0:hover .profile0 { display: flex; width: auto; }
+.section4 #interviewAll .interviewLine .profileAll1:hover .profile1 { display: flex; width: auto; }
+.section4 #interviewAll .interviewLine .profileAll2:hover .profile2 { display: flex; width: auto; }
+.section4 #interviewAll .interviewLine .profileAll3:hover .profile3 { display: flex; width: auto; }
+.section4 #interviewAll .interviewLine .profileAll4:hover .profile4 { display: flex; width: auto; }
+.section4 #interviewAll .interviewLine .profileAll5:hover .profile5 { display: flex; width: auto; }
+.section4 #interviewAll .interviewLine .profileAll6:hover .profile6 { display: flex; width: auto; }
 
 .section4 #interviewAll .profile ul { display: inline-block; margin: calc( 100vw * 20 / 1920) 0; font-family: semiBold; } 
 .section4 #interviewAll .profile ul li { display: inline; padding: 0 calc( 100vw * 20 / 1920); font-size: calc( 100vw * 20 / 1920);} 
 .section4 #interviewAll .profile ul li:first-child { padding: 0 calc( 100vw * 20 / 1920) 0 0 !important; border-right: calc( 100vw * 2 / 1920) solid #000; } 
 .section4 #interviewAll .profile ul .jobBg { color: #fff; background: #404040; padding: calc( 100vw * 5 / 1920) calc( 100vw * 8 / 1920); } 
 .section4 #interviewAll .profile p { font-size: calc( 100vw * 24 / 1920); font-family: regular; line-height: 130%; }
+
+@keyframes profile {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 310px;
+    }
+    100% {
+        width: auto;
+        padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920);
+
+    }
+}
 
 @keyframes bannermove {
     0% {
@@ -189,6 +205,12 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
         transform: translateX(-50%);
     }
 }
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-144vw); }
+}
+
 
 
 /* --------------------------------------------------------------------- */
