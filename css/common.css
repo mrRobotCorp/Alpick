@@ -85,7 +85,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section0 { background: #FF552F; background-size: cover; z-index: -70; } 
 .section0 article { height: 100vh; display: flex; justify-content: space-around; align-items: stretch; flex-direction: column; } 
 .section0 article #biInfo { text-align: left; margin-top: calc( 100vw * 220 / 1920); } 
-.section0 article #biInfo img { -webkit-user-drag: none; } 
+.section0 article #biInfo img { -webkit-user-drag: none;} 
 .section0 article #biInfo #serviceInfo { font-family: semiBold; color: #373151; font-size: calc( 100vw * 20 / 1920); letter-spacing: calc( 100vw * 2 / 1920); } 
 .section0 article #biInfo #serviceInfo::after { content: url(../source/sec0_app.png); position: absolute; margin: calc( 100vw * 20 / 1920) 0 0 calc( 100vw * -290 / 1920); } 
 .section0 article #tools { text-align: left; margin-top: calc( 100vw * 200 / 1920); width: calc( 100vw * 240 / 1920); } 
@@ -99,6 +99,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section0 #mainInfo ul:first-child { margin-right: calc( 100vw * 25 / 1920); } 
 .section0 #mainInfo ul .infoType { font-family: Plight; } 
 .section0 #mainInfo ul .infoCon { font-family: semiBold; line-height: 130%; } 
+.section0 article > img { margin-top: calc( 100vw * 20 /1920);}
 
 /* ---------------------------------------------------------------- */
 .section1 { margin-top: calc( 100vw * 150 / 1920); text-align: center; padding-bottom: calc( 100vw * 200 / 1920); } 
@@ -243,22 +244,8 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .serviceBox::after { content: ''; background: #312D40; width: 100vw; height: 170vh; position: absolute; margin-top: calc( 100vw * -3000 / 1920); border-radius: 50%; z-index: -100; }
 
 /* ----------------------------------------------------------------- */
-.section7 { padding-top: calc( 100vw * 100 / 1920); height: 100vh; } 
-.section7 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -75 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; }
-.section7 article { display: flex; flex-direction: column; justify-content: space-between; } 
-.section7 article #sec7_txt { margin-top: calc( 100vw * 50 / 1920); } 
-.section7 #sec7_txt #sec7_txt0 { font-size: calc( 100vw * 25 / 1920); font-family: regular; line-height: 130%; } 
-.section7 #sec7_txt #sec7_txt1 { margin-top: calc( 100vw * 10 / 1920); color: #666; font-size: calc( 100vw * 18 / 1920); font-family: regular; line-height: 120%; } 
-
-.section7 article #sec7_bottom { display: flex; justify-content: space-around; margin-top: calc( 100vw * 100 / 1920); font-size: calc( 100vw * 27 / 1920); } 
-.section7 #sec7_bottom p { margin-top: calc( 100vw * 40 / 1920); line-height: 150%; } 
-.section7 #sec7_bottom #asIs { display: inline-block; } 
-.section7 #sec7_bottom #asIs #asIs_title { display: inline-block; width: calc( 100vw * 220 / 1920); color: #fff; background: #373151; padding: calc( 100vw * 20 / 1920); border-radius: 0 calc( 100vw * 20 / 1920) calc( 100vw * 20 / 1920) 0; } 
-.section7 #sec7_bottom #asIs p { font-family: Plight; } 
-.section7 #sec7_bottom #asIs .sec7_bold { font-family: semiBold; } 
-.section7 #sec7_bottom #toBe { display: inline-block; } 
-.section7 #sec7_bottom #toBe #toBe_title { display: inline-block; width: calc( 100vw * 220 / 1920); font-family: Pbold; color: #373151; background: #FF6948; padding: calc( 100vw * 20 / 1920); border-radius: 0 calc( 100vw * 20 / 1920) calc( 100vw * 20 / 1920) 0; } 
-.section7 #sec7_bottom #toBe p { font-family: semiBold; } 
+.section7 { background: url(../source/sec7_mockup.png) no-repeat left; background-size: calc(100vw * 1100 / 1920);}
+.section7 h3 { font-size: calc(100vw * 40 / 1920); font-family: Pbold;}
 
 /* ---------------------------------------------------------------------- */
 .section8 .subTitle { margin-top: calc( 100vw * 100 / 1920); } 
