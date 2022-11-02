@@ -165,7 +165,7 @@ section .subTitle { position: relative; text-align: center; font-size: 32px; }
 .section4 #interviewAll .interviewLine img { margin: 10px 30px; } 
 
 .section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; }
-.section4 #interviewAll .profileAll .profile { display: none; flex-direction: column; justify-content: space-around; height: 190px; padding: 40px 60px; background: #fff; border-radius: 0 80px 80px 80px; transition: all 1s; }
+.section4 #interviewAll .profileAll .profile { display: none; flex-direction: column; justify-content: space-around; height: 190px; padding: 40px 80px; background: #fff; border-radius: 0 90px 90px 90px; transition: all 1s; }
 .section4 #interviewAll .interviewLine .profileAll0:hover .profile0 { display: flex; }
 .section4 #interviewAll .interviewLine .profileAll1:hover .profile1 { display: flex; }
 .section4 #interviewAll .interviewLine .profileAll2:hover .profile2 { display: flex; }
@@ -175,10 +175,10 @@ section .subTitle { position: relative; text-align: center; font-size: 32px; }
 .section4 #interviewAll .interviewLine .profileAll6:hover .profile6 { display: flex; }
 
 .section4 #interviewAll .profile ul { display: inline-block; margin: 20px 0; font-family: semiBold; } 
-.section4 #interviewAll .profile ul li { display: inline; padding: 0 20px; } 
+.section4 #interviewAll .profile ul li { display: inline; padding: 0 20px; font-size: 20px;} 
 .section4 #interviewAll .profile ul li:first-child { padding: 0 20px 0 0 !important; border-right: 2px solid #000; } 
 .section4 #interviewAll .profile ul .jobBg { color: #fff; background: #404040; padding: 5px 8px; } 
-.section4 #interviewAll .profile p { font-size: 20px; font-family: regular; line-height: 130%; }
+.section4 #interviewAll .profile p { font-size: 24px; font-family: regular; line-height: 130%; }
 
 @keyframes bannermove {
     0% {
