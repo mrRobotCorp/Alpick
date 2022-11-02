@@ -149,18 +149,6 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
     })
 
-    // -------------------------- text highlight --------------------------------
-    // const highlight = document.querySelector("#sec3_txt");
-
-    // gsap.registerPlugin(ScrollTrigger);
-
-    // gsap.utils.toArray(".text-highlight").forEach((highlight) => {
-    //     ScrollTrigger.create({
-    //         trigger: highlight,
-    //         start: "-100px center",
-    //         onEnter: () => highlight.classList.add("active")
-    //     });
-    // });
 
 });
 
@@ -176,5 +164,20 @@ $(document).ready(function(){
         else {
             $("#scrollTop").fadeOut(300);
         }
+    });
+
+    
+    // -------------------------- loop --------------------------------
+
+    const interviewAll = $('#interviewAll');
+    const interviewLine0 = $('#interviewLine0');
+    // const interviewLine1 = $('#interviewLine1');
+
+    interviewLine0.clone().appendTo(interviewAll);
+    
+    TweenMax.to(interviewAll, 10, {
+        x: -(interviewLine0.width()),
+        ease: Linear.easeNone,
+        repeat: -1
     });
 });
