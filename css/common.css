@@ -138,7 +138,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .wrapper .video { height: 90%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin-left: 15px; -webkit-clip-path: var(--clip-path); clip-path: var(--clip-path); transition: -webkit-clip-path var(--duration) var(--timing-function); transition: clip-path var(--duration) var(--timing-function); transition: clip-path var(--duration) var(--timing-function), -webkit-clip-path var(--duration) var(--timing-function); } 
 .wrapper .video video { position: fixed; background: #c4cbde; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); } 
 .wrapper .text { position: relative; text-transform: uppercase; font-weight: 600; letter-spacing: 0.3px; opacity: var(--opacity, 1); transition: opacity 0.3s var(--timing-function) 0.2s; } 
-.wrapper .text::before, .wrapper .text::after { content: ""; position: absolute; bottom: 0; left: -1px; right: 25px; height: 0; } 
+.wrapper .text::before, .wrapper .text::after { content: ''; position: absolute; bottom: 0; left: -1px; right: 25px; height: 0; } 
 .wrapper .text::before { box-shadow: 26px 0 0 1px var(--color); right: var(--r, 100%); opacity: var(--opacity, 0); transition: right 0.5s ease-in, opacity 0.1s linear; } 
 .wrapper .text::after { box-shadow: 26px 0 0 1px var(--color-invert); -webkit-clip-path: var(--clip-path); clip-path: var(--clip-path); transition: -webkit-clip-path var(--duration) var(--timing-function); transition: clip-path var(--duration) var(--timing-function); transition: clip-path var(--duration) var(--timing-function), -webkit-clip-path var(--duration) var(--timing-function); } 
 .wrapper .text > span::before, .wrapper .text > span::after { content: attr(data-text); padding-left: 30px; } 
@@ -205,8 +205,9 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section6 .subTitle { color: #fff; margin: calc( 100vw * 600 / 1920) 0 calc( 100vw * 80 / 1920) 0; }
 .section6 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -95 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; }
 .section6 article { display: flex; align-items: center; justify-content: space-around; margin-top: calc( 100vw * 200 / 1920); }
-.section6 article .sec6_con { height: calc( 100vw * 640 / 1920); display: flex; flex-direction: column; align-items: center; justify-content: space-around; }
-.section6 article .sec6_con div { display: inline-block; background: #fff; padding: calc( 100vw * 20 / 1920) calc( 100vw * 40 / 1920); border-radius: calc( 100vw * 40 / 1920); font-size: calc( 100vw * 34 / 1920); font-family: semiBold; }
+.section6 article .sec6_con { height: calc( 100vw * 640 / 1920); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-around; }
+.section6 article .sec6_con #asIsIcon::after { content: ''; background: url(../source/sec6_arrow.png) no-repeat center center; position: absolute; width: calc( 100vw * 270 / 1920); height: calc( 100vw * 24 / 1920 ); margin-top: -200px; }
+.section6 article .sec6_con div { display: inline-block; background: #fff; padding: calc( 100vw * 20 / 1920) calc( 100vw * 40 / 1920); border-radius: calc( 100vw * 40 / 1920); font-size: calc( 100vw * 34 / 1920 ); font-family: semiBold; }
 .section6 article .sec6_con p { color: #fff; width: calc( 100vw * 365 / 1920); font-size: calc( 100vw * 22 / 1920); font-family: regular; line-height: 150%; }
 
 .section6 h4 { color: #fff; font-size: calc( 100vw * 32 / 1920); font-family: Pbold; margin-top: calc( 100vw * 200 / 1920);}
@@ -263,15 +264,6 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 #banner #banner_txt { display: inline-block; margin: calc( 100vw * 60 / 1920) auto 0 auto; background: #fff; padding: calc( 100vw * 10 / 1920) calc( 100vw * 50 / 1920); border-radius: calc( 100vw * 15 / 1920); text-align: center; } 
 
 /* ---------------------------------------------------------------------- */
-.section11 { padding-top: calc( 100vw * 200 / 1920); margin-bottom: calc( 100vw * 200 / 1920); } 
-.section11 #sec11_box { display: flex; justify-content: space-around; } 
-.section11 .sec11_chat { display: flex; align-items: center; justify-content: center; text-align: center; width: calc( 100vw * 660 / 1920); height: calc( 100vw * 200 / 1920); background: #fff; font-size: calc( 100vw * 36 / 1920); line-height: 140%; border-radius: calc( 100vw * 40 / 1920); box-shadow: 3.96786e-15px 64.8px 129.6px rgba(51, 51, 51, 0.24), inset -1.23444e-15px -20.16px 20.16px #ECECEC, inset 1.23444e-15px 20.16px 20.16px #FFFFFF; } 
-.section11 article { display: flex; justify-content: space-around; align-items: center; margin-top: calc( 100vw * 200 / 1920); } 
-.section11 article h3 { font-size: calc( 100vw * 28 / 1920); font-family: Pbold; line-height: 130%; } 
-.section11 article h3::before { content: url(../source/sec9_icon.png); position: absolute; margin: calc( 100vw * -150 / 1920) 0 0 calc( 100vw * -50 / 1920); } 
-.section11 article p { width: calc( 100vw * 500 / 1920); color: #323232; margin-top: calc( 100vw * 40 / 1920); font-size: calc( 100vw * 20 / 1920); line-height: 140%; } 
-.section11 article img { -webkit-user-drag: none; } 
-
 
 /* ------------------------------- footer ------------------------------------ */
 footer { padding: calc( 100vw * 50 / 1920) 0 calc( 100vw * 30 / 1920) 0; text-align: center; font-family: Plight; background-color: #212121; color: #fff; } 
