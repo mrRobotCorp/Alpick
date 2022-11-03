@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    AOS.init();
     // ----------------- loader ------------------------------
     document.querySelector(".loading").style.visibility = "hidden";
     // -----------------------------------------------------
