@@ -114,7 +114,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 /* ----------------------------------------------------------------- */
 .section2 { height: 170vh; background: #F4F3F9; border-radius: 50% 50% 0 0; padding-top : calc( 100vw * 300 / 1920 ); } 
 .section2 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -75 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; } 
-.section2 article { text-align: left; margin-top: calc( 100vw * 300 / 1920 ); } 
+.section2 article { text-align: left; margin-top: calc( 100vw * 300 / 1920 ); position: relative; } 
 .section2 article #sec2_txt { display: flex; align-items: center; justify-content: space-between; margin: calc( 100vw * 200 / 1920) 0 calc( 100vw * 200 / 1920) 0; } 
 .section2 article #sec2_txt h3 { font-size: calc( 100vw * 38 / 1920); font-family: Pbold; } 
 .section2 article #sec2_txt p { color: #666; width: calc( 100vw * 600 / 1920); font-size: calc( 100vw * 22 / 1920); font-family: semiBold; line-height: 130%; } 
@@ -125,11 +125,9 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section2 article #sec2_box div:first-child::after { content: ''; border-top: calc( 100vw * 3 / 1920) solid #303444; position: absolute; width: calc( 100vw * 630 / 1920); top: calc( 100vw * 230 / 1920); margin-left: calc( 100vw * 440 / 1920); z-index: 0; } 
 .section2 article #sec2_box div img { -webkit-user-drag: none; z-index: 50; } 
 
-.section2 article #sec2_arrow div { width: 0; height: 0; margin: calc( 100vw * 15 / 1920) auto; border-radius: calc( 100vw * 7 / 1920); border-left: calc( 100vw * 15 / 1920) solid transparent; border-right: calc( 100vw * 15 / 1920) solid transparent; } 
-.section2 article #sec2_arrow #arrow0 { border-top: calc( 100vw * 20 / 1920) solid #303444; } 
-.section2 article #sec2_arrow #arrow1 { border-top: calc( 100vw * 20 / 1920) solid #303444c8; } 
-.section2 article #sec2_arrow #arrow2 { border-top: calc( 100vw * 20 / 1920) solid #30344485; } 
-.section2 article #sec2_bottom { font-family: Plight; font-size: calc( 100vw * 36 / 1920); text-align: center; margin-top: calc( 100vw * 70 / 1920); line-height: 150%; } 
+.section2 article #sec2_arrow { width: 0; height: calc( 100vw * 105 / 1920 ); margin: 0 auto; border-left: calc( 100vw * 2.5 / 1920 ) dashed #4C38AE ; } 
+.section2 article #sec2_arrow::after { background: #4C38AE; width: calc( 100vw * 8 / 1920 ); height: calc( 100vw * 8 / 1920 ); position: absolute; margin-top: calc( 100vw * -500 / 1920 ); border-radius: calc( 100vw * 5 / 1920 ); z-index: 100;}
+.section2 article #sec2_bottom { font-family: Plight; font-size: calc( 100vw * 36 / 1920); text-align: center; margin-top: calc( 100vw * 100 / 1920); line-height: 150%; } 
 .section2 article #sec2_bottom .colorNy { color: #4C38AE; font-family: Pbold; } 
 
 /* -------------------------------------------------------------------------- */
@@ -165,12 +163,11 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section4 #interviewAll .interviewLine:hover { animation-play-state: paused; -moz-animation-play-state: paused; -webkit-animation-play-state: paused; } 
 .section4 #interviewAll .interviewLine img { margin: calc( 100vw * 10 / 1920) calc( 100vw * 30 / 1920); } 
 
-.wrap-marqueeText { gap:3em; position:relative; overflow:hidden; width:80%; } 
+/* .wrap-marqueeText { gap:3em; position:relative; overflow:hidden; width:80%; } 
 .marqueeText { display:flex; flex-flow:row nowrap; justify-content:flex-start; align-items:center; gap:40px; position:relative; } 
-.marqueeText dd { flex: none; position: relative; } 
+.marqueeText dd { flex: none; position: relative; }  */
 
 .section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); } 
-/* .section4 #interviewAll .profileAll .profileImg { } */
 
 .section4 #interviewAll .profileAll .profile { display: none; white-space: nowrap; overflow: hidden; flex-direction: column; justify-content: space-around; height: calc( 100vw * 190 / 1920); padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920); background: #fff; border-radius: 0 calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920); animation: profile .6s; } 
 .section4 #interviewAll .interviewLine .profileAll0:hover .profile0 { display: flex; width: auto; } 
@@ -221,7 +218,8 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section6 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -95 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; } 
 .section6 article { display: flex; align-items: center; justify-content: space-around; position: relative; margin-top: calc( 100vw * 200 / 1920); } 
 .section6 article .sec6_con { height: calc( 100vw * 640 / 1920); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-around; } 
-.section6 article .sec6_con #asIsIcon::after { content: ''; background: url(../source/sec6_arrow.png) no-repeat center center; position: absolute; width: calc( 100vw * 270 / 1920); height: calc( 100vw * 24 / 1920 ); margin-top: -200px; } 
+.section6 article .sec6_con0::before { content: ''; background: url(../source/sec6_arrow.png) no-repeat center center; position: absolute; margin:calc(100vw * -200 / 1920) 0 0 calc( 100vw * 700 / 1920 ); width: calc( 100vw * 350 / 1920 ); height: calc( 100vw * 24 / 1920 ); }
+.section6 article .sec6_con0::after { content: ''; background: url(../source/sec6_arrow1.png) no-repeat center center; position: absolute; width: calc( 100vw * 350 / 1920); height: calc( 100vw * 24 / 1920 ); } 
 .section6 article .sec6_con div { display: inline-block; background: #fff; padding: calc( 100vw * 20 / 1920) calc( 100vw * 40 / 1920); border-radius: calc( 100vw * 40 / 1920); font-size: calc( 100vw * 34 / 1920 ); font-family: semiBold; } 
 .section6 article .sec6_con p { color: #fff; width: calc( 100vw * 365 / 1920); font-size: calc( 100vw * 22 / 1920); font-family: regular; line-height: 150%; } 
 
@@ -317,7 +315,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 
 /* ----------------------------------------------------------------------- */
-.section14 {}
+/* .section14 {} */
 
 
 
