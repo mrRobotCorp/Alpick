@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    AOS.init();
     // ----------------- loader ------------------------------
     document.querySelector(".loading").style.visibility = "hidden";
     // -----------------------------------------------------
@@ -171,9 +170,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+AOS.init();
+
 // ---------------- scrolling -------------------
 $(document).ready(function(){
-    const scrollPos = $(document).scrollTop();
+    // const scrollPos = $(document).scrollTop();
     const Height = $("#scrollTop").height(); 
     $("#scrollTop").hide();
 
@@ -185,36 +186,20 @@ $(document).ready(function(){
             $("#scrollTop").fadeOut(300);
         }
 
-        if ( scrollPos === 0 ) {
-            $('.sec8_colorOR').css({ 'width' : '60vw'});
-            $('.sec8_colorBlu').css({ 'height' : '33.3%'});
-            $('.sec8_colorGry').css({ 'height' : '33.3%'});
-            $('.sec8_colorWh').css({ 'height' : '33.3%'});
+        // if ( scrollPos === 0 ) {
+        //     $('.sec8_colorOR').css({ 'width' : '60vw'});
+        //     $('.sec8_colorBlu').css({ 'height' : '33.3%'});
+        //     $('.sec8_colorGry').css({ 'height' : '33.3%'});
+        //     $('.sec8_colorWh').css({ 'height' : '33.3%'});
 
-        } else if (scrollPos >= 10000 ) {
-            $('.sec8_colorOR').css({ 'width' : '60vw'});
-            $('.sec8_colorBlu').css({ 'height' : '33.3%'});
-            $('.sec8_colorGry').css({ 'height' : '33.3%'});
-            $('.sec8_colorWh').css({ 'height' : '33.3%'});
-        }
+        // } else if (scrollPos >= 10000 ) {
+        //     $('.sec8_colorOR').css({ 'width' : '60vw'});
+        //     $('.sec8_colorBlu').css({ 'height' : '33.3%'});
+        //     $('.sec8_colorGry').css({ 'height' : '33.3%'});
+        //     $('.sec8_colorWh').css({ 'height' : '33.3%'});
+        // }
 
     });
 
-
-
-    
-    // -------------------------- loop --------------------------------
-
-    // const interviewAll = $('#interviewAll');
-    // const interviewLine0 = $('#interviewLine0');
-    // // const interviewLine1 = $('#interviewLine1');
-
-    // interviewLine0.clone().appendTo(interviewAll);
-    
-    // TweenMax.to(interviewAll, 10, {
-    //     x: -(interviewLine0.width()),
-    //     ease: Linear.easeNone,
-    //     repeat: -1
-    // });
 
 });
