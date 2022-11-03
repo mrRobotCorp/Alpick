@@ -27,7 +27,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/common.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
     <!-- <script src="./js/marqueeMain.js" type="module"></script> -->
 
     <title>Alpick | 알픽</title>
@@ -479,13 +481,13 @@
         <div id="sec7_mockup">
             <img alt="용용이 캐릭터" src="./source/sec7_mockup.png" />
         </div>
-        <div class="sec7_chat sec7_box0" data-aos="fade-right">
+        <div class="sec7_chat sec7_box0" data-aos="fade-right" data-aos-delay="500">
             무엇을 도와드릴까요?
         </div>
-        <div class="sec7_chat sec7_box1" data-aos="fade-left">
+        <div class="sec7_chat sec7_box1" data-aos="fade-left" data-aos-delay="650">
             이번달 음주 리포트 알려줘
         </div>
-        <div class="sec7_chat sec7_box2" data-aos="fade-right">
+        <div class="sec7_chat sec7_box2" data-aos="fade-right" data-aos-delay="800">
             지난달보다 음주 빈도수가 4회 증가했어요.<br>더 마시지 않도록 주의하세요!
         </div>
     </section>
@@ -579,7 +581,7 @@
         </article>
     </section>
 
-    <section class="section section12">
+    <section class="section section12 inner">
         <h2 class="subTitle">App</h2>
         <article>
             <h3><span>01.</span>초기 설정과<br>음주 데이터를 기반으로</h3>
@@ -595,6 +597,11 @@
         <h2 class="blind"></h2>
         <article>
             <h3><span>02.</span>AI 서비스</h3>
+            <p>
+                AI 의 목소리를 선택 할 수 있고  원하는 대화<br>
+                키워드를 선택하면 용용이가 키워드에<br>
+                대한 답을 해줍니다.
+            </p>
         </article>
     </section>
 
@@ -648,6 +655,9 @@
             <p id="copy">&copy; All rights deserved by 231.</p>
         </div>
     </footer>
+
+    <!-- <script src="./js/scrollEvent.js"></script> -->
+    <script src="./js/common.js"></script>
 </body>
 
 </html>
