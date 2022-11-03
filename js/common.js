@@ -173,7 +173,7 @@ AOS.init();
 
 // ---------------- scrolling -------------------
 $(document).ready(function(){
-    // const scrollPos = $(document).scrollTop();
+    const scrollPos = $(document).scrollTop();
     const Height = $("#scrollTop").height(); 
     $("#scrollTop").hide();
 
@@ -183,6 +183,13 @@ $(document).ready(function(){
             $("#scrollTop").fadeIn(500).css({"position":"fixed"}); } 
         else {
             $("#scrollTop").fadeOut(300);
+        }
+
+        if (scrollPos >= 10000 ) {
+            $('.sec8_colorOR').addClass('active');
+            $('.sec8_colorBlu').addClass('active');
+            $('.sec8_colorGry').addClass('active');
+            $('.sec8_colorWh').addClass('active');
         }
 
         // if ( scrollPos === 0 ) {
