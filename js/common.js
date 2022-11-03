@@ -16,22 +16,21 @@ document.addEventListener("DOMContentLoaded", function() {
     // --------------------- menu move ---------------------------
     const scrollHeight = document.querySelector("html").scrollTop;
 
-    window.onscroll = function() {
-        if ( scrollHeight >= 10000 ) {
-            document.querySelector('.sec8_colorOR').style.width = '60vw';
-            document.querySelector('.sec8_colorBlu').style.height = '33.3%'
-            document.querySelector('.sec8_colorGry').style.height = '33.3%'
-            document.querySelector('.sec8_colorWh').style.height = '33.3%'
-        } else {
-            document.querySelector('.sec8_colorOR').style.width = '60vw';
-            document.querySelector('.sec8_colorBlu').style.height = '33.3%'
-            document.querySelector('.sec8_colorGry').style.height = '33.3%'
-            document.querySelector('.sec8_colorWh').style.height = '33.3%'
+    // window.onscroll = function() {
+    //     if ( scrollHeight < 10000 ) {
+    //         document.querySelector('.sec8_colorOR').style.width = '60vw';
+    //         document.querySelector('.sec8_colorBlu').style.height = '33.3%';
+    //         document.querySelector('.sec8_colorGry').style.height = '33.3%';
+    //         document.querySelector('.sec8_colorWh').style.height = '33.3%';
+    //     } else if ( scrollHeight >= 10000 ) {
+    //         document.querySelector('.sec8_colorOR').style.width = '60vw';
+    //         document.querySelector('.sec8_colorBlu').style.height = '33.3%';
+    //         document.querySelector('.sec8_colorGry').style.height = '33.3%';
+    //         document.querySelector('.sec8_colorWh').style.height = '33.3%';
+    //     } 
+    // };
 
-        }
-    }
-
-    window.onscroll();
+    // window.onscroll();
     
     window.onresize = function(event){
         const innerWidth = window.innerWidth;
@@ -175,7 +174,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // ---------------- scrolling -------------------
 $(document).ready(function(){
-    var Height = $("#scrollTop").height(); 
+    const scrollPos = $(document).scrollTop();
+    const Height = $("#scrollTop").height(); 
     $("#scrollTop").hide();
 
     $(window).scroll(function(){ 
@@ -185,7 +185,16 @@ $(document).ready(function(){
         else {
             $("#scrollTop").fadeOut(300);
         }
+
+        if (scrollPos >= 10000 ) {
+            $('.sec8_colorOR').css({ 'width' : '60vw'});
+            $('.sec8_colorBlu').css({ 'height' : '33.3%'});
+            $('.sec8_colorGry').css({ 'height' : '33.3%'});
+            $('.sec8_colorWh').css({ 'height' : '33.3%'});
+        }
     });
+
+
 
     
     // -------------------------- loop --------------------------------
