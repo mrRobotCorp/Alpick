@@ -14,19 +14,39 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     // --------------------- menu move ---------------------------
+    const scrollHeight = document.querySelector("html").scrollTop;
+
+    window.onscroll = function() {
+        if ( scrollHeight >= 10000 ) {
+            document.querySelector('.sec8_colorOR').style.width = '60vw';
+            document.querySelector('.sec8_colorBlu').style.height = '33.3%'
+            document.querySelector('.sec8_colorGry').style.height = '33.3%'
+            document.querySelector('.sec8_colorWh').style.height = '33.3%'
+        } else {
+            document.querySelector('.sec8_colorOR').style.width = '60vw';
+            document.querySelector('.sec8_colorBlu').style.height = '33.3%'
+            document.querySelector('.sec8_colorGry').style.height = '33.3%'
+            document.querySelector('.sec8_colorWh').style.height = '33.3%'
+
+        }
+    }
+
+    window.onscroll();
+    
     window.onresize = function(event){
-        var innerWidth = window.innerWidth;
+        const innerWidth = window.innerWidth;
+
         if (innerWidth > 1024) {
             window.onscroll = function() {
                 // 스크롤위치
-                // console.log(document.querySelector("html").scrollTop); 
+                console.log(scrollHeight); 
 
-                if ( document.querySelector("html").scrollTop === 0) {
+                if ( scrollHeight === 0) {
                     document.querySelector("header").style.top = "0";
                     document.querySelector("header div").style.marginBottom = "15px";
                 }
                 
-                if ( document.querySelector("html").scrollTop > 740) {
+                if ( scrollHeight > 740) {
                     document.querySelector("header").style.top = "-30px";
                     document.querySelector("header div").style.marginBottom = "0";
                 } else {
@@ -39,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if ( e.clientY < 70 ) {
                     document.querySelector("header").style.top = "0";
                     document.querySelector("header div").style.marginBottom = "15px";
-                } else if (document.querySelector("html").scrollTop > 740) {
+                } else if (scrollHeight > 740) {
                     document.querySelector("header").style.top = "-30px"
                     document.querySelector("header div").style.marginBottom = "0";
                 }
@@ -153,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// ---------------- after scrolling -------------------
+// ---------------- scrolling -------------------
 $(document).ready(function(){
     var Height = $("#scrollTop").height(); 
     $("#scrollTop").hide();
@@ -170,15 +190,16 @@ $(document).ready(function(){
     
     // -------------------------- loop --------------------------------
 
-    const interviewAll = $('#interviewAll');
-    const interviewLine0 = $('#interviewLine0');
-    // const interviewLine1 = $('#interviewLine1');
+    // const interviewAll = $('#interviewAll');
+    // const interviewLine0 = $('#interviewLine0');
+    // // const interviewLine1 = $('#interviewLine1');
 
-    interviewLine0.clone().appendTo(interviewAll);
+    // interviewLine0.clone().appendTo(interviewAll);
     
-    TweenMax.to(interviewAll, 10, {
-        x: -(interviewLine0.width()),
-        ease: Linear.easeNone,
-        repeat: -1
-    });
+    // TweenMax.to(interviewAll, 10, {
+    //     x: -(interviewLine0.width()),
+    //     ease: Linear.easeNone,
+    //     repeat: -1
+    // });
+
 });

@@ -259,13 +259,21 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 .section8 .color { display: flex; margin-top: calc( 100vw * 100 / 1920 ); } 
 .section8 .color h4 { font-family: Pbold; margin-bottom: calc( 100vw * 20 / 1920 );}
-.section8 .color .sec8_colorOR { height: calc(100vw * 790 / 1920); padding: calc( 100vw * 40 / 1920 ) calc( 100vw * 50 / 1920 ); display: inline-block; width: 60vw; color: #fff; background: #FF6948; } 
+.section8 .color .sec8_colorOR { height: calc(100vw * 790 / 1920); padding: calc( 100vw * 40 / 1920 ) calc( 100vw * 50 / 1920 ); display: inline-block; width: 0; color: #fff; background: #FF6948; white-space: nowrap; transition: all .4s; } 
 .section8 .color .colorRightAll { height: calc(100vw * 870 / 1920); display: flex; flex-direction: column; width: 40vw; } 
 .section8 .color .colorRight { padding: calc( 100vw * 40 / 1920 ) calc( 100vw * 50 / 1920 ); } 
-.section8 .color .sec8_colorBlu { width: 100%; height: 33.3%; color: #fff; background: #373151; } 
-.section8 .color .sec8_colorGry { width: 100%; height: 33.3%; color: #fff; background: #3A3A3A; } 
-.section8 .color .sec8_colorWh { width: 100%; height: 33.3%; color: #5F5F5F; background: #fff; } 
+.section8 .color .sec8_colorBlu { width: 100%; height: 0; color: #fff; background: #373151; } 
+.section8 .color .sec8_colorGry { width: 100%; height: 0; color: #fff; background: #3A3A3A; } 
+.section8 .color .sec8_colorWh { width: 100%; height: 0; color: #5F5F5F; background: #fff; } 
 
+@keyframes colorOR {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60vw;
+    }
+}
 /* ---------------------------------------------------------------------- */
 .section9 { height: 100vh; background: #312E3B; } 
 .section9 .sec8_art1 { color: #fff; padding-top: calc( 100vw * 80 / 1920 ); } 
