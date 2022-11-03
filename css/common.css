@@ -167,7 +167,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section4 #interviewAll .interviewLine img { margin: calc( 100vw * 10 / 1920) calc( 100vw * 30 / 1920); } 
 
 .section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); }
-.section4 #interviewAll .profileAll .profileImg { }
+/* .section4 #interviewAll .profileAll .profileImg { } */
 
 .section4 #interviewAll .profileAll .profile { display: none; white-space: nowrap; overflow: hidden; flex-direction: column; justify-content: space-around; height: calc( 100vw * 190 / 1920); padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920) ; background: #fff; border-radius: 0 calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920); animation: profile .6s; }
 .section4 #interviewAll .interviewLine .profileAll0:hover .profile0 { display: flex; width: auto; }
@@ -256,7 +256,10 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section7 .sec7_box2 { margin: calc( 100vw * -300 / 1920 ) 0 0 calc( 100vw * 800 / 1920); line-height: 140%; }
 
 /* ---------------------------------------------------------------------- */
-.section8 .subTitle { margin-top: calc( 100vw * 100 / 1920); } 
+.section8 { height: 700vh; background: #312E3B; padding: calc( 100vw * 400 / 1920 ) 0; border-radius: calc( 100vw * 1000 / 1920 ); }
+.section8 .subTitle { color: #fff; margin-top: calc( 100vw * 100 / 1920); } 
+/* .section8 .subTitle::before { content: ''; background: #312D40; width: 100vw; height: 170vh; position: absolute; left: 0; margin-top: calc( 100vw * -4500 / 1920); z-index: -100; } */
+.section8 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -90 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; }
 .section8 article { text-align: center; } 
 .section8 article p { margin-top: calc( 100vw * 50 / 1920); font-size: calc( 100vw * 17 / 1920); line-height: 150%; } 
 .section8 article #serviceLine { height: calc( 100vw * 360 / 1920); margin-top: calc( 100vw * 100 / 1920); display: flex; align-items: center; justify-content: space-between; flex-direction: column; } 
