@@ -166,8 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mainMockup.addEventListener('contextmenu', (event) => {
         event.preventDefault();
     });
-
-
+    
 });
 
 AOS.init();
