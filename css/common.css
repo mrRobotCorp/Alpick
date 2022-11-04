@@ -377,7 +377,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section16 .sec16_mockup img { width: 45%; }
 
 /* ------------------------------------------------------------------------ */
-.section17 { height: 120vh; color: #fff; background: #FF542F; border-radius: 0 0 50% 50%; }
+.section17 { height: 160vh; color: #fff; background: #FF542F; border-radius: 0 0 50% 50%; }
 .section17 article h3 { color: #fff; font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section17 article h3 span { display: block; width: calc( 100vw * 340 / 1920 ); margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section17 article p { margin: calc( 100vw * 60 / 1920 ) calc( 100vw * 40 / 1920 ) 0 0 ; line-height: 140%; }
