@@ -317,11 +317,15 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section13 article h3 span { display: block; width: calc( 100vw * 340 / 1920 ); margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section13 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
 .section13 .sec13_mockupAll { position: relative; margin-top: calc( 100vw * 300 / 1920 ); }
-.section13 .sec13_keyword { color: #fff; background: #FD5A36; position: absolute; padding: calc( 100vw * 20 / 1920) calc( 100vw * 30 / 1920 ) calc( 100vw * 20 / 1920 ) calc( 100vw * 50 / 1920 ); border-radius: calc( 100vw * 50 / 1920 ); }
+.section13 .sec13_keyword { color: #fff; background: #FD5A36; position: absolute; padding: calc( 100vw * 20 / 1920) calc( 100vw * 30 / 1920 ) calc( 100vw * 20 / 1920 ) calc( 100vw * 50 / 1920 ); border-radius: calc( 100vw * 50 / 1920 ); z-index: 10;}
 .section13 .sec13_keyword::before { content: ''; background: #fff; width: calc( 100vw * 10 / 1920 ); height: calc( 100vw * 10 / 1920 ); position: absolute; margin: calc( 100vw * 5 / 1920 ) 0 0 calc( 100vw * -20 / 1920 ); border-radius: calc( 100vw * 5 / 1920 );}
 .section13 .keyword0 { position: absolute; top: calc( 100vw * -250 / 1920 ); left: calc( 100vw * 600 / 1920 ); }
+.section13 .keyword0::after { content: ''; position: absolute; height: calc( 100vw * 480 / 1920 ); margin-left: calc( 100vw * -160 / 1920 ); border-left: 2px dashed #FD5A36; z-index: -1; }
 .section13 .keyword1 { position: absolute; top: calc( 100vw * -100 / 1920 ); left: calc( 100vw * 950 / 1920 ); }
+.section13 .keyword1::after { content: ''; position: absolute; height: calc( 100vw * 240 / 1920 ); margin-left: calc( 100vw * -205 / 1920 ); border-left: 2px dashed #FD5A36; z-index: -1; }
 .section13 .keyword2 { position: absolute; top: calc( 100vw * 340 / 1920 ); left: calc( 100vw * 950 / 1920 ); }
+.section13 .keyword2::after { content: ''; position: absolute; width: calc( 100vw * 100 / 1920 ); height: calc( 100vw * 50 / 1920 ); margin: calc( 100vw * 9 / 1920 ) 0 0 calc( 100vw * -230 / 1920 ); border-top: 2px dashed #FD5A36; border-left: 2px dashed #FD5A36; z-index: -1; }
+
 
 /* ----------------------------------------------------------------------- */
 .section14 { height: 140vh; background: #FF542F; color: #fff; text-align: center; border-radius: 50% 50% 0 0; margin-top: calc( 100vw * 150 / 1920 ); }
