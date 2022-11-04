@@ -224,7 +224,6 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section5 article #handMockup { margin: 0 auto; -webkit-user-drag: none; z-index: 100; }
 .section5 article #handMockup img { width: 50%; }
 
-
 /* ----------------------------------------------------------------- */
 .section6 { height: 260vh; position: relative; background: #312D40; text-align: center; display: flex; align-items: center; padding: calc( 100vw * 100 / 1920) 0 calc( 100vw * 300 / 1920); z-index: -100; } 
 .section6::before { content: ''; background: #312D40; width: 100vw; height: 170vh; position: absolute; margin-top: calc( 100vw * -3200 / 1920); z-index: -100; } 
@@ -353,13 +352,18 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 /* ----------------------------------------------------------------------- */
 .section15 { height: 150vh; color: #fff; background: #FF542F;}
-.section15 article { display: flex; align-items: flex-start; justify-content: space-between;}
+.section15 article { display: flex; justify-content: space-between; }
 .section15 article h3 { font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section15 article h3 span { display: block; margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section15 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
+.section15 article .sec15_mockup { margin-right: calc( 100vw * -950 / 1920 ); }
+.section15 article .sec15_mockup img { width: 50%; }
+.section15 .sec15_txt { width: calc( 100vw * 800 / 1920 );}
+
 .section15 .sec15_leftAll { position: relative; }
-.section15 .sec15_left0 img { width: 30%; position: absolute; }
-.section15 .sec15_left1 img { width: 30%; position: absolute; }
+.section15 .sec15_left { position: absolute; }
+.section15 .sec15_left0 {top: calc( 100vw * -400 / 1920 ); left: calc( 100vw * 500 / 1920 ); width: calc( 100vw * 500 / 1920 ); height: calc( 100vw * 200 / 1920 ); background: url(../source/sec15_left0.png) no-repeat center center; background-size: contain;  }
+.section15 .sec15_left1 {top: calc( 100vw * -200 / 1920 ); left: calc( 100vw * 200 / 1920 ); width: calc( 100vw * 500 / 1920 ); height: calc( 100vw * 200 / 1920 ); background: url(../source/sec15_left1.png) no-repeat center center; background-size: contain; }
 
 /* ------------------------------------------------------------------------- */
 .section16 { color: #fff; background: #FF542F; }
