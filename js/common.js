@@ -147,6 +147,29 @@ document.addEventListener("DOMContentLoaded", function() {
             behavior: 'smooth'
         });
     }
+    // ---------------------------------------------------------
+    const sticker0 = document.createElement('div');
+    sticker0.setAttribute('id', 'sticker0');
+    sticker0.setAttribute('class', 'sticker');
+    
+    const sticker1 = document.createElement('div');
+    sticker1.setAttribute('id', 'sticker1');
+    sticker1.setAttribute('class', 'sticker');
+
+    const sticker2 = document.createElement('div');
+    sticker2.setAttribute('id', 'sticker2');
+    sticker2.setAttribute('class', 'sticker');
+
+    const sticker3 = document.createElement('div');
+    sticker3.setAttribute('id', 'sticker3');
+    sticker3.setAttribute('class', 'sticker');
+
+    const sticker4 = document.createElement('div');
+    sticker4.setAttribute('id', 'sticker4');
+    sticker4.setAttribute('class', 'sticker');
+    
+    const stickerAll = document.querySelector('.stickerAll');
+    stickerAll.prepend(sticker0, sticker1, sticker2, sticker3, sticker4);
 
     // ------------------------------------------------------
     // document.getElementById("easyVegan").innerText = "쉬운 비건, 쉬운 실천!";
