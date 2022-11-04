@@ -114,7 +114,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 /* ----------------------------------------------------------------- */
 .section2 { height: 170vh; background: #F4F3F9; border-radius: 50% 50% 0 0; padding-top : calc( 100vw * 300 / 1920 ); } 
 .section2 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -75 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; } 
-.section2 article { text-align: left; margin-top: calc( 100vw * 300 / 1920 ); position: relative; } 
+.section2 article { text-align: left; position: relative; margin-top: calc( 100vw * 300 / 1920 ); position: relative; } 
 .section2 article #sec2_txt { display: flex; align-items: center; justify-content: space-between; margin: calc( 100vw * 200 / 1920) 0 calc( 100vw * 200 / 1920) 0; } 
 .section2 article #sec2_txt h3 { font-size: calc( 100vw * 38 / 1920); font-family: Pbold; } 
 .section2 article #sec2_txt p { color: #666; width: calc( 100vw * 600 / 1920); font-size: calc( 100vw * 22 / 1920); font-family: semiBold; line-height: 130%; } 
@@ -122,11 +122,10 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section2 article #sec2_box { display: flex; justify-content: space-between; margin: calc( 100vw * 200 / 1920) 0 calc( 100vw * 100 / 1920) calc( 100vw * -20 / 1920); position: relative; } 
 .section2 article #sec2_box div { display: flex; align-items: flex-end; justify-content: space-between; width: calc( 100vw * 420 / 1920); height: calc( 100vw * 420 / 1920); border-radius: 50%; } 
 .section2 article #sec2_box div:first-child { margin-right: calc( 100vw * 55 / 1920); } 
-/* .section2 article #sec2_box div:first-child::after { content: ''; border-top: calc( 100vw * 3 / 1920) solid #303444; position: absolute; width: calc( 100vw * 630 / 1920); top: calc( 100vw * 230 / 1920); margin-left: calc( 100vw * 440 / 1920); z-index: 0; }  */
 .section2 article #sec2_box div img { width: 100%; -webkit-user-drag: none; z-index: 50; } 
 
 .section2 article #sec2_arrow { width: 0; height: calc( 100vw * 105 / 1920 ); margin: 0 auto; border-left: calc( 100vw * 2.5 / 1920 ) dashed #4C38AE ; } 
-.section2 article #sec2_arrow::after { background: #4C38AE; width: calc( 100vw * 8 / 1920 ); height: calc( 100vw * 8 / 1920 ); position: absolute; margin-top: calc( 100vw * -500 / 1920 ); border-radius: calc( 100vw * 5 / 1920 ); z-index: 100;}
+.section2 article #sec2_arrow::after { background: #4C38AE; width: calc( 100vw * 8 / 1920 ); height: calc( 100vw * 8 / 1920 ); position: absolute; top: 50%; margin-top: calc( 100vw * -500 / 1920 ); border-radius: calc( 100vw * 5 / 1920 ); z-index: 100;}
 .section2 article #sec2_bottom { font-family: Plight; font-size: calc( 100vw * 36 / 1920); text-align: center; margin-top: calc( 100vw * 100 / 1920); line-height: 150%; } 
 .section2 article #sec2_bottom .colorNy { color: #4C38AE; font-family: Pbold; } 
 
