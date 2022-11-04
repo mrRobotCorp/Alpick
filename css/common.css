@@ -202,7 +202,6 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
  }
 
 
-
 /* --------------------------------------------------------------------- */
 .section5::before { content: ''; background: #F4F3F9; width: 100vw; height: 190vh; position: absolute; margin-top: calc( 100vw * -950 / 1920); left: -0.3%; border-radius: 50%; z-index: -10; } 
 .section5 article { text-align: center; } 
@@ -219,7 +218,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section6 article { display: flex; align-items: center; justify-content: space-around; position: relative; margin-top: calc( 100vw * 200 / 1920); } 
 .section6 article .sec6_con { height: calc( 100vw * 640 / 1920); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-around; } 
 .section6 article .sec6_con0::before { content: ''; background: url(../source/sec6_arrow.png) no-repeat center center; position: absolute; margin:calc(100vw * -200 / 1920) 0 0 calc( 100vw * 700 / 1920 ); width: calc( 100vw * 350 / 1920 ); height: calc( 100vw * 24 / 1920 ); }
-.section6 article .sec6_con0::after { content: ''; background: url(../source/sec6_arrow1.png) no-repeat center center; position: absolute; width: calc( 100vw * 350 / 1920); height: calc( 100vw * 24 / 1920 ); } 
+.section6 article .sec6_con0::after { content: ''; background: url(../source/sec6_arrow1.png) no-repeat center center; position: absolute; margin:calc(100vw * -200 / 1920) 0 0 calc( 100vw * 700 / 1920 ); width: calc( 100vw * 350 / 1920); height: calc( 100vw * 24 / 1920 ); } 
 .section6 article .sec6_con div { display: inline-block; background: #fff; padding: calc( 100vw * 20 / 1920) calc( 100vw * 40 / 1920); border-radius: calc( 100vw * 40 / 1920); font-size: calc( 100vw * 34 / 1920 ); font-family: semiBold; } 
 .section6 article .sec6_con p { color: #fff; width: calc( 100vw * 365 / 1920); font-size: calc( 100vw * 22 / 1920); font-family: regular; line-height: 150%; } 
 
@@ -330,19 +329,20 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section15 article h3 span { display: block; margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section15 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
 
-
 /* ------------------------------------------------------------------------- */
-
+.section16 { color: #fff; background: #FF542F; }
 
 /* ------------------------------- footer ------------------------------------ */
 footer { padding: calc( 100vw * 70 / 1920) 0 calc( 100vw * 50 / 1920) 0; text-align: center; font-family: Plight; background-color: #FF542F; color: #fff; } 
-footer .inner { display: flex; flex-direction: column; } 
-footer h3 { font-size: calc( 100vw * 17 / 1920); font-family: semiBold; } 
-footer #team { display: flex; align-items: center;}
+footer .teamAll { display: flex; flex-direction: column; } 
+footer h3 { font-size: calc( 100vw * 30 / 1920); font-family: PBold; } 
+footer #team { margin-top: calc( 100vw * 30 / 1920 );}
 footer #team > li { display: inline-block; margin: calc( 100vw * 20 / 1920); } 
-footer .member li { margin: calc( 100vw * 10 / 1920) 0; } 
-footer .member .memoticon { background: #fff; border-radius: 50%; padding: calc( 100vw * 20 / 1920 );}
-footer .inner #copy { margin-top: calc( 100vw * 30 / 1920); font-size: calc( 100vw * 15 / 1920); } 
+footer .member li { margin: calc( 100vw * 30 / 1920) 0; } 
+footer .member .memoticon { background: #fff; border-radius: 50%; padding: calc( 100vw * 50 / 1920 ); margin: 0 calc( 100vw * 20 / 1920 );}
+footer .member .memoticon img { width: calc( 100vw * 140 / 1920 );}
+footer .member .memberPart { font-size: calc( 100vw * 27 / 1920 ); font-family: semiBold; }
+footer .teamAll #copy { margin-top: calc( 100vw * 30 / 1920); font-size: calc( 100vw * 17 / 1920); } 
 
 /* scrollTop */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); font-family: semiBold; box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: calc( 100vw * 65 / 1920); height: calc( 100vw * 65 / 1920 ); border-radius: calc( 100vw * 50 / 1920 ); text-align: center; font-size: calc( 100vw * 12 / 1920 ); bottom: calc( 100vw * 40 / 1920 ); right: calc( 100vw * 50 / 1920 ); position: fixed; z-index: 3; cursor: pointer; } 
