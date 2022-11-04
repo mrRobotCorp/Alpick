@@ -13,8 +13,6 @@ a { text-decoration: none; color: #000; }
 ::-webkit-scrollbar-track { background-color: transparent; z-index: -10; } 
 ::selection { background-color: #303444; color: #fff; } 
 
-/* #example { width: 100vw; position: absolute; top: -50px; left: 0; opacity: .5; z-index: -1000; } */
-
 .loading { background: #fff; z-index: 1000; width: 100vw; height: 100vh; position: fixed; top: 0; } 
 .container { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; } 
 .dash { margin: 0 15px; width: 35px; height: 15px; border-radius: 8px; background: #FF6948; box-shadow: 0 0 10px 0 #e0c9aa; } 
@@ -85,9 +83,9 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section0 { background: #FF552F; background-size: cover; z-index: -70; } 
 .section0 article { height: 100vh; display: flex; justify-content: space-around; align-items: stretch; flex-direction: column; } 
 .section0 article #biInfo { text-align: left; margin-top: calc( 100vw * 220 / 1920); } 
-.section0 article #biInfo img { -webkit-user-drag: none; } 
+.section0 article #biInfo img { width: calc( 100vw * 350 / 1920 ); -webkit-user-drag: none; } 
 .section0 article #biInfo #serviceInfo { font-family: semiBold; color: #373151; font-size: calc( 100vw * 20 / 1920); letter-spacing: calc( 100vw * 2 / 1920); } 
-.section0 article #biInfo #serviceInfo::after { content: url(../source/sec0_app.png); position: absolute; margin: calc( 100vw * 20 / 1920) 0 0 calc( 100vw * -290 / 1920); } 
+.section0 article #biInfo #serviceInfo::after { content: ''; background: url(../source/sec0_app.png) no-repeat center center; background-size: contain; width: calc( 100vw * 140 / 1920 ); height: calc( 100vw * 140 / 1920 ); position: absolute; margin: calc( 100vw * 25 / 1920) 0 0 calc( 100vw * -290 / 1920); } 
 .section0 article #tools { text-align: left; margin-top: calc( 100vw * 200 / 1920); width: calc( 100vw * 240 / 1920); } 
 .section0 article #tools li { display: inline-block; } 
 .section0 article #tools li img { width: 90%; } 
@@ -309,7 +307,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section12 .subTitle { margin-bottom: calc( 100vw * 150 / 1920 );}
 .section12 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -38 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; }
 .section12 article { display: flex; align-items: flex-start; justify-content: space-between;}
-.section12 article h3 { color: #FF542F; font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
+.section12 article h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section12 article h3 span { display: block; margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section12 article div { display: inline-block;  }
 .section12 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
@@ -329,7 +327,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section13 { height: 140vh;}
 .section13 article { display: flex; flex-direction: column; justify-content: space-between; position: relative;}
 .section13 article .sec13_txt {display: flex; align-items: flex-end; flex-direction: column; }
-.section13 article h3 { color: #FF542F; font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
+.section13 article h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section13 article h3 span { display: block; width: calc( 100vw * 340 / 1920 ); margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section13 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
 .section13 .sec13_mockupAll { position: relative; margin-top: calc( 100vw * 300 / 1920 ); }
@@ -346,15 +344,15 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 /* ----------------------------------------------------------------------- */
 .section14 { height: 140vh; background: #FF542F; color: #fff; text-align: center; border-radius: 50% 50% 0 0; margin-top: calc( 100vw * 180 / 1920 ); }
 .section14 article { background: url(../source/mask_mockup.png) no-repeat center center;background-size: contain; padding-top: calc( 100vw * 700 / 1920 ); border-radius: 48% 48% 0 0;}
-.section14 article h3 { font-size: calc( 100vw * 53 / 1920 ); font-family: PLight; }
-.section14 article p { margin-top: calc( 100vw * 50 / 1920 ); font-size: calc( 100vw * 24 / 1920 ); font-family: PLight; line-height: 150%;}
+.section14 article h3 { font-size: calc( 100vw * 50 / 1920 ); font-family: PLight; }
+.section14 article p { margin-top: calc( 100vw * 47 / 1920 ); font-size: calc( 100vw * 24 / 1920 ); font-family: PLight; line-height: 150%;}
 .section14 article .sec14_bold { font-family: blackBlod;}
 
 
 /* ----------------------------------------------------------------------- */
 .section15 { height: 140vh; color: #fff; background: #FF542F;}
 .section15 article { display: flex; justify-content: space-between; }
-.section15 article h3 { font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
+.section15 article h3 { font-size: calc( 100vw * 50 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section15 article h3 span { display: block; margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section15 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
 .section15 article .sec15_mockup { margin-right: calc( 100vw * -1250 / 1920 ); }
@@ -370,7 +368,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section16 { height: 130vh; color: #fff; background: #FF542F; }
 .section16 article { display: flex; flex-direction: column; justify-content: space-between;}
 .section16 article .sec16_txt {display: flex; align-items: flex-end; flex-direction: column; }
-.section16 article h3 { color: #fff; font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
+.section16 article h3 { color: #fff; font-size: calc( 100vw * 50 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section16 article h3 span { display: block; width: calc( 100vw * 340 / 1920 ); margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section16 article p { margin: calc( 100vw * 60 / 1920 ) calc( 100vw * 40 / 1920 ) 0 0 ; line-height: 140%; }
 .section16 .sec16_mockup { position: relative; }
@@ -383,7 +381,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 /* ------------------------------------------------------------------------ */
 .section17 { height: 160vh; text-align: center; color: #fff; background: #FF542F; border-radius: 0 0 50% 50%; margin-top: calc( 100vw * -300 / 1920 ); }
 .section17 article { padding-top: calc( 100vw * 300 / 1920 ); margin-bottom: calc( 100vw * 100 / 1920 );}
-.section17 article h3 { color: #fff; font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
+.section17 article h3 { color: #fff; font-size: calc( 100vw * 50 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section17 article h3 span { display: block; margin: 0 auto; width: calc( 100vw * 340 / 1920 ); margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section17 article p { margin: calc( 100vw * 60 / 1920 ) calc( 100vw * 40 / 1920 ) 0 0; line-height: 140%; }
 .section17 .sec17_frame img { width: calc( 100vw * 500 / 1920 ); }
@@ -391,16 +389,26 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 
 /* -------------------------------------------------------------------------- */
-.section18 { margin-top: calc( 100vw * 1100 / 1920 );}
-.section18 article h3 { color: #FF542F; font-size: calc( 100vw * 53 / 1920 ); font-family: blackBlod; line-height: 130%; }
+.section18 { height: 175vh; margin-top: calc( 100vw * 1100 / 1920 );}
+.section18 article h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section18 article h3 span { display: block; margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section18 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
 .section18 .sec18_mockup { margin-top: calc( 100vw * 80 / 1920 );}
 .section18 .sec18_mockup img { width: 100%;}
 .section18 .sec18_mockup::after { content: ''; background: #FF542F; position: absolute; width: calc( 100vw * 1000 / 1920 ); height: calc( 100vw * 1000 / 1920 ); margin-left: calc( 100vw * -600 / 1920 ); border-radius: 50%; z-index: -100;}
 
+/* ------------------------------------------------------------------------- */
+.section19 { text-align: center;}
+.section19 article h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: PLight; line-height: 130%; }
+.section19 article h3 span { margin: 0 auto; margin-bottom: calc( 100vw * 20 / 1920 ); font-family: PBold;}
+.section19 article p { margin: calc( 100vw * 60 / 1920 ) calc( 100vw * 40 / 1920 ) 0 0; line-height: 140%; }
+
+/* ----------------------------------------------------------------------------- */
+.section20 { background: url(../source/sec20_bg.png) no-repeat center center; background-size: cover;}
+
+
 /* ------------------------------- footer ------------------------------------ */
-footer { padding: calc( 100vw * 70 / 1920) 0 calc( 100vw * 50 / 1920) 0; text-align: center; font-family: Plight; background-color: #FF542F; color: #fff; } 
+footer { padding: calc( 100vw * 50 / 1920) 0 calc( 100vw * 50 / 1920) 0; text-align: center; font-family: Plight; background-color: #FF542F; color: #fff; } 
 footer .teamAll { display: flex; flex-direction: column; } 
 /* footer h3 { font-size: calc( 100vw * 30 / 1920); font-family: PBold; }  */
 footer #team { margin-top: calc( 100vw * 30 / 1920 );}
@@ -409,7 +417,14 @@ footer .member li { margin: calc( 100vw * 30 / 1920) 0; }
 footer .member .memoticon { background: #fff; border-radius: 50%; padding: calc( 100vw * 50 / 1920 ); margin: 0 calc( 100vw * 20 / 1920 );}
 footer .member .memoticon img { width: calc( 100vw * 140 / 1920 );}
 footer .member .memberPart { font-size: calc( 100vw * 27 / 1920 ); font-family: semiBold; }
+footer .member .name { font-size: calc( 100vw * 23 /1920 ); font-family: PBold; }
 footer .teamAll #copy { margin-top: calc( 100vw * 30 / 1920); font-size: calc( 100vw * 17 / 1920); } 
+
+footer .footerBtm { display: flex; justify-content: space-between; align-items: flex-end; margin-top: calc( 100vw * 50 / 1920 );}
+footer .copyRight { text-align: left;}
+footer .copyRight .src { margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 28 / 1920 ); font-family: PBold;}
+footer .copyRight .srcLink { margin-top: calc( 100vw * 15 / 1920 ); font-size: calc( 100vw * 20 / 1920 ); font-family: PLight;}
+footer p { float: right; }
 
 /* scrollTop */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); font-family: semiBold; box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: calc( 100vw * 65 / 1920); height: calc( 100vw * 65 / 1920 ); border-radius: calc( 100vw * 50 / 1920 ); text-align: center; font-size: calc( 100vw * 12 / 1920 ); bottom: calc( 100vw * 40 / 1920 ); right: calc( 100vw * 50 / 1920 ); position: fixed; z-index: 3; cursor: pointer; } 
