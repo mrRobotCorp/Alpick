@@ -395,6 +395,13 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section17 .sec17_mockup .sec17_pop { position: absolute; margin: calc( 100vw * 420 / 1920 ) 0 0 calc( 100vw * 650 / 1920 );}
 .section17 .sec17_mockup .sec17_pop img { width: calc( 100vw * 460 / 1920 ); filter: drop-shadow(14.9563px 25.7581px 25.7581px rgba(67, 58, 58, 0.17));}
 
+.section17 .sec17_keyword { background: #fff; position: absolute; padding: calc( 100vw * 20 / 1920) calc( 100vw * 30 / 1920 ) calc( 100vw * 20 / 1920 ) calc( 100vw * 50 / 1920 ); border-radius: calc( 100vw * 50 / 1920 ); z-index: 10;}
+.section17 .sec17_keyword::before { content: ''; background: #fff; width: calc( 100vw * 10 / 1920 ); height: calc( 100vw * 10 / 1920 ); position: absolute; margin: calc( 100vw * 5 / 1920 ) 0 0 calc( 100vw * -20 / 1920 ); border-radius: calc( 100vw * 5 / 1920 );}
+.section17 .sec17_keyword0 { position: absolute; top: calc( 100vw * -250 / 1920 ); left: calc( 100vw * 600 / 1920 ); }
+.section17 .sec17_keyword0::after { content: ''; position: absolute; height: calc( 100vw * 470 / 1920 ); margin-left: calc( 100vw * -160 / 1920 ); border-left: 2px dashed #FD5A36; z-index: -100; }
+.section17 .sec17_keyword1 { position: absolute; top: calc( 100vw * -100 / 1920 ); left: calc( 100vw * 950 / 1920 ); }
+.section17 .sec17_keyword1::after { content: ''; position: absolute; height: calc( 100vw * 240 / 1920 ); margin-left: calc( 100vw * -205 / 1920 ); border-left: 2px dashed #FD5A36; z-index: -1; }
+
 
 /* -------------------------------------------------------------------------- */
 .section18 { height: 175vh; margin-top: calc( 100vw * 1100 / 1920 );}
