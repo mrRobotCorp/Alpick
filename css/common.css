@@ -415,16 +415,16 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section18 .sec18_mockup::after { content: ''; background: #FF542F; position: absolute; width: calc( 100vw * 1000 / 1920 ); height: calc( 100vw * 1000 / 1920 ); margin-left: calc( 100vw * -600 / 1920 ); border-radius: 50%; z-index: -100;}
 
 /* ------------------------------------------------------------------------- */
-.section19 { height: 150vh; text-align: center;}
-.section19 article h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: PLight; line-height: 130%; }
-.section19 article h3 span { margin: 0 auto; margin-bottom: calc( 100vw * 20 / 1920 ); font-family: PBold;}
-.section19 article p { margin: calc( 100vw * 60 / 1920 ) calc( 100vw * 40 / 1920 ) 0 0; line-height: 140%; }
-
-.section19 article .sec19_mockup img { width: calc( 100vw * 630 / 1920 ); }
-
+.section19 { height: 180vh; text-align: center;}
+.section19 article .sec19_txt { margin-bottom: calc( 100vw * 300 / 1920 );}
+.section19 article .sec19_txt h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: PLight; line-height: 130%; }
+.section19 article .sec19_txt h3 span { margin: 0 auto; margin-bottom: calc( 100vw * 20 / 1920 ); font-family: PBold;}
+.section19 article .sec19_txt p { margin: calc( 100vw * 60 / 1920 ) calc( 100vw * 40 / 1920 ) 0 0; line-height: 140%; }
+.section19 article .sec19_mockup { background: url(../source/sec19_bg.png) no-repeat center center; background-size: cover;}
+.section19 article .sec19_mockup img { width: calc( 100vw * 630 / 1920 ); margin-top: calc( 100vw * -200 / 1920 ); }
 
 /* ----------------------------------------------------------------------------- */
-.section20 { background: url(../source/sec20_bg.png) no-repeat center center; background-size: cover;}
+.section20 { background: url(../source/sec20_bg.png) no-repeat center center fixed; background-size: cover; }
 
 
 /* ------------------------------- footer ------------------------------------ */
