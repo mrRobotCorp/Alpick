@@ -1,4 +1,5 @@
-@import './reset.css'; .inner { width: calc( 100vw * 1440 / 1920); margin: 0 auto; } 
+@import './reset.css'; 
+.inner { width: calc( 100vw * 1440 / 1920); margin: 0 auto; } 
 .blind { display: none !important; } 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
@@ -163,10 +164,6 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section4 #interviewAll .interviewLine:hover { animation-play-state: paused; -moz-animation-play-state: paused; -webkit-animation-play-state: paused; } 
 .section4 #interviewAll .interviewLine img { margin: calc( 100vw * 10 / 1920) calc( 100vw * 30 / 1920); } 
 
-/* .wrap-marqueeText { gap:3em; position:relative; overflow:hidden; width:80%; } 
-.marqueeText { display:flex; flex-flow:row nowrap; justify-content:flex-start; align-items:center; gap:40px; position:relative; } 
-.marqueeText dd { flex: none; position: relative; }  */
-
 .section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); } 
 
 .section4 #interviewAll .profileAll .profile { display: none; white-space: nowrap; overflow: hidden; flex-direction: column; justify-content: space-around; height: calc( 100vw * 190 / 1920); padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920); background: #fff; border-radius: 0 calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920); animation: profile .6s; } 
@@ -177,18 +174,6 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section4 #interviewAll .interviewLine .profileAll4:hover .profile4 { display: flex; width: auto; } 
 .section4 #interviewAll .interviewLine .profileAll5:hover .profile5 { display: flex; width: auto; } 
 .section4 #interviewAll .interviewLine .profileAll6:hover .profile6 { display: flex; width: auto; } 
-
-/* .listContainer{width:420px;height:120px;position:relative; overflow:hidden; padding-bottom:2px;}
-.list {background-color: #FFF6E7;height: 100%;overflow: hidden; padding-top: 7px; width: 700px;position: absolute;left:0;top:0;}
-.list li { float: left; height: 116px; margin:0px; width: 140px;}
-.list li a {font: 11px/1.3 dotum;color:#3357A4;}
-.list li .br {border: 1px solid #E1E2DD; height: 75px; overflow: hidden; position: relative; width: 135px;}
-.list li .br img {margin-top:0;}
-.list li span { display: block; text-align: center;}
-.list .name em {color: #3357A4;font-style: normal;font-weight: bold;}
-.list .name { margin: 5px 0 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 135px;}
-.list .slo { color: #878787; font: 11px/1.3 dotum; margin-bottom: 2px; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;width: 135px;} */
-
 
 .section4 #interviewAll .profile ul { display: inline-block; margin: calc( 100vw * 20 / 1920) 0; font-family: semiBold; } 
 .section4 #interviewAll .profile ul li { display: inline; padding: 0 calc( 100vw * 20 / 1920); font-size: calc( 100vw * 20 / 1920); } 
@@ -201,11 +186,6 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
  50% { width: 310px; } 
  100% { width: auto; padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920); } 
  }
-
-/* @keyframes bannermove { 
- 0% { transform: translateX(0); } 
- 100% { transform: translateX(-50%); } 
- }*/
 
 @keyframes scrolling { 
  0% { transform: translateX(0); } 

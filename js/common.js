@@ -147,6 +147,13 @@ document.addEventListener("DOMContentLoaded", function() {
             behavior: 'smooth'
         });
     }
+    // -------------------------- loop ----------------------------
+    const loopAdd = setInterval( function() {
+        $(".interviewLine").append($(".interviewLine dl"));
+        $(".interviewLine").remove($(".interviewLine dl:first"));
+    }, 2000);
+
+
     // ---------------------------------------------------------
     const sticker0 = document.createElement('div');
     sticker0.setAttribute('id', 'sticker0');
@@ -205,20 +212,15 @@ $(document).ready(function(){
             $('.sec8_colorWh').addClass('active');
         }
 
-        // if ( scrollPos === 0 ) {
-        //     $('.sec8_colorOR').css({ 'width' : '60vw'});
-        //     $('.sec8_colorBlu').css({ 'height' : '33.3%'});
-        //     $('.sec8_colorGry').css({ 'height' : '33.3%'});
-        //     $('.sec8_colorWh').css({ 'height' : '33.3%'});
-
-        // } else if (scrollPos >= 10000 ) {
-        //     $('.sec8_colorOR').css({ 'width' : '60vw'});
-        //     $('.sec8_colorBlu').css({ 'height' : '33.3%'});
-        //     $('.sec8_colorGry').css({ 'height' : '33.3%'});
-        //     $('.sec8_colorWh').css({ 'height' : '33.3%'});
-        // }
-
     });
+    
+    // const loopAdd = setInterval( function() {
+    //     $(".interviewLine").append($(".interviewLine dl"));
+    // }, 5000);
 
-
+    // const loopRemove = setInterval( function() {
+    //     $(".interviewLine").remove($(".interviewLine dl:first"));
+    // }, 2000)
+    
+    
 });
