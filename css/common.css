@@ -406,7 +406,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 
 /* -------------------------------------------------------------------------- */
-.section18 { height: 175vh; margin-top: calc( 100vw * 1100 / 1920 );}
+.section18 { height: 175vh; margin-top: calc( 100vw * 700 / 1920 );}
 .section18 article h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: blackBlod; line-height: 130%; }
 .section18 article h3 span { display: block; margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod;}
 .section18 article p { margin-top: calc( 100vw * 60 / 1920 ) ; line-height: 140%; }
