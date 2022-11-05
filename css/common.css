@@ -420,16 +420,14 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 /* ------------------------------- footer ------------------------------------ */
 footer { padding: calc( 100vw * 50 / 1920) 0 calc( 100vw * 50 / 1920) 0; text-align: center; font-family: Plight; background-color: #FF542F; color: #fff; } 
-footer .teamAll { display: flex; flex-direction: column; } 
-/* footer h3 { font-size: calc( 100vw * 30 / 1920); font-family: PBold; }  */
-footer #team { margin-top: calc( 100vw * 30 / 1920 );}
-footer #team > li { display: inline-block; margin: calc( 100vw * 20 / 1920); } 
+footer .teamAll { display: flex; flex-direction: column; }
+footer #team { margin-top: calc( 100vw * 30 / 1920 ); display: flex; justify-content: space-between;}
 footer .member li { margin: calc( 100vw * 30 / 1920) 0; } 
 footer .member li:last-child a { color: #fff; transition: all .3s; position: relative; padding-bottom: calc( 100vw * 5 / 1920 );}
 footer .member li:last-child a::after { content: ''; position: absolute; height: calc( 100vw * 1.5 / 1920 ); width: 0; transform: translateX(-50%); left: 50%; bottom: -15%; transition: .3s ease-out; background-color: #fff;}
 footer .member li:last-child a:hover:after { width: 100%; }
-footer .member .memoticon { background: #fff; border-radius: 50%; padding: calc( 100vw * 50 / 1920 ); margin: 0 calc( 100vw * 20 / 1920 );}
-footer .member .memoticon img { width: calc( 100vw * 140 / 1920 );}
+footer .member .memoticon { background: #fff; border-radius: 50%; padding: calc( 100vw * 40 / 1920 );}
+footer .member .memoticon img { width: calc( 100vw * 150 / 1920 );}
 footer .member .memberPart { font-size: calc( 100vw * 27 / 1920 ); font-family: semiBold; }
 footer .member .name { font-size: calc( 100vw * 23 /1920 ); font-family: PBold; }
 footer .teamAll #copy { margin-top: calc( 100vw * 30 / 1920); font-size: calc( 100vw * 17 / 1920); } 
