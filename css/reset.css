@@ -18,7 +18,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -43,8 +42,10 @@ table {
 }
 
 /* -------------------- font ------------------------- */
-
-/* @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'); */
+@font-face {
+	font-family: noto;
+	src: url(../source/NotoSansKR-Medium.otf);
+}
 
 @font-face {
 	font-family: blackBlod;

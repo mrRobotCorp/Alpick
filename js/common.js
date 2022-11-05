@@ -205,28 +205,28 @@ $(document).ready(function(){
 
     });
     
-    const loopAdd = setInterval( function() {
-        $(".interviewLine").append($(".interviewLine dl"));
-    }, 5000);
+    // const loopAdd = setInterval( function() {
+    //     $(".interviewLine").append($(".interviewLine dl"));
+    // }, 5000);
 
-    const loopRemove = setInterval( function() {
-        $(".interviewLine").remove($(".interviewLine dl:first"));
-    }, 2000)
+    // const loopRemove = setInterval( function() {
+    //     $(".interviewLine").remove($(".interviewLine dl:first"));
+    // }, 2000)
 
-    // setInterval( function() {
-    //     // ---if ($(".interviewLine").is(":animated") == false) {
-    //         $(".interviewLine").animate(
-    //             {
-    //                 "left": "-144vw"
-    //             },
-    //             1000,'linear',
-    //             function () {
-    //                 $(".interviewLine").append($(".interviewLine dl:first"));
-    //                 // $(".interviewLine").css("left", "0px");
-    //             }
-    //         );
-    //     // ---}
-    // }, 500)
+    setInterval( function() {
+        // ---if ($(".interviewLine").is(":animated") == false) {
+            $(".interviewLine").animate(
+                {
+                    "left": "-144vw"
+                },
+                1000,'linear',
+                function () {
+                    $(".interviewLine").append($(".interviewLine dl:first"));
+                    // $(".interviewLine").css("left", "0px");
+                }
+            );
+        // ---}
+    }, 500)
 
     
     $('.play-pause-btn').on('click',function(){
