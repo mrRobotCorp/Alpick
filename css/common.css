@@ -211,7 +211,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section6 article { display: flex; align-items: center; justify-content: space-around; position: relative; margin-top: calc( 100vw * 200 / 1920); } 
 .section6 article .sec6_con { height: calc( 100vw * 640 / 1920); position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-around; } 
 .section6 article .sec6_con0::before { content: ''; background: url(../source/sec6_arrow.png) no-repeat center center; background-size: contain; position: absolute; margin:calc(100vw * -200 / 1920) 0 0 calc( 100vw * 700 / 1920 ); width: calc( 100vw * 350 / 1920 ); height: calc( 100vw * 24 / 1920 ); } 
-.section6 article .sec6_con0::after { content: ''; background: url(../source/sec6_arrow1.png) no-repeat center center; background-size: contain; position: absolute; margin:calc(100vw * 600 / 1920) 0 0 calc( 100vw * 707 / 1920 ); width: calc( 100vw * 450 / 1920); height: calc( 100vw * 360 / 1920 ); } 
+.section6 article .sec6_con0::after { content: ''; background: url(../source/sec6_arrow1.png) no-repeat center center; background-size: contain; position: absolute; margin:calc(100vw * 590 / 1920) 0 0 calc( 100vw * 707 / 1920 ); width: calc( 100vw * 480 / 1920); height: calc( 100vw * 390 / 1920 ); } 
 .section6 article .sec6_con div { display: inline-block; background: #fff; padding: calc( 100vw * 20 / 1920) calc( 100vw * 40 / 1920); border-radius: calc( 100vw * 40 / 1920); font-size: calc( 100vw * 34 / 1920 ); font-family: semiBold; } 
 .section6 article .sec6_con p { color: #fff; width: calc( 100vw * 365 / 1920); font-size: calc( 100vw * 22 / 1920); font-family: regular; line-height: 150%; } 
 
@@ -248,40 +248,14 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 .section8 .color { display: flex; margin-top: calc( 100vw * 100 / 1920 ); } 
 .section8 .color h4 { font-family: Pbold; margin-bottom: calc( 100vw * 10 / 1920 ); } 
-.section8 .color .sec8_colorOR { display: flex; flex-direction: column; justify-content: space-between; height: calc(100vw * 790 / 1920); padding: calc( 100vw * 40 / 1920 ) calc( 100vw * 50 / 1920 ); color: #fff; background: #FF6948; white-space: nowrap; transition: colorOR .4s; } 
-/* .section8 .color .sec8_colorOR.colorActive { width: 60vw; } */
+.section8 .color .sec8_colorOR { display: flex; flex-direction: column; justify-content: space-between; height: calc(100vw * 790 / 1920); padding: calc( 100vw * 40 / 1920 ) calc( 100vw * 50 / 1920 ); color: #fff; background: #FF6948; white-space: nowrap; } 
 .section8 .color p { line-height: 170%; } 
 
-.section8 .color .colorRightAll { height: calc(100vw * 870 / 1920); display: flex; flex-direction: column; width: 40vw; } 
+.section8 .color .colorRightAll { height: calc(100vw * 870 / 1920); display: flex; flex-direction: column; position: absolute; margin-left: calc( 100vw * 1100 / 1920 ); } 
 .section8 .color .colorRight { padding: calc( 100vw * 40 / 1920 ) calc( 100vw * 50 / 1920 ); } 
-.section8 .color .sec8_colorBlu { width: 100%; color: #fff; background: #373151; transition: colorRight .4s; animation-delay: .4s; } 
-.section8 .color .sec8_colorGry { width: 100%; color: #fff; background: #3A3A3A; transition: colorRight .4s; animation-delay: .4s; } 
-.section8 .color .sec8_colorWh { width: 100%; color: #5F5F5F; background: #fff; transition: colorRight .4s; animation-delay: .4s; } 
-
-/* @keyframes colorOR {
-    0% {
-        width: 0;
-    }
-    50% {
-        width: 30vw;
-    }
-    100% {
-        width: 60vw;
-    }
-} */
-
-/* @keyframes colorRight {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 33.3%;
-    }
-} */
-
-/* .section8 .color .bluActive { height: 33.3%; } 
-.section8 .color .gryActive { height: 33.3%; } 
-.section8 .color .WhActive { height: 33.3%; } */
+.section8 .color .sec8_colorBlu { color: #fff; background: #373151; } 
+.section8 .color .sec8_colorGry { color: #fff; background: #3A3A3A; } 
+.section8 .color .sec8_colorWh { color: #5F5F5F; background: #fff; } 
 
 /* ---------------------------------------------------------------------- */
 .section9 { height: 100vh; background: #312E3B; } 

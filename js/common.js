@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("menu1").onclick = function () {
         window.scrollTo({
-            top: 3028,
+            top: 3150,
             left: 0,
             behavior: 'smooth'
         });
@@ -165,35 +165,77 @@ document.addEventListener("DOMContentLoaded", function() {
     // ------------------------------------------------------------
 
     gsap.registerPlugin(ScrollTrigger);
-    const color = document.querySelector('color');
-    const colorOR = document.querySelector('.sec8_colorOR');
-    const colorBlu = document.querySelector('.sec8_colorBlu');
-    const colorGry = document.querySelector('.sec8_colorGry');
-    const colorWh = document.querySelector('.sec8_colorWh');
 
-    gsap.to(colorOR, {
-        scrollTrigger:color, 
+    const boxOR = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color", // 트리거 기준 요소 선택
+        start : "top 100%",
+        // pin: true,// 트리거 시작 지점
+        scrub: true,
+        end : "+=450 20%", // // scroll trigger와 동일함
+        // toggleActions : "play reverse none reverse"  // default : play none none none
+        // toggleActions : (onEnter, onLeave, onEnterBack, onLeaveBack) 값은 
+        // (play pause resume reset restart complete reverse none) 사용 가능  
+        // toggleActions : (트리거 시작할 때, 트리거 떠날 때, end방향으로 다시 진입할 때, start로 다시 진입할 때, start로 다시 나갈 때) 
+        }
+    });
+
+    const boxBlu = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color", // 트리거 기준 요소 선택
+        start : "top 100%",
+        scrub: true,
+        end : "+=450 20%", // // scroll trigger와 동일함
+        }
+    });
+
+    const boxGry = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color", // 트리거 기준 요소 선택
+        start : "top 100%",
+        scrub: true,
+        end : "+=450 20%", // // scroll trigger와 동일함
+        }
+    });
+
+    const boxWh = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color", // 트리거 기준 요소 선택
+        start : "top 100%",
+        scrub: true,
+        end : "+=450 20%", // // scroll trigger와 동일함
+        }
+    });
+
+    
+    
+    boxOR.to('.sec8_colorOR', { 
+        // scrollTrigger:color, 
         width:'60vw', 
         duration:1
-    });
+    })
 
-    gsap.to(colorBlu, {
-        scrollTrigger:color, 
+    boxBlu.to('.sec8_colorBlu', { 
+        // scrollTrigger:color, 
         height:'33.3%', 
+        width: '40vw',
         duration:1
-    });
+    })
 
-    gsap.to(colorGry, {
-        scrollTrigger:color, 
+    boxGry.to('.sec8_colorGry', { 
+        // scrollTrigger:color, 
         height:'33.3%', 
+        width: '40vw',
         duration:1
-    });
+    })
 
-    gsap.to(colorWh, {
-        scrollTrigger:color, 
+    boxWh.to('.sec8_colorWh', { 
+        // scrollTrigger:color, 
         height:'33.3%', 
+        width: '40vw',
         duration:1
-    });
+    })
+    
 
 
 });
@@ -202,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ---------------- scrolling -------------------
     $(document).ready(function(){
-    const scrollPos = $(document).scrollTop();
     const Height = $("#scrollTop").height(); 
     $("#scrollTop").hide();
 
@@ -214,13 +255,6 @@ document.addEventListener("DOMContentLoaded", function() {
             $("#scrollTop").fadeOut(300);
         }
 
-        // if (scrollPos >= 10000 ) {
-        //     $('.sec8_colorOR').addClass('active');
-        //     $('.sec8_colorBlu').addClass('active');
-        //     $('.sec8_colorGry').addClass('active');
-        //     $('.sec8_colorWh').addClass('active');
-        // }
-
     });
 
 
@@ -229,104 +263,53 @@ document.addEventListener("DOMContentLoaded", function() {
         $.fn.marquee = function( setting ){
 
             function rightToLeft( wrap, content, speed ){
-            var width = 0;
+                var width = 0;
+                content.append( content.html() );
+                content.append( content.html() );
+                content.find('li').each(function () {
+                    width += $(this).outerWidth();
+                })
 
-            content.append( content.html() );
-            content.append( content.html() );
+                content.width( width );
 
-
-            content.find('li').each(function () {
-                width += $(this).outerWidth();
-            })
-
-            content.width( width );
-
-
-            function run() {
-                if( wrap.scrollLeft() - (content.width() / 2) >= 0 ){
-                    wrap.scrollLeft( 0 );
-                }else{
-                    wrap.scrollLeft( wrap.scrollLeft() + 1 );
+                function run() {
+                    if( wrap.scrollLeft() - (content.width() / 2) >= 0 ){
+                        wrap.scrollLeft( 0 );
+                    }else{
+                        wrap.scrollLeft( wrap.scrollLeft() + 1 );
+                    }
                 }
-            }
 
-            var timer = setInterval( run, speed );
+                var timer = setInterval( run, speed );
 
-            wrap.mouseover( function () {
-                clearInterval( timer );
-            } )
+                wrap.mouseover( function () {
+                    clearInterval( timer );
+                } )
+                wrap.mouseout( function () {
+                    timer = setInterval( run, speed );
+                } )
 
-            wrap.mouseout( function () {
-                timer = setInterval( run, speed );
-            } )
-
-            }
-
-            function leftToRight( wrap, content, speed ){
-            var width = 0;
-
-            content.append( content.html() );
-            content.append( content.html() );
-
-            content.find('li').each(function () {
-                width += $(this).outerWidth();
-            })
-
-            content.width( width );
-            wrap.scrollLeft( content.width() )
-
-            function run() {
-                if( wrap.scrollLeft() - (content.width() / 2) == 0 ){
-                    wrap.scrollLeft( content.width() );
-                }else{
-                    wrap.scrollLeft( wrap.scrollLeft() - 1 );
-                }
-            }
-
-            var timer = setInterval( run, speed );
-
-            wrap.mouseover( function () {
-                clearInterval( timer );
-            } )
-
-            wrap.mouseout( function () {
-                timer = setInterval( run, speed );
-            } )
             }
 
             return this.each(function(){
-            var wrap = $(this);
-            var content = wrap.find( setting.container );
+                var wrap = $(this);
+                var content = wrap.find( setting.container );
+                var animateType = wrap.attr('type');
 
-            var animateType = wrap.attr('type');
-
-            if ( animateType == 'right-to-left' ){
-                content.addClass( animateType );
-                rightToLeft( wrap, content, setting.speed );
-            }
-
-            if ( animateType == 'left-to-right' ){
-                content.addClass( animateType );
-                leftToRight( wrap, content, setting.speed );
-            }
-
-            if ( animateType == 'static' ){
-                content.addClass( animateType );
-            }
-
-            if ( animateType == 'bottom-to-top' ){
-                content.addClass( animateType );
-                bottomToTop( wrap, content, setting.speed );
-            }
-
+                if ( animateType == 'right-to-left' ){
+                    content.addClass( animateType );
+                    rightToLeft( wrap, content, setting.speed );
+                }
             })
         }
+
         })(jQuery)
 
         var setting = {
         container: '.marquee-content',
         speed: 0.6
         }
+
         $('.marquee-wrap').marquee( setting );
 
     // --------------------------------------------
@@ -343,43 +326,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
     });
-
-    // -------------------------------------------------
-    $(window).scroll(function () {
-        const scrollPosition = $(document).scrollTop();
-        // const winHeight = $('section').height();
-
-        if (scrollPosition >= 12000) {
-            // $('.sec8_colorOR').removeClass('.sec8_colorOR');
-            $('.sec8_colorOR').addClass('colorActive');
-        } 
-        // else if (scrollPosition >= winHeight * 2) {
-    //         $('.box').removeClass('first second fourth');
-    //         $('.box').addClass('third');
-    //     } else if (scrollPosition >= winHeight) {
-    //         $('.box').removeClass('first third fourth');
-    //         $('.box').addClass('second');
-    //     } else if (scrollPosition > 20) {
-    //         $('.box').removeClass('second third fourth');
-    //         $('.box').addClass('first');
-    //     } else {
-    //         $('.box').removeClass('first');
-    //     }
-    });
-
-    // const colorOR = document.querySelector('.sec8_colorOR');
-    // // const colorBlu = document.querySelector('.sec8_colorBlu');
-    // // const colorGry = document.querySelector('.sec8_colorGry');
-    // // const colorWh = document.querySelector('.sec8_colorWh');
-
-    // window.color = function() {
-    //     if(scrollHeight >= 12000) {
-    //         colorOR.classList.add('.colorActive');
-    //         colorOR.classList.remove('.sec8_colorOR');
-    //     }
-    // };
-
-    // window.color();
         
-
 });
