@@ -235,8 +235,6 @@ document.addEventListener("DOMContentLoaded", function() {
         width: '40vw',
         duration:1
     })
-    
-
 
 });
 
