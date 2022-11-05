@@ -1,9 +1,9 @@
 @import './reset.css'; .inner { width: calc( 100vw * 1440 / 1920); margin: 0 auto; } 
 .blind { display: none !important; } 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');body { font-family: Pmedium; overflow-x: hidden; } 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap'); body { font-family: Pmedium; overflow-x: hidden; } 
 a { text-decoration: none; color: #000; } 
 .section { height: 100vh; } 
-.section h2 { font-family: Pbold; }
+.section h2 { font-family: Pbold; } 
 
 ::-webkit-scrollbar { width: calc( 100vw * 12 / 1920); } 
 ::-webkit-scrollbar-thumb { background-color: #212121; border-radius: calc( 100vw * 10 / 1920); } 
@@ -129,7 +129,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 
 /* -------------------------------------------------------------------------- */
 .section3 { height: 100vh; overflow-y: hidden; background: #F4F3F9; position: relative; overflow-x: hidden; } 
-.section3 iframe { width: 100vw; height: 100vh;}
+.section3 iframe { width: 100vw; height: 100vh; } 
 .section3 #video { width: 100vw; } 
 /* .wrapper { --color: #373151; --color-invert: #373151; --clip-path: circle(70px at left); --clip-path-hover: circle(120px at left); --clip-path-clicked: circle(100vw at left); --duration: .4s; --timing-function: ease; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; } 
 .wrapper .video { height: 90%; overflow: hidden; display: flex; justify-content: center; align-items: center; margin-left: 15px; -webkit-clip-path: var(--clip-path); clip-path: var(--clip-path); transition: -webkit-clip-path var(--duration) var(--timing-function); transition: clip-path var(--duration) var(--timing-function); transition: clip-path var(--duration) var(--timing-function), -webkit-clip-path var(--duration) var(--timing-function); } 
@@ -162,11 +162,14 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section4 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -110 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; } 
 .section4 #interviewAll { display: inline-block; position: relative; width: 100%; overflow: hidden; margin: calc( 100vw * 150 / 1920) 0; } 
 
-.section4 #interviewAll .interviewLine { display: flex; justify-content: space-around; /*animation: scrolling 6s linear infinite; */  transition: all .4s; } 
+.section4 #interviewAll .interviewLine { display: flex; justify-content: space-around; /*animation: scrolling 6s linear infinite; transition: all .4s; */ } 
 .section4 #interviewAll .interviewLine:hover { animation-play-state: paused; -moz-animation-play-state: paused; -webkit-animation-play-state: paused; } 
 .section4 #interviewAll .interviewLine img { margin: calc( 100vw * 10 / 1920) calc( 100vw * 30 / 1920); } 
 
-.section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); } 
+.marquee-wrap { position:relative; overflow: hidden; width: 100vw; margin-bottom: 20px; } 
+.marquee-wrap .marquee-content { position: relative; margin: 0; padding: 0; } 
+
+ .section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); } 
 .section4 #interviewAll .interviewLine .profileAll .profile { display: none; white-space: nowrap; overflow: hidden; flex-direction: column; justify-content: space-around; height: calc( 100vw * 190 / 1920); padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920); background: #fff; border-radius: 0 calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920); animation: profile .4s ease-in-out; } 
 .section4 #interviewAll .interviewLine .profileAll0:hover .profile0 { display: flex; width: auto; } 
 .section4 #interviewAll .interviewLine .profileAll1:hover .profile1 { display: flex; width: auto; } 
@@ -222,7 +225,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section6 #serviceBox { background: #fff; margin-top: calc( 100vw * 150 / 1920); padding: calc( 100vw * 100 / 1920) calc( 100vw * 30 / 1920); border-radius: calc( 100vw * 230 / 1920); } 
 .section6 #serviceBox #servieceOR li { color: #FF6948 !important; } 
 .section6 #serviceBox ul { display: inline-block; width: calc( 100vw * 300 / 1920); } 
-.section6 #serviceBox ul li img { width: calc( 100vw * 160 / 1920 );}
+.section6 #serviceBox ul li img { width: calc( 100vw * 160 / 1920 ); } 
 .section6 #serviceBox ul .serviceTitle { color: #312D40; margin: calc( 100vw * 20 / 1920) 0; font-size: calc( 100vw * 30 / 1920); font-family: Pbold; } 
 .section6 #serviceBox ul .servieceEG { color: #979797; font-size: calc( 100vw * 18 / 1920); font-family: regular; line-height: 130%; } 
 
@@ -301,9 +304,12 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section12 article h3 span { display: block; margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 100 / 1920 ); font-family: extraBlod; } 
 .section12 article div { display: inline-block; } 
 .section12 article p { margin-top: calc( 100vw * 60 / 1920 ); line-height: 140%; } 
-.section12 .sec12_mockup { margin-right: calc( 100vw * 80 / 1920 ); } 
+.section12 .sec12_mockup { margin-right: calc( 100vw * 80 / 1920 ); position: relative; } 
 .section12 .sec12_mockup img { width: calc( 100vw * 420 / 1920 ); } 
 .section12 .sec12_mockup::before { content: ''; background: #FF542F; position: absolute; width: calc( 100vw * 780 / 1920 ); height: calc( 100vw * 780 / 1920 ); margin: calc( 100vw * 250 / 1920 ) 0 0 calc( 100vw * -175 / 1920 ); border-radius: 50%; z-index: -100; } 
+
+.section12 #sec12_vid { position: absolute; width: calc( 100vw 400 / 1920 ); height: calc( 100vw * 760 / 1920 ); border-radius: calc( 100vw * 30 / 1920 ); z-index: -10; margin: calc( 100vw * 80 / 1920) 0 0 calc( 100vw * -400 / 1920 ); } 
+.section12 #sec12_vid video { min-width: 100%; min-height: 100%; object-fit: fill; } 
 
 .section12 .stickerAll { position: relative; margin-top: calc( 100vw * -300 / 1920 ); } 
 .section12 .sticker { position: absolute; width: calc( 100vw * 250 / 1920 ); height: calc( 100vw * 250 / 1920 ); filter: drop-shadow(-4px 7px 5px rgba(0, 0, 0, 0.25)); } 
