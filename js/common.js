@@ -84,9 +84,9 @@ document.addEventListener("DOMContentLoaded", function() {
     cursor.setAttribute("class", "cursor");
     const follower = document.createElement("div");
     follower.setAttribute("class", "cursor_follower");
-
+    
     document.querySelector("body").prepend(cursor, follower);
-
+    
     function myCursor(e) {
         cursor.style.top = e.pageY + 10 + "px";
         cursor.style.left = e.pageX + 10 + "px";
@@ -147,12 +147,6 @@ document.addEventListener("DOMContentLoaded", function() {
             behavior: 'smooth'
         });
     }
-    // -------------------------- loop ----------------------------
-    const loopAdd = setInterval( function() {
-        $(".interviewLine").append($(".interviewLine dl"));
-        $(".interviewLine").remove($(".interviewLine dl:first"));
-    }, 2000);
-
 
     // ---------------------------------------------------------
     const sticker0 = document.createElement('div');
@@ -177,9 +171,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const stickerAll = document.querySelector('.stickerAll');
     stickerAll.prepend(sticker0, sticker1, sticker2, sticker3, sticker4);
-
-    // ------------------------------------------------------
-    // document.getElementById("easyVegan").innerText = "쉬운 비건, 쉬운 실천!";
 
     // ------------------ prevent event ------------------------------
     const mainMockup = document.querySelector('#mainMockup');
@@ -214,13 +205,43 @@ $(document).ready(function(){
 
     });
     
-    // const loopAdd = setInterval( function() {
-    //     $(".interviewLine").append($(".interviewLine dl"));
-    // }, 5000);
+    const loopAdd = setInterval( function() {
+        $(".interviewLine").append($(".interviewLine dl"));
+    }, 5000);
 
-    // const loopRemove = setInterval( function() {
-    //     $(".interviewLine").remove($(".interviewLine dl:first"));
-    // }, 2000)
+    const loopRemove = setInterval( function() {
+        $(".interviewLine").remove($(".interviewLine dl:first"));
+    }, 2000)
+
+    // setInterval( function() {
+    //     // ---if ($(".interviewLine").is(":animated") == false) {
+    //         $(".interviewLine").animate(
+    //             {
+    //                 "left": "-144vw"
+    //             },
+    //             1000,'linear',
+    //             function () {
+    //                 $(".interviewLine").append($(".interviewLine dl:first"));
+    //                 // $(".interviewLine").css("left", "0px");
+    //             }
+    //         );
+    //     // ---}
+    // }, 500)
+
     
+    $('.play-pause-btn').on('click',function(){
+    
+        if($(this).attr('data-click') == 1) {
+            $(this).attr('data-click', 0);
+            // $(this).text('Play');
+            $('#video')[0].pause();
+        } else {
+            $(this).attr('data-click', 1);
+            // $(this).text('Pause');
+            $('#video')[0].play();
+        }
+        
+    });
+        
     
 });

@@ -19,7 +19,7 @@
 
     <link rel="icon" href="./source/favicon-32x32.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180" />
-    
+
     <link type="text/css" rel="stylesheet" href="./css/common.css" />
     <link type="text/css" rel="stylesheet" href="./css/header.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 
     <header>
         <div class="inner">
-            <h1 id="logoTop"><img alt="알픽 로고" src="./source/alpick_logo.png"/></h1>
+            <h1 id="logoTop"><img alt="알픽 로고" src="./source/alpick_logo.png" /></h1>
             <nav>
                 <ul id="gnb">
                     <li id="menu0">서비스 배경</li>
@@ -110,13 +110,13 @@
                     <h3>혼술이 <span class="colorOR">위험에 쉽게</span> 노출될 수 있다는<br>사실을 알고 계셨나요?</h3>
                     <p>
                         최근 사람들의 음주 문화는 다수에서 혼술까지도 자리잡게 되었는데요. 늘어나는 음주량에 비해 음주 관리에 있어서는 소홀했습니다.<br>
-                        정신의학과 최강 원장은 술을 마시면서도 본인의 음주 습관을 체크하고 스스로 술을  마시는 횟수와 양을 조절하려는 노력이 필요하다고 말하였습니다.
+                        정신의학과 최강 원장은 술을 마시면서도 본인의 음주 습관을 체크하고 스스로 술을 마시는 횟수와 양을 조절하려는 노력이 필요하다고 말하였습니다.
                     </p>
                 </div>
             </article>
         </div>
     </section>
-    
+
     <section class="section section2">
         <div class="inner">
             <h2 class="subTitle">Overview</h2>
@@ -124,8 +124,8 @@
                 <div id="sec2_txt">
                     <h3>혼술이 무슨 문제가 있어요?</h3>
                     <p data-aos="fade-left">
-                        혼술은 간편하게 술을 즐길 수 있다는 장점이 있지만 그만큼 술을 
-                        자제시킬 상대가 없어 음주량과 빈도수가 늘어나기 쉬운 환경을 조성한다.
+                        혼술은 간편하게 술을 즐길 수 있다는 장점이 있지만 그만큼 술을
+                        자제시킬 상대가 없어 음주량과 빈도수가 늘어나기 쉬운 환경을 조성합니다.
                     </p>
                 </div>
                 <div id="sec2_box">
@@ -151,17 +151,24 @@
     </section>
 
     <section class="section section3">
-        <div class="wrapper">
+        <!-- <div class="wrapper">
             <input type="checkbox">
             <div class="video">
-                <video loop autoplay playsinline>
+                <video autoplay playsinline muted controls>
                     <source src="./source/alpick.mp4" type="video/mp4"/>
                 </video>
             </div>
             <div class="text">
                 <span data-text="click and Watch"></span>
             </div>
+        </div> -->
+        <div>
+            <video id="video" poster="./source/thumbnail.png">
+                <source src="./source/alpick.mp4" type="video/mp4">
+            </video>
+            <div class="play-pause-btn" data-click="0" ></div>
         </div>
+
     </section>
 
 
@@ -169,121 +176,121 @@
         <h2 class="subTitle">User Research</h2>
         <article>
             <div id="interviewAll">
-                    <span class="interviewLine interviewLine0" >
-                        <dl class="profileAll profileAll0">
-                            <dt class="profileImg"><img alt="인터뷰 대상1" src="./source/interview0.png" /></dt>
-                            <dd>
-                                <div class="profile profile0">
-                                    <ul>
-                                        <li>김지훈</li>
-                                        <li>20대 초반 남성</li>
-                                        <li class="jobBg">직장인</li>
-                                    </ul>
-                                    <p>
-                                        “혼술을 하다보면 조절을 잘 못하고 <br>과음을 할때가 많았어요.” 
-                                    </p>
-                                </div>
-                            </dd>
-                        </dl>
-    
-                        <dl class="profileAll profileAll1">
-                            <dt class="profileImg"><img alt="인터뷰 대상2" src="./source/interview1.png" /></dt>
-                            <dd>
-                                <div class="profile profile1">
-                                    <ul>
-                                        <li>김혜정</li>
-                                        <li>20대 후반 여성</li>
-                                        <li class="jobBg">직장인</li>
-                                    </ul>
-                                    <p>
-                                        “술을 좋아해서 그런지 자주 먹게 돼요. <br>또 혼자 살게 되니깐 더 그런거 같아요!”
-                                    </p>
-                                </div>
-                            </dd>
-                        </dl>
-    
-                        <dl class="profileAll profileAll2">
-                            <dt class="profileImg"><img alt="인터뷰 대상3" src="./source/interview2.png" /></dt>
-                            <dd>
-                                <div class="profile profile2">
-                                    <ul>
-                                        <li>오기수</li>
-                                        <li>30대 초반 남성</li>
-                                        <li class="jobBg">직장인</li>
-                                    </ul>
-                                    <p>
-                                        “점점 술을 마시는 빈도수가 늘고 있다는걸 <br>느껴요.. 줄여야할텐데 쉽지 않네요.”
-                                    </p>
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl class="profileAll profileAll3">
-                            <dt class="profileImg"><img alt="인터뷰 대상4" src="./source/interview3.png" /></dt>
-                            <dd>
-                                <div class="profile profile3">
-                                    <ul>
-                                        <li>이지훈</li>
-                                        <li>20대 초반 남성</li>
-                                        <li class="jobBg">직장인</li>
-                                    </ul>
-                                    <p>
-                                        “지금부터 벌써 술 관리를 한다니.. 너무<br> 가혹한 걸요.. 걱정없이 마시고 싶어요.
-                                    </p>
-                                </div>
-                            </dd>
-                        </dl>
-    
-                        <dl class="profileAll profileAll4">
-                            <dt class="profileImg"><img alt="인터뷰 대상5" src="./source/interview4.png" /></dt>
-                            <dd>
-                                <div class="profile profile4">
-                                    <ul>
-                                        <li>한민준</li>
-                                        <li>20대 후반 남성</li>
-                                        <li class="jobBg">직장인</li>
-                                    </ul>
-                                    <p>
-                                        “요즘 술 관련 컨텐츠가 많이 나와서 그런지<br> 자연스럽게 술이 생각나고 마시고 싶어져요.”
-                                    </p>
-                                </div>
-                            </dd>
-                        </dl>
-    
-                        <dl class="profileAll profileAll5">
-                            <dt class="profileImg"><img alt="인터뷰 대상6" src="./source/interview5.png" /></dt>
-                            <dd>
-                                <div class="profile profile5">
-                                    <ul>
-                                        <li>이재인</li>
-                                        <li>30대 초반 여성</li>
-                                        <li class="jobBg">직장인</li>
-                                    </ul>
-                                    <p>
-                                        “집에서 편하게 술을 마시다보니 많이<br>마시게 되더라구요”
-                                    </p>
-                                </div>
-                            </dd>
-                        </dl>
-    
-                        <dl class="profileAll profileAll6">
-                            <dt class="profileImg"><img alt="인터뷰 대상7" src="./source/interview6.png" /></dt>
-                            <dd>
-                                <div class="profile profile6">
-                                    <ul>
-                                        <li>최이준</li>
-                                        <li>20대 초반 남성</li>
-                                        <li class="jobBg">학생</li>
-                                    </ul>
-                                    <p>
-                                        “그냥 술 줄이면 되지 않을까요?<br>전 별로 신경 쓰지 않는것 같아요.”
-                                    </p>
-                                </div>
-                            </dd>
-                        </dl>
-                    </span>
+                <span class="interviewLine interviewLine0">
+                    <dl class="profileAll profileAll0">
+                        <dt class="profileImg"><img alt="인터뷰 대상1" src="./source/interview0.png" /></dt>
+                        <dd>
+                            <div class="profile profile0">
+                                <ul>
+                                    <li>김지훈</li>
+                                    <li>20대 초반 남성</li>
+                                    <li class="jobBg">직장인</li>
+                                </ul>
+                                <p>
+                                    “혼술을 하다보면 조절을 잘 못하고 <br>과음을 할때가 많았어요.”
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
 
-                
-                
+                    <dl class="profileAll profileAll1">
+                        <dt class="profileImg"><img alt="인터뷰 대상2" src="./source/interview1.png" /></dt>
+                        <dd>
+                            <div class="profile profile1">
+                                <ul>
+                                    <li>김혜정</li>
+                                    <li>20대 후반 여성</li>
+                                    <li class="jobBg">직장인</li>
+                                </ul>
+                                <p>
+                                    “술을 좋아해서 그런지 자주 먹게 돼요. <br>또 혼자 살게 되니깐 더 그런거 같아요!”
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl class="profileAll profileAll2">
+                        <dt class="profileImg"><img alt="인터뷰 대상3" src="./source/interview2.png" /></dt>
+                        <dd>
+                            <div class="profile profile2">
+                                <ul>
+                                    <li>오기수</li>
+                                    <li>30대 초반 남성</li>
+                                    <li class="jobBg">직장인</li>
+                                </ul>
+                                <p>
+                                    “점점 술을 마시는 빈도수가 늘고 있다는걸 <br>느껴요.. 줄여야할텐데 쉽지 않네요.”
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="profileAll profileAll3">
+                        <dt class="profileImg"><img alt="인터뷰 대상4" src="./source/interview3.png" /></dt>
+                        <dd>
+                            <div class="profile profile3">
+                                <ul>
+                                    <li>이지훈</li>
+                                    <li>20대 초반 남성</li>
+                                    <li class="jobBg">직장인</li>
+                                </ul>
+                                <p>
+                                    “지금부터 벌써 술 관리를 한다니.. 너무<br> 가혹한 걸요.. 걱정없이 마시고 싶어요.
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl class="profileAll profileAll4">
+                        <dt class="profileImg"><img alt="인터뷰 대상5" src="./source/interview4.png" /></dt>
+                        <dd>
+                            <div class="profile profile4">
+                                <ul>
+                                    <li>한민준</li>
+                                    <li>20대 후반 남성</li>
+                                    <li class="jobBg">직장인</li>
+                                </ul>
+                                <p>
+                                    “요즘 술 관련 컨텐츠가 많이 나와서 그런지<br> 자연스럽게 술이 생각나고 마시고 싶어져요.”
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl class="profileAll profileAll5">
+                        <dt class="profileImg"><img alt="인터뷰 대상6" src="./source/interview5.png" /></dt>
+                        <dd>
+                            <div class="profile profile5">
+                                <ul>
+                                    <li>이재인</li>
+                                    <li>30대 초반 여성</li>
+                                    <li class="jobBg">직장인</li>
+                                </ul>
+                                <p>
+                                    “집에서 편하게 술을 마시다보니 많이<br>마시게 되더라구요”
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl class="profileAll profileAll6">
+                        <dt class="profileImg"><img alt="인터뷰 대상7" src="./source/interview6.png" /></dt>
+                        <dd>
+                            <div class="profile profile6">
+                                <ul>
+                                    <li>최이준</li>
+                                    <li>20대 초반 남성</li>
+                                    <li class="jobBg">학생</li>
+                                </ul>
+                                <p>
+                                    “그냥 술 줄이면 되지 않을까요?<br>전 별로 신경 쓰지 않는것 같아요.”
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
+                </span>
+
+
+
                 <span class="interviewLine interviewLine0">
                     <dl class="profileAll profileAll2">
                         <dt class="profileImg"><img alt="인터뷰 대상3" src="./source/interview2.png" /></dt>
@@ -348,7 +355,7 @@
                             </div>
                         </dd>
                     </dl>
-                    
+
                     <dl class="profileAll profileAll1">
                         <dt class="profileImg"><img alt="인터뷰 대상2" src="./source/interview1.png" /></dt>
                         <dd>
@@ -375,7 +382,7 @@
                                     <li class="jobBg">직장인</li>
                                 </ul>
                                 <p>
-                                    “혼술을 하다보면 조절을 잘 못하고 <br>과음을 할때가 많았어요.” 
+                                    “혼술을 하다보면 조절을 잘 못하고 <br>과음을 할때가 많았어요.”
                                 </p>
                             </div>
                         </dd>
@@ -412,7 +419,7 @@
                 </p>
             </div>
             <div id="handMockup">
-                <img  alt="손, 앱 화면 목업 이미지" src="./source/hand_mockup.png" />
+                <img alt="손, 앱 화면 목업 이미지" src="./source/hand_mockup.png" />
             </div>
         </article>
     </section>
@@ -533,7 +540,7 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <section class="section section9">
@@ -575,7 +582,7 @@
         <article class="inner">
             <h3>Character</h3>
             <div class="sec11_con">
-                <div class="sec11_yong"><img alt="" src="./source/sec11_yong.png"/></div>
+                <div class="sec11_yong"><img alt="" src="./source/sec11_yong.png" /></div>
                 <p>
                     안녕 나는 너희의 음주를 관리해줄 용용이야<br>
                     술취하면 개가 된다는 말이 싫어서 평소에는 <br>
@@ -592,7 +599,7 @@
             <div class="sec12_txt">
                 <h3><span>01.</span>초기 설정과<br>음주 데이터를 기반으로</h3>
                 <p>
-                    이용자가 메인 서비스를 사용할 때 손쉽게<br> 
+                    이용자가 메인 서비스를 사용할 때 손쉽게<br>
                     이용할 수 있도록 키워드를 제공합니다.
                 </p>
             </div>
@@ -609,7 +616,7 @@
             <div class="sec13_txt">
                 <h3><span>02.</span>AI 서비스</h3>
                 <p>
-                    AI 의 목소리를 선택 할 수 있고  원하는 대화<br>
+                    AI 의 목소리를 선택 할 수 있고 원하는 대화<br>
                     키워드를 선택하면 용용이가 키워드에 대한<br>
                     답을 해줍니다.
                 </p>
@@ -626,7 +633,7 @@
     <section class="section section14">
         <h2 class="blind"></h2>
         <div class="sec14_mask">
-            <img alt="" src="./source/mask_mockup.png"/>
+            <img alt="" src="./source/mask_mockup.png" />
         </div>
         <article class="inner" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
             <h3><span class="sec14_bold">음성</span>으로 <span class="sec14_bold">손쉽게 서비스</span> 이용 가능</h3>
@@ -646,15 +653,17 @@
                     음주 리포트를 통해 점검하세요! <br>
                     기록한 음주 데이터를 수집한 뒤 정리하여<br>
                     음주 리포트를 제공해줍니다.
-                </p> 
+                </p>
             </div>
             <div class="sec15_mockup">
                 <img alt="" src="./source/sec15_mockup.png" />
             </div>
         </article>
         <div class="sec15_leftAll">
-            <div class="sec15_left sec15_left0" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="300"></div>
-            <div class="sec15_left sec15_left1" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300"></div>
+            <div class="sec15_left sec15_left0" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="300">
+            </div>
+            <div class="sec15_left sec15_left1" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
+            </div>
         </div>
     </section>
 
@@ -674,13 +683,13 @@
                 </div>
                 <div class="sec16_mockup1">
                     <div class="sec16_pop sec16_pop0" data-aos="zoom-in" data-aos-delay="200">
-                        <img alt="" src="./source/sec16_mockup1-1.png"/>
+                        <img alt="" src="./source/sec16_mockup1-1.png" />
                     </div>
                     <img alt="" src="./source/sec16_mockup1.png" />
                 </div>
                 <div class="sec16_mockup2">
                     <div class="sec16_pop sec16_pop1" data-aos="zoom-in" data-aos-delay="400">
-                        <img alt="" src="./source/sec16_mockup2-1.png"/>
+                        <img alt="" src="./source/sec16_mockup2-1.png" />
                     </div>
                     <img alt="" src="./source/sec16_mockup2.png" />
                 </div>
@@ -696,15 +705,15 @@
                 <p>
                     기록한 음주 데이터를 한눈에 캘린더 형식으로 볼 수 있고 과음한 날과 음주한 날을 구분하여 경각심을<br>
                     높힐 수 있도록 구성했습니다.
-                </p> 
+                </p>
             </div>
         </article>
         <div class="sec17_mockup">
             <div class="sec17_frame">
                 <div class="sec17_pop" data-aos="zoom-in">
-                    <img alt="" src="./source/sec17_pop.png"/>
+                    <img alt="" src="./source/sec17_pop.png" />
                 </div>
-                <img alt="" src="./source/sec17_frame.png"/>
+                <img alt="" src="./source/sec17_frame.png" />
                 <span class="sec17_keyword sec17_keyword0" data-aos="fade-right" data-aos-delay="300">과음한 날</span>
                 <span class="sec17_keyword sec17_keyword1" data-aos="fade-left" data-aos-delay="500">음주한 날</span>
             </div>
@@ -716,14 +725,14 @@
         <article>
             <h3><span>06.</span>주류 정보</h3>
             <p>
-                여러 주류 정보와  AI가 추천해주는 주류 ,좋아요 기능과 댓글 기능 등<br>
+                여러 주류 정보와 AI가 추천해주는 주류 ,좋아요 기능과 댓글 기능 등<br>
                 건강한 음주를 즐길 수 있는 다양한 컨텐츠를 제공합니다.
             </p>
             <div class="sec18_mockup">
-                <img alt="" src="./source/sec18_mockup0.png" data-aos="fade-left" data-aos-delay="900"/>
-                <img alt="" src="./source/sec18_mockup1.png" data-aos="fade-left" data-aos-delay="700"/>
-                <img alt="" src="./source/sec18_mockup2.png" data-aos="fade-left" data-aos-delay="600"/>
-                <img alt="" src="./source/sec18_mockup3.png" data-aos="fade-left" data-aos-delay="400"/>
+                <img alt="" src="./source/sec18_mockup0.png" data-aos="fade-left" data-aos-delay="900" />
+                <img alt="" src="./source/sec18_mockup1.png" data-aos="fade-left" data-aos-delay="700" />
+                <img alt="" src="./source/sec18_mockup2.png" data-aos="fade-left" data-aos-delay="600" />
+                <img alt="" src="./source/sec18_mockup3.png" data-aos="fade-left" data-aos-delay="400" />
             </div>
         </article>
     </section>
@@ -736,7 +745,7 @@
                 <p>사용자의 정보 등에 따라서 AI가 상황에 맞는 주류를 맞춤으로<br>추천해 줍니다.</p>
             </div>
             <div class="sec19_mockup">
-                <img alt="" src="./source/sec19_mockup.png"/>
+                <img alt="" src="./source/sec19_mockup.png" />
             </div>
         </article>
     </section>
@@ -744,7 +753,7 @@
     <section class="section section20">
         <h2></h2>
         <article>
-            
+
         </article>
     </section>
 
