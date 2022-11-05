@@ -26,10 +26,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="./js/marqueeMain.js" type="module"></script> -->
 
     <title>Alpick | 알픽</title>
 </head>
@@ -71,30 +73,31 @@
         <h2 class="blind">AI 알콜 케어 서비스 알픽</h2>
         <div class="inner">
             <article>
-                <div id="biInfo">
-                    <h2><img alt="알픽로고" src="./source/alpick_logo.png"></h2>
-                    <p id="serviceInfo">AI alchole care service</p>
-                </div>
-                <div>
-                    <ul id="tools">
-                        <li><img alt="c4d logo" src="./source/tool0.png"></li>
-                        <li><img alt="figma logo" src="./source/tool1.png"></li>
-                        <li><img alt="illuste logo" src="./source/tool2.png"></li>
-                        <li><img alt="photoshop logo" src="./source/tool3.png"></li>
-                    </ul>
-                </div>
-                <div id="mainInfo">
-                    <div id="infoLeft">
-                        <ul>
-                            <li class="infoType">Project Type.</li>
-                            <li class="infoCon">Digital Media<br>Design</li>
-                        </ul>
-                        <ul>
-                            <li class="infoType">Service.</li>
-                            <li class="infoCon">Mobile</li>
+                <div class="sec0_con">
+                    <div id="biInfo">
+                        <h2><img alt="알픽로고" src="./source/alpick_logo.png"></h2>
+                        <p id="serviceInfo">AI alchole care service</p>
+                    </div>
+                    <div>
+                        <ul id="tools">
+                            <li><img alt="c4d logo" src="./source/tool0.png"></li>
+                            <li><img alt="figma logo" src="./source/tool1.png"></li>
+                            <li><img alt="illuste logo" src="./source/tool2.png"></li>
+                            <li><img alt="photoshop logo" src="./source/tool3.png"></li>
                         </ul>
                     </div>
-
+                    <div id="mainInfo">
+                        <div id="infoLeft">
+                            <ul>
+                                <li class="infoType">Project Type.</li>
+                                <li class="infoCon">Digital Media<br>Design</li>
+                            </ul>
+                            <ul>
+                                <li class="infoType">Service.</li>
+                                <li class="infoCon">Mobile</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div id="mainMockup">
                     <img alt="손, 화면 목업" src="./source/sec0_mainMockup.png" />
@@ -493,20 +496,20 @@
         <div id="sec7_mockup">
             <img alt="용용이 캐릭터" src="./source/sec7_mockup.png" />
         </div>
-        <div class="sec7_chat sec7_box0" data-aos="fade-right" data-aos-delay="500">
+        <div class="sec7_chat sec7_box0" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">
             무엇을 도와드릴까요?
         </div>
-        <div class="sec7_chat sec7_box1" data-aos="fade-left" data-aos-delay="550">
+        <div class="sec7_chat sec7_box1" data-aos="fade-left" data-aos-delay="550" data-aos-duration="1200">
             이번달 음주 리포트 알려줘
         </div>
-        <div class="sec7_chat sec7_box2" data-aos="fade-right" data-aos-delay="650">
+        <div class="sec7_chat sec7_box2" data-aos="fade-right" data-aos-delay="650" data-aos-duration="1200">
             지난달보다 음주 빈도수가 4회 증가했어요.<br>더 마시지 않도록 주의하세요!
         </div>
     </section>
 
     <section class="section section8">
         <h2 class="subTitle">Style guide</h2>
-        <article class="sec8_art0">
+        <article class="sec8_txt">
             <h3>Color</h3>
             <p>
                 과한 음주가 알콜 중독으로 이어질 수 있다는 경각심을 주기 위해<br>

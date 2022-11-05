@@ -13,38 +13,22 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     // --------------------- menu move ---------------------------
-
-    // window.onscroll = function() {
-        //     if ( scrollHeight < 10000 ) {
-            //         document.querySelector('.sec8_colorOR').style.width = '60vw';
-            //         document.querySelector('.sec8_colorBlu').style.height = '33.3%';
-            //         document.querySelector('.sec8_colorGry').style.height = '33.3%';
-            //         document.querySelector('.sec8_colorWh').style.height = '33.3%';
-            //     } else if ( scrollHeight >= 10000 ) {
-                //         document.querySelector('.sec8_colorOR').style.width = '60vw';
-                //         document.querySelector('.sec8_colorBlu').style.height = '33.3%';
-                //         document.querySelector('.sec8_colorGry').style.height = '33.3%';
-                //         document.querySelector('.sec8_colorWh').style.height = '33.3%';
-                //     } 
-                // };
-                
-                // window.onscroll();
-                
-    const scrollHeight = document.querySelector("html").scrollTop;
-    
+    const scrollNum = document.querySelector("html").scrollTop;
 
     window.onresize = function(event){
         const innerWidth = window.innerWidth;
 
+
         if (innerWidth > 1024) {
             window.onscroll = function() {
+                console.log(scrollNum);
 
-                if ( scrollHeight === 0) {
+                if ( scrollNum === 0) {
                     document.querySelector("header").style.top = "0";
                     document.querySelector("header div").style.marginBottom = "15px";
                 }
                 
-                if ( scrollHeight > 740) {
+                if ( scrollNum > 740) {
                     document.querySelector("header").style.top = "-30px";
                     document.querySelector("header div").style.marginBottom = "0";
                 } else {
@@ -57,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if ( e.clientY < 70 ) {
                     document.querySelector("header").style.top = "0";
                     document.querySelector("header div").style.marginBottom = "15px";
-                } else if (scrollHeight > 740) {
+                } else if (scrollNum > 740) {
                     document.querySelector("header").style.top = "-30px"
                     document.querySelector("header div").style.marginBottom = "0";
                 }
@@ -67,30 +51,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.onresize();
 
-    const colorOR = document.querySelector('.sec8_colorOR');
-    // const colorBlu = document.querySelector('.sec8_colorBlu');
-    // const colorGry = document.querySelector('.sec8_colorGry');
-    // const colorWh = document.querySelector('.sec8_colorWh');
-
-    window.color = function() {
-        if(scrollHeight === 12000) {
-            colorOR.classList.add('.colorActive');
-            colorOR.classList.remove('.sec8_colorOR');
-        }
-    };
-
-    window.color();
-
     // -------------------------- progress indicator ---------------------------------
     window.addEventListener("scroll", () => {
         if(document.querySelector('.progressbar') != null)setProgress();
-        console.log(scrollHeight);
     }); 
 
     function setProgress() {          
         let currY = document.documentElement.scrollTop;
         let totalY = document.documentElement.scrollHeight - document.documentElement.clientHeight; //전체 높이
-        let percentage = (currY / totalY) * 100; //퍼센트 값
+        let percentage = (currY / totalY) * 100;
         document.querySelector(".progress").style.width = percentage + "%"; //프로그래스바 너비 변경
     }
 
@@ -193,10 +162,39 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
     });
 
-    // -------------------------------------------------------
+    // ------------------------------------------------------------
 
-    
-        // ----------------------------------------------
+    gsap.registerPlugin(ScrollTrigger);
+    const color = document.querySelector('color');
+    const colorOR = document.querySelector('.sec8_colorOR');
+    const colorBlu = document.querySelector('.sec8_colorBlu');
+    const colorGry = document.querySelector('.sec8_colorGry');
+    const colorWh = document.querySelector('.sec8_colorWh');
+
+    gsap.to(colorOR, {
+        scrollTrigger:color, 
+        width:'60vw', 
+        duration:1
+    });
+
+    gsap.to(colorBlu, {
+        scrollTrigger:color, 
+        height:'33.3%', 
+        duration:1
+    });
+
+    gsap.to(colorGry, {
+        scrollTrigger:color, 
+        height:'33.3%', 
+        duration:1
+    });
+
+    gsap.to(colorWh, {
+        scrollTrigger:color, 
+        height:'33.3%', 
+        duration:1
+    });
+
 
 });
 
@@ -225,6 +223,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
+
+    // ----------------------- loop slide -------------------- 
     (function ($) {
         $.fn.marquee = function( setting ){
 
@@ -265,7 +265,6 @@ document.addEventListener("DOMContentLoaded", function() {
             function leftToRight( wrap, content, speed ){
             var width = 0;
 
-            // 将内容复制四份，已解决单条公告循环滚动的问题
             content.append( content.html() );
             content.append( content.html() );
 
@@ -330,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         $('.marquee-wrap').marquee( setting );
 
-
+    // --------------------------------------------
     $('.play-pause-btn').on('click',function(){
 
         if($(this).attr('data-click') == 1) {
@@ -344,6 +343,43 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
     });
+
+    // -------------------------------------------------
+    $(window).scroll(function () {
+        const scrollPosition = $(document).scrollTop();
+        // const winHeight = $('section').height();
+
+        if (scrollPosition >= 12000) {
+            // $('.sec8_colorOR').removeClass('.sec8_colorOR');
+            $('.sec8_colorOR').addClass('colorActive');
+        } 
+        // else if (scrollPosition >= winHeight * 2) {
+    //         $('.box').removeClass('first second fourth');
+    //         $('.box').addClass('third');
+    //     } else if (scrollPosition >= winHeight) {
+    //         $('.box').removeClass('first third fourth');
+    //         $('.box').addClass('second');
+    //     } else if (scrollPosition > 20) {
+    //         $('.box').removeClass('second third fourth');
+    //         $('.box').addClass('first');
+    //     } else {
+    //         $('.box').removeClass('first');
+    //     }
+    });
+
+    // const colorOR = document.querySelector('.sec8_colorOR');
+    // // const colorBlu = document.querySelector('.sec8_colorBlu');
+    // // const colorGry = document.querySelector('.sec8_colorGry');
+    // // const colorWh = document.querySelector('.sec8_colorWh');
+
+    // window.color = function() {
+    //     if(scrollHeight >= 12000) {
+    //         colorOR.classList.add('.colorActive');
+    //         colorOR.classList.remove('.sec8_colorOR');
+    //     }
+    // };
+
+    // window.color();
         
 
 });
