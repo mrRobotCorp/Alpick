@@ -406,10 +406,13 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section18 .sec18_mockup::after { content: ''; background: #FF542F; position: absolute; width: calc( 100vw * 1000 / 1920 ); height: calc( 100vw * 1000 / 1920 ); margin-left: calc( 100vw * -600 / 1920 ); border-radius: 50%; z-index: -100;}
 
 /* ------------------------------------------------------------------------- */
-.section19 { text-align: center;}
+.section19 { height: 150vh; text-align: center;}
 .section19 article h3 { color: #FF542F; font-size: calc( 100vw * 50 / 1920 ); font-family: PLight; line-height: 130%; }
 .section19 article h3 span { margin: 0 auto; margin-bottom: calc( 100vw * 20 / 1920 ); font-family: PBold;}
 .section19 article p { margin: calc( 100vw * 60 / 1920 ) calc( 100vw * 40 / 1920 ) 0 0; line-height: 140%; }
+
+.section19 article .sec19_mockup img { width: calc( 100vw * 630 / 1920 ); }
+
 
 /* ----------------------------------------------------------------------------- */
 .section20 { background: url(../source/sec20_bg.png) no-repeat center center; background-size: cover;}
@@ -422,6 +425,9 @@ footer .teamAll { display: flex; flex-direction: column; }
 footer #team { margin-top: calc( 100vw * 30 / 1920 );}
 footer #team > li { display: inline-block; margin: calc( 100vw * 20 / 1920); } 
 footer .member li { margin: calc( 100vw * 30 / 1920) 0; } 
+footer .member li:last-child a { color: #fff; transition: all .3s; position: relative; padding-bottom: calc( 100vw * 5 / 1920 );}
+footer .member li:last-child a::after { content: ''; position: absolute; height: calc( 100vw * 1.5 / 1920 ); width: 0; transform: translateX(-50%); left: 50%; bottom: -15%; transition: .3s ease-out; background-color: #fff;}
+footer .member li:last-child a:hover:after { width: 100%; }
 footer .member .memoticon { background: #fff; border-radius: 50%; padding: calc( 100vw * 50 / 1920 ); margin: 0 calc( 100vw * 20 / 1920 );}
 footer .member .memoticon img { width: calc( 100vw * 140 / 1920 );}
 footer .member .memberPart { font-size: calc( 100vw * 27 / 1920 ); font-family: semiBold; }
