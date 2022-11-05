@@ -448,8 +448,8 @@ footer .copyRight .srcLink { margin-top: calc( 100vw * 15 / 1920 ); font-size: c
 footer p { float: right; }
 
 /* scrollTop */
-#scrollTop { background-color: rgba(255, 255, 255, 0.925); font-family: semiBold; box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: calc( 100vw * 65 / 1920); height: calc( 100vw * 65 / 1920 ); border-radius: calc( 100vw * 50 / 1920 ); text-align: center; font-size: calc( 100vw * 12 / 1920 ); bottom: calc( 100vw * 40 / 1920 ); right: calc( 100vw * 50 / 1920 ); position: fixed; z-index: 3; cursor: pointer; } 
-#scrollTop:hover { transition: 0.5s ease; background-color: #dededee9; } 
+#scrollTop { background: #fff; font-family: semiBold; box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: calc( 100vw * 65 / 1920); height: calc( 100vw * 65 / 1920 ); border-radius: calc( 100vw * 50 / 1920 ); text-align: center; font-size: calc( 100vw * 12 / 1920 ); bottom: calc( 100vw * 40 / 1920 ); right: calc( 100vw * 50 / 1920 ); position: fixed; z-index: 3; cursor: pointer; } 
+#scrollTop:hover { transition: 0.5s ease; background-color: #e4e4e4; } 
 #scrollTop::before { content: "\2303"; position: absolute; top: calc( 100vw * 15 / 1920 ); left: calc( 100vw * 23 / 1920 ); color: #000; font-size: calc( 100vw * 23 / 1920); } 
 #scrollTop .topTxt { display: block; margin-top: calc( 100vw * 30 / 1920 ); font-size: calc( 100vw * 14 / 1920); } 
 
