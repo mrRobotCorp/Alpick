@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.getElementById("menu1").onclick = function () {
         window.scrollTo({
-            top: 2435,
+            top: 3028,
             left: 0,
             behavior: 'smooth'
         });
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.getElementById("menu2").onclick = function () {
         window.scrollTo({
-            top: 4000,
+            top: 9800,
             left: 0,
             behavior: 'smooth'
         });
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.getElementById("menu3").onclick = function () {
         window.scrollTo({
-            top: 600,
+            top: 13550,
             left: 0,
             behavior: 'smooth'
         });
