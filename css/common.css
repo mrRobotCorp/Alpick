@@ -124,8 +124,9 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section2 article #sec2_box div:first-child { margin-right: calc( 100vw * 55 / 1920); } 
 .section2 article #sec2_box div img { width: 100%; -webkit-user-drag: none; z-index: 50; } 
 
-.section2 article #sec2_arrow { width: 0; height: calc( 100vw * 105 / 1920 ); margin: 0 auto; border-left: calc( 100vw * 2.5 / 1920 ) dashed #4C38AE ; } 
-.section2 article #sec2_arrow::after { background: #4C38AE; width: calc( 100vw * 8 / 1920 ); height: calc( 100vw * 8 / 1920 ); position: absolute; top: 50%; margin-top: calc( 100vw * -500 / 1920 ); border-radius: calc( 100vw * 5 / 1920 ); z-index: 100;}
+.section2 article .ses2_result { position: relative; }
+.section2 article #sec2_arrow { width: calc( 100vw * 18 / 1920 ); height: calc( 100vw * 18 / 1920 ); background: #4C38AE;  margin: 0 auto; border-radius: 50%; margin-top: calc( 100vw * 200 / 1920 );}
+.section2 article #sec2_arrow::before { content: ''; width: 0; height: calc( 100vw * 105 / 1920 ); position: absolute; bottom: calc( 100vw * 10 / 1920 ); left: calc( 100vw * 8 / 1920 ); border-left: calc( 100vw * 2.5 / 1920 ) dashed #4C38AE ; padding-top: calc( 100vw * 45 / 1920 );}
 .section2 article #sec2_bottom { font-family: Plight; font-size: calc( 100vw * 36 / 1920); text-align: center; margin-top: calc( 100vw * 100 / 1920); line-height: 150%; } 
 .section2 article #sec2_bottom .colorNy { color: #4C38AE; font-family: Pbold; } 
 
