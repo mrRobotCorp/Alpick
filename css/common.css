@@ -109,7 +109,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .colorOR { color: #FF6948; } 
 
 /* ----------------------------------------------------------------- */
-.section2 { height: 170vh; background: #F4F3F9; border-radius: 50% 50% 0 0; padding: calc( 100vw * 300 / 1920 ) 0 calc( 100vw * 200 / 1920 ) 0; } 
+.section2 { height: 150vh; background: #F4F3F9; border-radius: 50% 50% 0 0; padding: calc( 100vw * 300 / 1920 ) 0 calc( 100vw * 200 / 1920 ) 0; } 
 .section2 .subTitle::after { content: ''; background-color: #FF6948; position: absolute; bottom: calc( 100vw * -30 / 1920); width: calc( 100vw * 14 / 1920); height: calc( 100vw * 14 / 1920); margin-left: calc( 100vw * -75 / 1920); border-radius: calc( 100vw * 10 / 1920); z-index: 10; } 
 .section2 article { text-align: left; position: relative; margin-top: calc( 100vw * 300 / 1920 ); position: relative; } 
 .section2 article #sec2_txt { display: flex; align-items: center; justify-content: space-between; margin: calc( 100vw * 200 / 1920) 0 calc( 100vw * 200 / 1920) 0; } 
