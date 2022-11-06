@@ -143,7 +143,6 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section4 #interviewAll { display: inline-block; position: relative; width: 100%; overflow: hidden; margin: calc( 100vw * 150 / 1920) 0; } 
 
 .section4 #interviewAll .interviewLine { display: flex; justify-content: space-around; } 
-.section4 #interviewAll .interviewLine:hover { animation-play-state: paused; -moz-animation-play-state: paused; -webkit-animation-play-state: paused; } 
 .section4 #interviewAll .interviewLine img { margin: calc( 100vw * 10 / 1920) calc( 100vw * 30 / 1920); } 
 
 .marquee-wrap { position: relative; overflow: hidden; width: 100vw; margin-bottom: 20px; } 
