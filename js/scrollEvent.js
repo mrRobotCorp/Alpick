@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("menu1").onclick = function () {
         window.scrollTo({
-            top: 3150,
+            top: 3010,
             left: 0,
             behavior: 'smooth'
         });
