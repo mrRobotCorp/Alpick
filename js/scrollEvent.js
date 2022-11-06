@@ -1,5 +1,7 @@
+AOS.init();
+
 document.addEventListener("DOMContentLoaded", function() {
-    AOS.init();
+
     // ------------------ scroll move ------------------------------
     document.getElementById("logoTop").onclick = function () {
         window.scrollTo({
