@@ -275,7 +275,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section12 .sec12_mockup img { width: calc( 100vw * 420 / 1920 ); }
 .section12 .sec12_mockup::before { content: ''; background: #FF542F; position: absolute; width: calc( 100vw * 780 / 1920 ); height: calc( 100vw * 780 / 1920 ); margin: calc( 100vw * 250 / 1920 ) 0 0 calc( 100vw * -175 / 1920 ); border-radius: 50%; z-index: -100; } 
 
-.section12 #sec12_vid { position: absolute; border-radius: calc( 100vw * 60 / 1920 ); width: 98%;  max-width: calc( 100vw * 400 /1920 ); height: 98%; z-index: -10; margin: calc( 100vw * 15 / 1920 ) 0 0 calc( 100vw * -410 / 1920 ); } 
+.section12 #sec12_vid { position: absolute; border-radius: calc( 100vw * 60 / 1920 ); width: 98%;  max-width: calc( 100vw * 400 /1920 ); height: 98%; z-index: -10; margin: calc( 100vw * 13 / 1920 ) 0 0 calc( 100vw * -410 / 1920 ); } 
 
 .section12 .stickerAll { position: relative; margin-top: calc( 100vw * -300 / 1920 ); } 
 .section12 .sticker { position: absolute; width: calc( 100vw * 250 / 1920 ); height: calc( 100vw * 250 / 1920 ); filter: drop-shadow(-4px 7px 5px rgba(0, 0, 0, 0.25)); } 
