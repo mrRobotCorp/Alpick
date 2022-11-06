@@ -311,20 +311,20 @@ $(document).ready(function(){
     $('.sec7_box0').on('click',function(){
         if($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0);
-            $('#sec_audio0')[0].pause();
+            $('#sec7_audio0')[0].pause();
         } else {
             $(this).attr('data-click', 1);
-            $('#sec_audio0')[0].play();
+            $('#sec7_audio0')[0].play();
         }
     });
 
     $('.sec7_box2').on('click',function(){
         if($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0);
-            $('#sec_audio1')[0].pause();
+            $('#sec7_audio1')[0].pause();
         } else {
             $(this).attr('data-click', 1);
-            $('#sec_audio1')[0].play();
+            $('#sec7_audio1')[0].play();
         }
     });
         
