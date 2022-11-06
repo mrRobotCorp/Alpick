@@ -169,7 +169,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .marquee-wrap { position: relative; overflow: hidden; width: 100vw; margin-bottom: 20px; } 
 .marquee-wrap .marquee-content { position: relative; margin: 0; padding: 0; } 
 
- .section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); } 
+.section4 #interviewAll .interviewLine .profileAll { display: flex; align-items: center; margin: calc( 100vw * 20 / 1920); } 
 .section4 #interviewAll .interviewLine .profileAll .profile { display: none; white-space: nowrap; overflow: hidden; flex-direction: column; justify-content: space-around; height: calc( 100vw * 190 / 1920); padding: calc( 100vw * 40 / 1920) calc( 100vw * 80 / 1920); background: #fff; border-radius: 0 calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920) calc( 100vw * 110 / 1920); animation: profile .4s ease-in-out; } 
 .section4 #interviewAll .interviewLine .profileAll0:hover .profile0 { display: flex; width: auto; } 
 .section4 #interviewAll .interviewLine .profileAll1:hover .profile1 { display: flex; width: auto; } 
