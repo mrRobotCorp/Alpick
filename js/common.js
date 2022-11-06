@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (innerWidth > 1024) {
             window.onscroll = function() {
-                console.log(scrollNum);
 
                 if ( scrollNum === 0) {
                     document.querySelector("header").style.top = "0";

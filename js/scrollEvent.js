@@ -55,10 +55,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const boxOR = gsap.timeline({
         scrollTrigger: {
         trigger: ".color", // 트리거 기준 요소 선택
-        start : "top 100%",
+        start : "top 90%",
         // pin: true,// 트리거 시작 지점
         scrub: true,
-        end : "+=450 20%", // // scroll trigger와 동일함
+        end : "+=200 20%", // // scroll trigger와 동일함
         // toggleActions : "play reverse none reverse"  // default : play none none none
         // toggleActions : (onEnter, onLeave, onEnterBack, onLeaveBack) 값은 
         // (play pause resume reset restart complete reverse none) 사용 가능  
@@ -69,27 +69,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const boxBlu = gsap.timeline({
         scrollTrigger: {
         trigger: ".color", // 트리거 기준 요소 선택
-        start : "top 100%",
+        start : "top 90%",
         scrub: true,
-        end : "+=450 20%", // // scroll trigger와 동일함
+        end : "+=200 20%", // // scroll trigger와 동일함
         }
     });
 
     const boxGry = gsap.timeline({
         scrollTrigger: {
         trigger: ".color", // 트리거 기준 요소 선택
-        start : "top 100%",
+        start : "top 70%",
         scrub: true,
-        end : "+=450 20%", // // scroll trigger와 동일함
+        end : "+=200 13%", // // scroll trigger와 동일함
         }
     });
 
     const boxWh = gsap.timeline({
         scrollTrigger: {
         trigger: ".color", // 트리거 기준 요소 선택
-        start : "top 100%",
+        start : "top 50%",
         scrub: true,
-        end : "+=450 20%", // // scroll trigger와 동일함
+        end : "+=200 7%", // // scroll trigger와 동일함
         }
     });
 
