@@ -208,7 +208,7 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section7 article { text-align: center; } 
 .section7 article h3 { font-size: calc(100vw * 40 / 1920); font-family: Pbold; line-height: 130%; } 
 .section7 article p { line-height: 150%; margin: calc( 100vw * 30 /1920 ) 0 calc( 100vw * 100 / 1920 ); } 
-.section7 #sec7_mockup img { width: 25%; margin-left: calc( 100vw * 300 / 1920 ); } 
+.section7 #sec7_vid { width: 100%;  max-width: calc( 100vw * 560 /1920 ); height: 100%; margin-left: calc( 100vw * 200 / 1920 );}
 .section7 .sec7_chat { display: inline-block; position: absolute; font-size: calc( 100vw * 30 / 1920 ); font-family: Pmedium; box-shadow: 4.39344e-15px 46.9895px 143.5px rgba(42, 49, 67, 0.2); } 
 .section7 .sec7_box0, .section7 .sec7_box2 { background: #FF542F; color: #fff; padding: calc( 100vw * 50 / 1920 ) calc( 100vw * 90 / 1920 ); border-radius: calc( 100vw * 100 / 1920 ) calc( 100vw * 100 / 1920 ) calc( 100vw * 100 / 1920 ) 0; } 
 .section7 .sec7_box0 { margin: calc( 100vw * -800 / 1920 ) 0 0 calc( 100vw * 600 / 1920); } 
