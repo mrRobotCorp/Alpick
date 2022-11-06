@@ -307,19 +307,29 @@ $(document).ready(function(){
 
         $('.marquee-wrap').marquee( setting );
 
-    // -----------------------  video control --------------------------
-    // $('.play-pause-btn').on('click',function(){
+    // -----------------------  audio control --------------------------
+    $('.sec7_box0').on('click',function(){
+        if($(this).attr('data-click') == 1) {
+            $(this).attr('data-click', 0);
+            // $(this).text('Play');
+            $('#sec_audio0')[0].pause();
+        } else {
+            $(this).attr('data-click', 1);
+            // $(this).text('Pause');
+            $('#sec_audio0')[0].play();
+        }
+    });
 
-    //     if($(this).attr('data-click') == 1) {
-    //         $(this).attr('data-click', 0);
-    //         // $(this).text('Play');
-    //         $('#video')[0].pause();
-    //     } else {
-    //         $(this).attr('data-click', 1);
-    //         // $(this).text('Pause');
-    //         $('#video')[0].play();
-    //     }
-        
-    // });
+    $('.sec7_box2').on('click',function(){
+        if($(this).attr('data-click') == 1) {
+            $(this).attr('data-click', 0);
+            // $(this).text('Play');
+            $('#sec_audio1')[0].pause();
+        } else {
+            $(this).attr('data-click', 1);
+            // $(this).text('Pause');
+            $('#sec_audio1')[0].play();
+        }
+    });
         
 });
