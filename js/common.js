@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
             left: 0,
             behavior: 'smooth'
         });
-    }
+    };
 
     document.getElementById("menu0").onclick = function () {
         window.scrollTo({
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
             left: 0,
             behavior: 'smooth'
         });
-    }
+    };
 
     document.getElementById("menu1").onclick = function () {
         window.scrollTo({
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
             left: 0,
             behavior: 'smooth'
         });
-    }
+    };
 
     document.getElementById("menu2").onclick = function () {
         window.scrollTo({
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
             left: 0,
             behavior: 'smooth'
         });
-    }
+    };
 
     document.getElementById("menu3").onclick = function () {
         window.scrollTo({
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
             left: 0,
             behavior: 'smooth'
         });
-    }
+    };
 
     document.getElementById("scrollTop").onclick = function () {
         window.scrollTo({
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
             left: 0,
             behavior: 'smooth'
         });
-    }
+    };
     
     // --------------------------- scrollTrigger --------------------------------------
     gsap.registerPlugin(ScrollTrigger);
@@ -207,31 +207,31 @@ document.addEventListener("DOMContentLoaded", function() {
         end : "+=200 7%",
         }
     });
-
-    
     
     boxOR.to('.sec8_colorOR', { 
         width:'60vw', 
         duration:1
-    })
+    });
 
     boxBlu.to('.sec8_colorBlu', { 
         height:'33.3%', 
         width: '40vw',
         duration:1
-    })
+    });
 
     boxGry.to('.sec8_colorGry', { 
         height:'33.3%', 
         width: '40vw',
         duration:1
-    })
+    });
 
     boxWh.to('.sec8_colorWh', { 
         height:'33.3%', 
         width: '40vw',
         duration:1
-    })
+    });
+
+    
 
 });
 
@@ -308,6 +308,11 @@ $(document).ready(function(){
         $('.marquee-wrap').marquee( setting );
 
     // -----------------------  audio control --------------------------
+    const audio0 = document.querySelector('#sec7_audio0');
+    const audio1 = document.querySelector('#sec7_audio1');
+    audio0.volume = 0.8;
+    audio1.volume = 0.8;
+
     $('.sec7_box0').on('click',function(){
         if($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0);
