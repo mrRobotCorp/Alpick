@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
+    AOS.init();
+
     // ----------------- loader ------------------------------
     document.querySelector(".loading").style.visibility = "hidden";
     
@@ -18,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.onresize = function(event){
         const innerWidth = window.innerWidth;
-
 
         if (innerWidth > 1024) {
             window.onscroll = function() {
@@ -63,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".progress").style.width = percentage + "%"; //프로그래스바 너비 변경
     }
 
-    // --------------------custom mouse ---------------------------
+    // -------------------- custom mouse ---------------------------
     const cursor = document.createElement("div");
     cursor.setAttribute("class", "cursor");
     const follower = document.createElement("div");
@@ -113,6 +115,123 @@ document.addEventListener("DOMContentLoaded", function() {
     mainMockup.addEventListener('contextmenu', (event) => {
         event.preventDefault();
     });
+
+    // ------------------ scroll move ------------------------------
+    document.getElementById("logoTop").onclick = function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    document.getElementById("menu0").onclick = function () {
+        window.scrollTo({
+            top: 750,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    document.getElementById("menu1").onclick = function () {
+        window.scrollTo({
+            top: 3010,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    document.getElementById("menu2").onclick = function () {
+        window.scrollTo({
+            top: 9800,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    document.getElementById("menu3").onclick = function () {
+        window.scrollTo({
+            top: 13550,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    document.getElementById("scrollTop").onclick = function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+    
+    // --------------------------- scroll event --------------------------------------
+    gsap.registerPlugin(ScrollTrigger);
+
+    const boxOR = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color",
+        start : "top 90%",
+        scrub: true,
+        end : "+=200 20%", // scroll trigger와 동일함
+        // toggleActions : "play reverse none reverse"  // default : play none none none
+        // toggleActions : (onEnter, onLeave, onEnterBack, onLeaveBack) 값은 
+        // (play pause resume reset restart complete reverse none) 사용 가능  
+        // toggleActions : (트리거 시작할 때, 트리거 떠날 때, end방향으로 다시 진입할 때, start로 다시 진입할 때, start로 다시 나갈 때) 
+        }
+    });
+
+    const boxBlu = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color",
+        start : "top 90%",
+        scrub: true,
+        end : "+=200 20%", 
+        }
+    });
+
+    const boxGry = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color",
+        start : "top 70%",
+        scrub: true,
+        end : "+=200 13%", 
+        }
+    });
+
+    const boxWh = gsap.timeline({
+        scrollTrigger: {
+        trigger: ".color",
+        start : "top 50%",
+        scrub: true,
+        end : "+=200 7%",
+        }
+    });
+
+    
+    
+    boxOR.to('.sec8_colorOR', { 
+        width:'60vw', 
+        duration:1
+    })
+
+    boxBlu.to('.sec8_colorBlu', { 
+        height:'33.3%', 
+        width: '40vw',
+        duration:1
+    })
+
+    boxGry.to('.sec8_colorGry', { 
+        height:'33.3%', 
+        width: '40vw',
+        duration:1
+    })
+
+    boxWh.to('.sec8_colorWh', { 
+        height:'33.3%', 
+        width: '40vw',
+        duration:1
+    })
 
 });
 
