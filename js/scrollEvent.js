@@ -1,4 +1,4 @@
-export default addEventListener();
+// export default addEventListener();
 
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init();

@@ -1,8 +1,9 @@
-import scrollEvent from './scrollEvent.js';
+// import scrollEvent from './scrollEvent.js';
 
-document.addEventListener("DOMContentLoaded", scrollEvent, function() {
+document.addEventListener("DOMContentLoaded", function() {
     // ----------------- loader ------------------------------
     document.querySelector(".loading").style.visibility = "hidden";
+    
     // -----------------------------------------------------
     const trigerMenu = document.getElementById("menu");
     const gnbMenu = document.getElementById("gnb");
