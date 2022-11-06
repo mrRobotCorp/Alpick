@@ -5,18 +5,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // ----------------- loader ------------------------------
     document.querySelector(".loading").style.visibility = "hidden";
     
-    // -----------------------------------------------------
-    const trigerMenu = document.getElementById("menu");
-    const gnbMenu = document.getElementById("gnb");
+    // ----------------------- responsive ------------------------------
+    // const trigerMenu = document.getElementById("menu");
+    // const gnbMenu = document.getElementById("gnb");
 
-    trigerMenu.onclick = function() {
-        gnbMenu.style.transition = "all .5s"
-        trigerMenu.classList.toggle("open");
-        this.classList.toggle("active");
-        gnbMenu.classList.toggle("active");
-    };
+    // trigerMenu.onclick = function() {
+    //     gnbMenu.style.transition = "all .5s"
+    //     trigerMenu.classList.toggle("open");
+    //     this.classList.toggle("active");
+    //     gnbMenu.classList.toggle("active");
+    // };
 
-    // --------------------- menu move ---------------------------
+    // --------------------- header interaction ---------------------------
     const scrollNum = document.querySelector("html").scrollTop;
 
     window.onresize = function(event){
@@ -60,9 +60,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function setProgress() {          
         let currY = document.documentElement.scrollTop;
-        let totalY = document.documentElement.scrollHeight - document.documentElement.clientHeight; //전체 높이
+        let totalY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         let percentage = (currY / totalY) * 100;
-        document.querySelector(".progress").style.width = percentage + "%"; //프로그래스바 너비 변경
+        document.querySelector(".progress").style.width = percentage + "%";
     }
 
     // -------------------- custom mouse ---------------------------
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
     });
 
-    // ------------------ scroll move ------------------------------
+    // ------------------ nav scroll move ------------------------------
     document.getElementById("logoTop").onclick = function () {
         window.scrollTo({
             top: 0,
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     
-    // --------------------------- scroll event --------------------------------------
+    // --------------------------- scrollTrigger --------------------------------------
     gsap.registerPlugin(ScrollTrigger);
 
     const boxOR = gsap.timeline({
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-    // ---------------- scrolling -------------------
+// -------------------------------------------------------------------
 $(document).ready(function(){
 
     const Height = $("#scrollTop").height(); 
@@ -253,7 +253,7 @@ $(document).ready(function(){
     });
 
 
-    // ----------------------- loop slide -------------------- 
+    // ----------------------- loop slide ---------------------- 
     (function ($) {
         $.fn.marquee = function( setting ){
 
@@ -311,11 +311,9 @@ $(document).ready(function(){
     $('.sec7_box0').on('click',function(){
         if($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0);
-            // $(this).text('Play');
             $('#sec_audio0')[0].pause();
         } else {
             $(this).attr('data-click', 1);
-            // $(this).text('Pause');
             $('#sec_audio0')[0].play();
         }
     });
@@ -323,11 +321,9 @@ $(document).ready(function(){
     $('.sec7_box2').on('click',function(){
         if($(this).attr('data-click') == 1) {
             $(this).attr('data-click', 0);
-            // $(this).text('Play');
             $('#sec_audio1')[0].pause();
         } else {
             $(this).attr('data-click', 1);
-            // $(this).text('Pause');
             $('#sec_audio1')[0].play();
         }
     });
