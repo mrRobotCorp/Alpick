@@ -264,7 +264,8 @@ section .subTitle { position: relative; text-align: center; font-size: calc( 100
 .section11 article .sec11_con { display: flex; align-items: flex-start; justify-content: space-around; }
 .section11 article .sec11_con p { float: right; padding: calc( 100vw * 300 /1920 ) calc( 100vw * 80 / 1920 ) 0 0; font-size: calc( 100vw * 24 / 1920 ); line-height: 160%; z-index: 10; } 
 .section11 article .sec11_con p::after { content: ''; background: url(../source/sec11_txt.png) no-repeat center center; background-size: contain; position: absolute; margin-top: calc( 100vw * 100 / 1920 ); right: calc( 100vw * 150 / 1920 ); width: calc( 100vw * 720 / 1920 ); height: calc( 100vw * 160 / 1920 ); } 
-.section11 .sec11_vid { width: 100%;  max-width: calc( 100vw * 730 /1920 ); height: 100%;  margin: calc( 100vw * 50 / 1920 ) 0 0 calc( 100vw * -100 / 1920 );  }
+.section11 .sec11_vid { width: 100%;  max-width: calc( 100vw * 800 /1920 ); height: 100%;  margin: calc( 100vw * 50 / 1920 ) 0 0 calc( 100vw * -100 / 1920 );  }
+/* .section11 .sec11_vid { width: 100%;  max-width: calc( 100vw * 730 /1920 ); height: 100%;  margin: calc( 100vw * 50 / 1920 ) 0 0 calc( 100vw * -100 / 1920 );  } */
 
 /* ---------------------------------------------------------------------- */
 .section12 { height: 160vh; padding-top: calc( 100vw * 200 / 1920 ); } 
