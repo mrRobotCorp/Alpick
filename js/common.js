@@ -231,7 +231,6 @@ document.addEventListener("DOMContentLoaded", function() {
         duration:1
     });
 
-    
 
 });
 
@@ -332,5 +331,6 @@ $(document).ready(function(){
             $('#sec7_audio1')[0].play();
         }
     });
+    
         
 });
