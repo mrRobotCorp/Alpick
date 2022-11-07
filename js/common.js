@@ -308,10 +308,10 @@ $(document).ready(function(){
         $('.marquee-wrap').marquee( setting );
 
     // -----------------------  audio control --------------------------
-    // const audio0 = document.querySelector('#sec7_audio0');
-    // const audio1 = document.querySelector('#sec7_audio1');
-    // audio0.volume = 0.8;
-    // audio1.volume = 0.8;
+    const audio0 = document.querySelector('#sec7_audio0');
+    const audio1 = document.querySelector('#sec7_audio1');
+    audio0.volume = 0.8;
+    audio1.volume = 0.8;
 
     $('.sec7_box0').on('click',function(){
         if($(this).attr('data-click') == 1) {
