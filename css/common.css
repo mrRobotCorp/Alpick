@@ -408,6 +408,7 @@ footer .member .name { font-size: calc( 100vw * 23 /1920 ); font-family: PBold; 
 footer .teamAll #copy { margin-top: calc( 100vw * 30 / 1920); font-size: calc( 100vw * 17 / 1920); } 
 
 footer .footerBtm { display: flex; justify-content: space-between; align-items: flex-end; margin-top: calc( 100vw * 50 / 1920 ); } 
+footer .file { color: #fff; border-radius: ; }
 footer .copyRight { text-align: left; } 
 footer .copyRight .src { margin-bottom: calc( 100vw * 20 / 1920 ); font-size: calc( 100vw * 28 / 1920 ); font-family: PBold; } 
 footer .copyRight .srcLink { margin-top: calc( 100vw * 15 / 1920 ); font-size: calc( 100vw * 20 / 1920 ); font-family: PLight; } 
