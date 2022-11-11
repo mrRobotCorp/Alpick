@@ -990,7 +990,7 @@ section .subTitle {
 }
 
 .mainService .sec7_box0,
-.section7 .sec7_box2 {
+.mainService .sec7_box2 {
     display: flex;
     align-items: center;
     background: #FF542F;
@@ -1018,7 +1018,7 @@ section .subTitle {
 }
 
 .mainService .sec7_box0:hover,
-.section7 .sec7_box2:hover {
+.mainService .sec7_box2:hover {
     background: #f84117;
 }
 
