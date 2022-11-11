@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const boxOR = gsap.timeline({
         scrollTrigger: {
-        trigger: ".color",
+        trigger: ".allColor",
         start : "top 90%",
         scrub: true,
         end : "+=200 20%", // scroll trigger와 동일함
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const boxBlu = gsap.timeline({
         scrollTrigger: {
-        trigger: ".color",
+        trigger: ".allColor",
         start : "top 90%",
         scrub: true,
         end : "+=200 20%", 
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const boxGry = gsap.timeline({
         scrollTrigger: {
-        trigger: ".color",
+        trigger: ".allColor",
         start : "top 70%",
         scrub: true,
         end : "+=200 13%", 
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const boxWh = gsap.timeline({
         scrollTrigger: {
-        trigger: ".color",
+        trigger: ".allColor",
         start : "top 50%",
         scrub: true,
         end : "+=200 7%",
