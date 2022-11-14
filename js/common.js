@@ -27,24 +27,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if ( scrollNum === 0) {
                     document.querySelector("header").style.top = "0";
-                    document.querySelector("header div").style.marginBottom = "15px";
+                    document.querySelector("header div").style.marginBottom = "calc(100vw * 17 / 1920)";
                 }
                 
                 if ( scrollNum > 740) {
-                    document.querySelector("header").style.top = "-30px";
+                    document.querySelector("header").style.top = "calc(100vw * -31 / 1920)";
                     document.querySelector("header div").style.marginBottom = "0";
                 } else {
                     document.querySelector("header").style.top = "0";
-                    document.querySelector("header div").style.marginBottom = "15px";
+                    document.querySelector("header div").style.marginBottom = "calc(100vw * 17 / 1920)";
                 }
 
             }
             window.onmousemove = function(e) {
                 if ( e.clientY < 70 ) {
                     document.querySelector("header").style.top = "0";
-                    document.querySelector("header div").style.marginBottom = "15px";
+                    document.querySelector("header div").style.marginBottom = "calc(100vw * 17 / 1920)";
                 } else if (scrollNum > 740) {
-                    document.querySelector("header").style.top = "-30px"
+                    document.querySelector("header").style.top = "calc(100vw * -31 / 1920)"
                     document.querySelector("header div").style.marginBottom = "0";
                 }
             }
@@ -86,7 +86,9 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("mousemove", Trailer);
 
 
-    // ---------------------------------------------------------
+    // ------------------------ DOM 추가 ---------------------------------
+    document.querySelector('.totalGoal').insertAdjacentHTML('afterend', `<div class=roundBg></div>`);
+
     const sticker0 = document.createElement('div');
     sticker0.setAttribute('id', 'sticker0');
     sticker0.setAttribute('class', 'sticker');
@@ -173,11 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
         trigger: ".allColor",
         start : "top 90%",
         scrub: true,
-        end : "+=200 20%", // scroll trigger와 동일함
-        // toggleActions : "play reverse none reverse"  // default : play none none none
-        // toggleActions : (onEnter, onLeave, onEnterBack, onLeaveBack) 값은 
-        // (play pause resume reset restart complete reverse none) 사용 가능  
-        // toggleActions : (트리거 시작할 때, 트리거 떠날 때, end방향으로 다시 진입할 때, start로 다시 진입할 때, start로 다시 나갈 때) 
+        end : "+=200 20%"
         }
     });
 
@@ -186,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
         trigger: ".allColor",
         start : "top 90%",
         scrub: true,
-        end : "+=200 20%", 
+        end : "+=200 20%"
         }
     });
 
@@ -195,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
         trigger: ".allColor",
         start : "top 70%",
         scrub: true,
-        end : "+=200 13%", 
+        end : "+=200 13%"
         }
     });
 
@@ -204,30 +202,30 @@ document.addEventListener("DOMContentLoaded", function() {
         trigger: ".allColor",
         start : "top 50%",
         scrub: true,
-        end : "+=200 7%",
+        end : "+=200 7%"
         }
     });
     
     boxOR.to('.sec8_colorOR', { 
-        width:'60vw', 
+        width:'53vw', 
         duration:1
     });
 
     boxBlu.to('.sec8_colorBlu', { 
         height:'33.3%', 
-        width: '40vw',
+        width: '38vw',
         duration:1
     });
 
     boxGry.to('.sec8_colorGry', { 
         height:'33.3%', 
-        width: '40vw',
+        width: '38vw',
         duration:1
     });
 
     boxWh.to('.sec8_colorWh', { 
         height:'33.3%', 
-        width: '40vw',
+        width: '38vw',
         duration:1
     });
 
@@ -259,7 +257,7 @@ $(document).ready(function(){
                 var width = 0;
                 content.append( content.html() );
                 content.append( content.html() );
-                content.find('li').each(function () {
+                content.find('dl').each(function () {
                     width += $(this).outerWidth();
                 })
 
