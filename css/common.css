@@ -579,11 +579,9 @@ section .subTitle { position: relative; text-align: center; font-size: calc(100v
 
 .service05 .sec17_mockup { position: relative; } 
 
-.service05 .sec17_mockup .sec17_frame img { width: calc(100vw * 500 / 1920); } 
+.service05 .sec17_mockup .sec17_frame { width: calc(100vw * 500 / 1920); } 
 
-.service05 .sec17_mockup .sec17_pop { position: absolute; margin: calc(100vw * 420 / 1920) 0 0 calc(100vw * 650 / 1920); } 
-
-.service05 .sec17_mockup .sec17_pop img { width: calc(100vw * 460 / 1920); filter: drop-shadow(14.9563px 25.7581px 25.7581px rgba(67, 58, 58, 0.17)); } 
+.service05 .sec17_mockup .sec17_pop { position: absolute; width: calc(100vw * 460 / 1920); margin: calc(100vw * 420 / 1920) 0 0 calc(100vw * -555 / 1920); filter: drop-shadow(14.9563px 25.7581px 25.7581px rgba(67, 58, 58, 0.17)); } 
 
 .service05 .sec17_keyword { color: #000; background: #fff; position: absolute; padding: calc(100vw * 20 / 1920) calc(100vw * 30 / 1920) calc(100vw * 20 / 1920) calc(100vw * 50 / 1920); border-radius: calc(100vw * 50 / 1920); font-family: semiBold; font-size: calc(100vw * 20 / 1920); z-index: 10; } 
 
