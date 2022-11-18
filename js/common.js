@@ -86,32 +86,40 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("mousemove", Trailer);
 
 
-    // ------------------------ DOM 추가 ---------------------------------
+    // ------------------------ DOM element 추가 ---------------------------------
     document.querySelector('.totalGoal').insertAdjacentHTML('afterend', `<div class=roundBg></div>`);
 
-    const sticker0 = document.createElement('div');
-    sticker0.setAttribute('id', 'sticker0');
-    sticker0.setAttribute('class', 'sticker');
-
-    const sticker1 = document.createElement('div');
-    sticker1.setAttribute('id', 'sticker1');
-    sticker1.setAttribute('class', 'sticker');
-
-    const sticker2 = document.createElement('div');
-    sticker2.setAttribute('id', 'sticker2');
-    sticker2.setAttribute('class', 'sticker');
-
-    const sticker3 = document.createElement('div');
-    sticker3.setAttribute('id', 'sticker3');
-    sticker3.setAttribute('class', 'sticker');
-
-    const sticker4 = document.createElement('div');
-    sticker4.setAttribute('id', 'sticker4');
-    sticker4.setAttribute('class', 'sticker');
-
     const stickerAll = document.querySelector('.stickerAll');
-    stickerAll.prepend(sticker0, sticker1, sticker2, sticker3, sticker4);
+    stickerAll.insertAdjacentHTML('afterbegin', `
+        <img class='sticker' id='sticker0' src='./source/sec12_sticker0.png' alt='sticker0'>
+        <img class='sticker' id='sticker1' src='./source/sec12_sticker0.png' alt='sticker1'>
+        <img class='sticker' id='sticker2' src='./source/sec12_sticker1.png' alt='sticker2'>
+        <img class='sticker' id='sticker3' src='./source/sec12_sticker1.png' alt='sticker3'>
+        <img class='sticker' id='sticker4' src='./source/sec12_sticker0.png' alt='sticker4'>
+    `);
 
+    // const sticker0 = document.createElement('div');
+    // sticker0.setAttribute('id', 'sticker0');
+    // sticker0.setAttribute('class', 'sticker');
+
+    // const sticker1 = document.createElement('div');
+    // sticker1.setAttribute('id', 'sticker1');
+    // sticker1.setAttribute('class', 'sticker');
+
+    // const sticker2 = document.createElement('div');
+    // sticker2.setAttribute('id', 'sticker2');
+    // sticker2.setAttribute('class', 'sticker');
+
+    // const sticker3 = document.createElement('div');
+    // sticker3.setAttribute('id', 'sticker3');
+    // sticker3.setAttribute('class', 'sticker');
+
+    // const sticker4 = document.createElement('div');
+    // sticker4.setAttribute('id', 'sticker4');
+    // sticker4.setAttribute('class', 'sticker');
+
+    // stickerAll.prepend(sticker0, sticker1, sticker2, sticker3, sticker4);
+    
     // ------------------ prevent event ------------------------------
     const mainMockup = document.querySelector('#mainMockup');
     mainMockup.addEventListener('contextmenu', (event) => {
@@ -248,7 +256,6 @@ $(document).ready(function(){
 
     });
 
-
     // ----------------------- loop slide ---------------------- 
     (function ($) {
         $.fn.marquee = function( setting ){
@@ -329,5 +336,4 @@ $(document).ready(function(){
         }
     });
     
-        
 });
