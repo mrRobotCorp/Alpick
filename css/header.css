@@ -34,7 +34,7 @@ header div.inner {
 header nav #gnb li {
     display: inline-block;
     padding: 0 calc(100vw * 10 / 1920);
-    color: rgba(0, 0, 0, 0.71);
+    color: rgba(0, 0, 0, 0.587);
     transition: all .3s;
     cursor: pointer;
 }
