@@ -971,7 +971,7 @@ section .subTitle {
     position: absolute;
     font-size: calc(100vw * 30 / 1920);
     font-family: Pmedium;
-    box-shadow: 4.39344e-15px 46.9895px 143.5px rgba(42, 49, 67, 0.2);
+    box-shadow: calc( 100vw * 4 / 1920 ) calc( 100vw * 8 / 1920 ) calc( 100vw * 40 / 1920 ) calc( 100vw * 20 / 1920 ) rgba(42, 49, 67, 0.08);
 }
 
 .mainService .sec7_box0 {
