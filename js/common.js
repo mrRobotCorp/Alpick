@@ -84,6 +84,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener("mousemove", myCursor);
     window.addEventListener("mousemove", Trailer);
+    
+    if (window.innerWidth < 768) {
+        cursor.style.visibility = 'hidden';
+        follower.style.visibility = 'hidden';
+    }
 
 
     // ------------------------ DOM element 추가 ---------------------------------

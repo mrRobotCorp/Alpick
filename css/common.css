@@ -2045,37 +2045,11 @@ footer .copyRight {
 
 /* ------------------------- responsive --------------------------- */
 @media screen and (min-width: 768px) {
-    body {
-        background-color: #fff;
-    }
+    body { cursor: auto; } 
 }
 
 @media screen and (min-width: 1024px) {
 
-    /* body { background-color: #a8a8a8; } */
-    .desktop {
-        display: block;
-    }
-
-    nav #gnb {
-        position: static;
-        width: auto;
-        height: 50px;
-        line-height: 50px;
-        text-align: right;
-        padding: 0;
-    }
-
-    nav #gnb li {
-        display: inline-block;
-        margin: 0 20px;
-        padding: 0;
-    }
-
-    .menu-trigger {
-        margin-top: -20px;
-        display: none;
-    }
 }
 
 @media screen and (min-width: 1440px) {
