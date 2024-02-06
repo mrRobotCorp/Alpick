@@ -3,18 +3,29 @@ document.addEventListener("DOMContentLoaded", function() {
     AOS.init();
 
     // ----------------- loader ------------------------------
+    document.querySelector("body").insertAdjacentHTML('afterbegin', `
+    <div class="loading">
+        <div class="container">
+            <div class="dash uno"></div>
+            <div class="dash dos"></div>
+            <div class="dash tres"></div>
+            <div class="dash cuatro"></div>
+        </div>
+    </div>
+    `);
+    
     document.querySelector(".loading").style.visibility = "hidden";
     
-    // ----------------------- responsive ------------------------------
-    // const trigerMenu = document.getElementById("menu");
-    // const gnbMenu = document.getElementById("gnb");
+    // ------------------- hamburger menu -----------------------------
+    var trigerMenu = document.querySelector("#menu");
+    var gnbMenu = document.getElementById("gnb");
 
-    // trigerMenu.onclick = function() {
-    //     gnbMenu.style.transition = "all .5s"
-    //     trigerMenu.classList.toggle("open");
-    //     this.classList.toggle("active");
-    //     gnbMenu.classList.toggle("active");
-    // };
+    trigerMenu.onclick = function() {
+        gnbMenu.style.transition = "all .5s"
+        trigerMenu.classList.toggle("open");
+        this.classList.toggle("active");
+        gnbMenu.classList.toggle("active");
+    };
 
     // --------------------- header interaction ---------------------------
     const scrollNum = document.querySelector("html").scrollTop;

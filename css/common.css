@@ -2044,8 +2044,21 @@ footer .copyRight {
 
 
 /* ------------------------- responsive --------------------------- */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     body { cursor: auto; } 
+
+    .inner { width: 85%; margin: 0 auto; }
+    .mainBanner article { height: 90vh; padding-top: 20px; justify-content: center; align-items: stretch; flex-direction: column;}
+    
+    .mainBanner article .sec0_con {
+        height: auto;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-direction: row;
+    }
+
+    .mainBanner article #mainMockup img { width: 330px; }
+    .mainBanner article #biInfo img { width: 150px;}
 }
 
 @media screen and (min-width: 1024px) {
