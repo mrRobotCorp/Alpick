@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let currentLeftValue = 0;
 
             // Kick off for the animation function.
-            window.setInterval(animationLoop, 40);
+            window.setInterval(animationLoop, 50);
 
             /* 
               Looks at first item in the list and checks if it goes out of the visible area 
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
               of the containing element. 
             */
             function animationLoop() {
-                const firstListItem = listElem.querySelector('.list__item:first-child');
+                const firstListItem = listElem.querySelector('#list .list__item:first-child');
 
                 let rightSideOfFirstItem = firstListItem.getBoundingClientRect().right;
 
@@ -367,10 +367,19 @@ $(document).ready(function () {
 
     var setting = {
         container: '.marquee-content',
-        speed: 0.6
+        speed: 0.5
     }
 
     $('.marquee-wrap').marquee(setting);
+
+    if (window.innerWidth < 768) {
+
+        var setting = {
+            // container: '.marquee-content',
+            // speed: 0.01
+        }
+        
+    }
 
     // -----------------------  audio control --------------------------
     const audio0 = document.querySelector('#sec7_audio0');

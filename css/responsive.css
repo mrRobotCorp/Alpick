@@ -55,6 +55,8 @@
  
  .list { list-style: none; display: flex; margin: 0; padding: 0; position: absolute; width: 100%; margin-left: 0; } 
  .list__item { flex-grow: 0; flex-shrink: 0; text-align: center; width: 20%; } 
+
+ .totalGoal::before {}
  }
 
 @media screen and (min-width: 1024px) {}
