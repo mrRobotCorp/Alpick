@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let currentLeftValue = 0;
         
             // Kick off for the animation function.
-            window.setInterval(animationLoop, 50);
+            window.setInterval(animationLoop, 20);
         
             /* 
               Looks at first item in the list and checks if it goes out of the visible area 
