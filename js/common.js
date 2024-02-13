@@ -16,16 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector(".loading").style.visibility = "hidden";
 
-    // ------------------- hamburger menu -----------------------------
-    var trigerMenu = document.querySelector("#menu");
-    var gnbMenu = document.getElementById("gnb");
-
-    trigerMenu.onclick = function () {
-        gnbMenu.style.transition = "all .5s"
-        trigerMenu.classList.toggle("open");
-        this.classList.toggle("active");
-        gnbMenu.classList.toggle("active");
-    };
 
     // --------------------- header interaction ---------------------------
     const scrollNum = document.querySelector("html").scrollTop;
@@ -255,47 +245,71 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // if (window.innerWidth < 768) {
-    //         /*
-    //           Quick whip-up of an idea posed by a client: a bar filled with logo's that move to the left slowly and infinitely.
-    //           I checked if the <marquee> tag was still working (and it is), but it's considered invalid html now so I needed something else.
-    //         */
+    if (window.innerWidth < 768) {
+
+        // ------------------- hamburger menu -----------------------------
+        let gnbMenu = document.querySelector("#gnb");
+
+        gnbMenu.insertAdjacentHTML('afterend',`
+        <button id="menu" class="menu-trigger">
+            <span class="blind">메뉴보기</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        `);
+
+        var trigerMenu = document.querySelector("#menu");
+
+        trigerMenu.onclick = function () {
+            gnbMenu.style.transition = "all .5s"
+            trigerMenu.classList.toggle("open");
+            this.classList.toggle("active");
+            gnbMenu.classList.toggle("active");
+        };
+
+
         
-    //         const items = [...document.getElementsByClassName('list__item')];
-    //         const containerElem = document.getElementById('containerElem');
-    //         const leftSideOfContainer = containerElem.getBoundingClientRect().left;
-    //         const listElem = document.getElementById('list');
-    //         let currentLeftValue = 0;
+            // /*
+            //   Quick whip-up of an idea posed by a client: a bar filled with logo's that move to the left slowly and infinitely.
+            //   I checked if the <marquee> tag was still working (and it is), but it's considered invalid html now so I needed something else.
+            // */
         
-    //         // Kick off for the animation function.
-    //         window.setInterval(animationLoop, 20);
+            // const items = [...document.getElementsByClassName('list__item')];
+            // const containerElem = document.getElementById('containerElem');
+            // const leftSideOfContainer = containerElem.getBoundingClientRect().left;
+            // const listElem = document.getElementById('list');
+            // let currentLeftValue = 0;
         
-    //         /* 
-    //           Looks at first item in the list and checks if it goes out of the visible area 
-    //           by comparing the right position of the first list item to the left position 
-    //           of the containing element. 
-    //         */
-    //         function animationLoop() {
-    //             const firstListItem = listElem.querySelector('.list__item:first-child');
+            // // Kick off for the animation function.
+            // window.setInterval(animationLoop, 20);
         
-    //             let rightSideOfFirstItem = firstListItem.getBoundingClientRect().right;
+            // /* 
+            //   Looks at first item in the list and checks if it goes out of the visible area 
+            //   by comparing the right position of the first list item to the left position 
+            //   of the containing element. 
+            // */
+            // function animationLoop() {
+            //     const firstListItem = listElem.querySelector('.list__item:first-child');
         
-    //             /* 
-    //               If first list item is out of viewable area, move it to the end of the list. 
-    //               Also, set the current left value to -1 so we won't stutter.
-    //             */
-    //             if (rightSideOfFirstItem == leftSideOfContainer) {
-    //                 currentLeftValue = -1;
-    //                 listElem.appendChild(firstListItem);
-    //             }
+            //     let rightSideOfFirstItem = firstListItem.getBoundingClientRect().right;
         
-    //             // The part that keeps it all going: animating the margin left value of the list.
-    //             listElem.style.marginLeft = `${currentLeftValue}px`;
-    //             currentLeftValue--;
-    //         }
+            //     /* 
+            //       If first list item is out of viewable area, move it to the end of the list. 
+            //       Also, set the current left value to -1 so we won't stutter.
+            //     */
+            //     if (rightSideOfFirstItem == leftSideOfContainer) {
+            //         currentLeftValue = -1;
+            //         listElem.appendChild(firstListItem);
+            //     }
+        
+            //     // The part that keeps it all going: animating the margin left value of the list.
+            //     listElem.style.marginLeft = `${currentLeftValue}px`;
+            //     currentLeftValue--;
+            // }
         
         
-    // }
+    }
 
 
 

@@ -67,10 +67,15 @@
 
  .roundBg { height: 40vh; }
 
+ .totalGoal .inner { width: 100%; }
  .totalGoal .subTitle { margin: 0 auto;}
  .totalGoal .subTitle::after { margin-left: -39px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
 
- .totalGoal article .sec6_con0::before { width: 50px; height: 20px; }
+ .totalGoal article .sec6_con .goalIcon { width: 70%;}
+ .totalGoal article .sec6_con0::before { margin: -50px 0 0 180px; width: 100px; height: 20px; }
+ .totalGoal article .sec6_con0::after { width: 200px; height: 100px;}
+
+
 
  }
 
