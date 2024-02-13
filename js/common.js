@@ -269,7 +269,16 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
 
+        // ------------ mockup video ------------------------
+        let vid = document.querySelector("#sec7_mockup video");
         
+        if (vid.paused || !vid.played) {
+            vid.play;
+        };
+
+        vid.onclick = function() {
+            console.log("ch");
+        }
             // /*
             //   Quick whip-up of an idea posed by a client: a bar filled with logo's that move to the left slowly and infinitely.
             //   I checked if the <marquee> tag was still working (and it is), but it's considered invalid html now so I needed something else.

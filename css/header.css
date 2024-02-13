@@ -10,7 +10,7 @@ header nav #gnb li { display: inline-block; padding: 0 calc(100vw * 10 / 1920); 
 
 header nav #gnb li:hover { color: #000; transform: scale(1.1); } 
 
-.progressbar { position: absolute; height: calc(100vw * 6 / 1920); left: 0; width: 100%; z-index: 100; } 
+.progressbar { position: absolute; height: calc(100vw * 5 / 1920); left: 0; width: 100%; z-index: 100; } 
 
 .progressbar>.progress { width: 0%; height: 100%; transition: width 0.3s ease-out; background-color: #FF6948; } 
 
@@ -61,6 +61,8 @@ header nav #gnb li:hover { color: #FF6948;}
 .menu-trigger.open span:nth-child(2) { transform: rotate(45deg); top: 13px; } 
 .menu-trigger.open span:nth-child(3) { opacity:0; } 
 .menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
+
+.progressbar { height: 3px; }
 
  }
 
