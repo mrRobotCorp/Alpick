@@ -63,8 +63,14 @@
  .list__item { flex-grow: 0; flex-shrink: 0; text-align: center; width: 20%; }  */
 
  .totalGoal { margin-top: 100px; height: 70vh; }
- .totalGoal::before { height: 40vh; border-radius: 50% 50% 0 0;}
+ .totalGoal::before { height: 45vh; border-radius: 50% 50% 0 0;}
 
+ .roundBg { height: 40vh; }
+
+ .totalGoal .subTitle { margin: 0 auto;}
+ .totalGoal .subTitle::after { margin-left: -39px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
+
+ .totalGoal article .sec6_con0::before { width: 50px; height: 20px; }
 
  }
 
