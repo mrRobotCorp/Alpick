@@ -41,7 +41,7 @@ header nav #gnb li:hover { color: #000; transform: scale(1.1); }
  header div.inner { align-items: center;}
 
  header nav #gnb { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 100px; z-index: 150; top: 0; right: -10%; height: 100vh; width: 0; background-color: #222; box-shadow: -2px 0 15px #00000049; overflow: hidden; } 
-header nav #gnb.active { width: 70%; right: 0; } 
+header nav #gnb.active { width: 65%; right: 0; } 
 header nav #gnb li { padding: 35px 25px; color: #fff; font-size: 17px; } 
 header nav #gnb li:hover { color: #FF6948;} 
 

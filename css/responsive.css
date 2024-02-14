@@ -43,7 +43,7 @@
  .searchResult::before { height: 58vh; border-radius: 45%; } 
 
  .promoVid { height: 50vh; } 
- .promoVid iframe { width: 100%; height: 220px; } 
+ .promoVid iframe { width: 100%; height: 210px; } 
 
  .research { height: 70vh;}
  .research .subTitle::after { margin-left: -45px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; } 
@@ -104,13 +104,29 @@
  .mainService .sec7_box1 { padding: 12px 15px; margin: -210px 0 0 220px; font-size: 11px; }
  .mainService .sec7_box2 { margin: -100px 0 0 160px; }
 
+ .serviceColor { height: 85vh; padding: 150px 0 0 0;}
  .serviceColor .subTitle::after { margin-left: -37px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
  .serviceColor .sec8_txt { width: 78%; margin: 100px auto 50px auto; }
- .serviceColor .sec8_txt h3 { font-size: 12px; font-family: Pbold; }
- .serviceColor .sec8_txt p { font-size: 12px; font-family: extraLight; }
-
+ 
+ .serviceColor .sec8_txt h3,
+ .serviceLogo .sec8_art1 h3,
+ .serviceTypo h3  { font-size: 14px; font-family: Pbold; }
+ .serviceColor .sec8_txt p,
+ .serviceLogo .sec8_art1 p { font-size: 12px; font-family: extraLight; }
+ 
  .serviceColor .allColor h4 { font-size: 10px; }
  .serviceColor .allColor p { font-size: 8px; }
+ 
+ .serviceLogo .sec8_art1 { width: 78%; }
+ .serviceLogo .sec8_logoAll { flex-direction: column; margin-top: 60px;}
+ .serviceLogo .sec8_logo img { display: block; width: 90%; margin: 0 auto;}
+ .serviceLogo .sec8_logoBox { padding: 15px 28px; margin-top: 80px; border-radius: 30px 30px 0 30px;}
+ .serviceLogo .sec8_logoBox img { width: 200px; }
+
+ .serviceTypo { height: 60vh; }
+ .serviceTypo ul .fontType { font-size: 15px; font-family: extraLight; }
+ .serviceTypo ul .usedFont { font-size: 18px; }
+ .serviceTypo article ul:last-child li:last-child { font-family: Pbold;}   
 
 
  }

@@ -268,6 +268,10 @@ document.addEventListener("DOMContentLoaded", function () {
             gnbMenu.classList.toggle("active");
         };
 
+        
+        let sec1_txt = document.querySelector("#sec1_txt h3");
+        sec1_txt.innerHTML = `혼술이 <span class="colorOR">위험에 쉽게</span> 노출될 수 <br>있다는 사실을 알고 계셨나요?`;
+
 
         // ------------ mockup video ------------------------
         let vid = document.querySelector("#sec7_mockup video");
