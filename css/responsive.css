@@ -50,13 +50,13 @@
  .research #interviewAll .interviewLine .profileAll img { width: 150px; } 
  .research #interviewAll .interviewLine .profileAll .profile { padding: 45px 25px; justify-content: center; border-radius: 0 30px 30px 30px;}
  .research #interviewAll .profile ul { margin-bottom: 15px; }
- .research #interviewAll .profile ul li { font-size: 11px; }
+ .research #interviewAll .profile ul li { font-size: 12px; }
  .research #interviewAll .profile p { font-size: 10px; }
  
  .searchResult { height: 78vh;}
- .searchResult article #sec5_txt { padding: 5px 15px; margin: 0 auto 40px auto; width: 80%;}
- .searchResult article #sec5_txt h3 { font-size: 13px; }
- .searchResult article #sec5_txt p { font-size: 10px; font-family: regular;}
+ .searchResult article #sec5_txt { padding: 5px 15px; margin: 0 auto 40px auto; width: 75%;}
+ .searchResult article #sec5_txt h3 { font-size: 14px; }
+ .searchResult article #sec5_txt p { font-size: 11px; font-family: regular; line-height: 130%;}
  .searchResult article #handMockup img { width: 60%; }
 
  /* ---------- loop img test ----------- */
@@ -78,11 +78,11 @@
 
  .totalGoal article .sec6_con .goalIcon { width: 70%;}
  .totalGoal article .sec6_con0::before { margin: -80px 0 0 190px; width: 90px; height: 20px; }
- .totalGoal article .sec6_con0::after { margin: 180px 0 0 190px; width: 160px; height: 95px; }
+ .totalGoal article .sec6_con0::after { margin: 200px 0 0 200px; width: 160px; height: 110px; }
  .totalGoal article .sec6_con div { padding: 5px 10px; margin-top: 5px; font-size: 13px; border-radius: 15px; }
  .totalGoal article .sec6_con p { margin-top: 10px; width: 100%; font-size: 8px; font-family: Plight; }
 
- .totalGoal h4 { margin-top: 100px; font-size: 17px; }
+ .totalGoal h4 { margin-top: 120px; font-size: 17px; }
  .totalGoal #serviceBox { display: flex; flex-wrap: wrap; justify-content: center; margin: 30px auto 0 auto; width: 75%; border-radius: 35px;}
  .totalGoal #serviceBox ul { width: 45%; }
  .totalGoal #serviceBox ul:first-child, .totalGoal #serviceBox ul:nth-child(2) { margin-bottom: 20px;}
@@ -90,19 +90,28 @@
  .totalGoal #serviceBox ul .serviceTitle { font-size: 12px; }
  .totalGoal #serviceBox ul .servieceEG { font-size: 8px; font-family: Plight; line-height: 110%; }
 
- .mainService { margin-top: 80px; height: 80vh; }
+ .mainService { margin-top: 130px; height: 85vh; }
  .mainService article h3 { font-size: 17px; line-height: 120%; }
- .mainService article p { color: #999; font-size: 10px; line-height: 135%; }
- .mainService #sec7_vid { margin-left: 10px; max-width: 220px; }
+ .mainService article p { margin-bottom: 60px; color: #999; font-size: 10px; line-height: 135%; }
+ .mainService #sec7_vid { margin-left: 10px; max-width: 200px; }
 
- .mainService .sec7_box0, .mainService .sec7_box2 { font-size: 11px; }
- .mainService .sec7_box0 { margin: -330px 0 0 160px; }
+ .mainService .sec7_box0, .mainService .sec7_box2 { padding-right: 20px; font-size: 11px; }
+ .mainService .sec7_box0 { margin: -300px 0 0 160px; }
  .mainService .sec7_box0::after,
- .mainService .sec7_box2::after { content: ''; right: 0; width: 30px; height: 30px; background: url(../source/audioIcon.png) center center; background-size: cover;}
+ .mainService .sec7_box2::after { content: ''; right: -7px; top: 0; width: 27px; height: 27px; background: url(../source/audioIcon.png) center center; background-size: cover; filter: drop-shadow(0 0 3px #c4c4c4);}
 
- .mainService .sec7_box1::before { content: ''; width: 20px; height: 20px; background: url(../source/sec7_icon.png) center center; background-size: cover;}
- .mainService .sec7_box1 { margin: -230px 0 0 220px; font-size: 11px; }
+ .mainService .sec7_box1::before { content: ''; width: 18px; height: 18px; margin-right: 6px; background: url(../source/sec7_icon.png) center center; background-size: cover;}
+ .mainService .sec7_box1 { padding: 12px 15px; margin: -210px 0 0 220px; font-size: 11px; }
  .mainService .sec7_box2 { margin: -100px 0 0 160px; }
+
+ .serviceColor .subTitle::after { margin-left: -37px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
+ .serviceColor .sec8_txt { width: 78%; margin: 100px auto 50px auto; }
+ .serviceColor .sec8_txt h3 { font-size: 12px; font-family: Pbold; }
+ .serviceColor .sec8_txt p { font-size: 12px; font-family: extraLight; }
+
+ .serviceColor .allColor h4 { font-size: 10px; }
+ .serviceColor .allColor p { font-size: 8px; }
+
 
  }
 
