@@ -120,7 +120,7 @@
  .serviceLogo .sec8_art1 { width: 78%; }
  .serviceLogo .sec8_logoAll { flex-direction: column; margin-top: 60px;}
  .serviceLogo .sec8_logo img { display: block; width: 90%; margin: 0 auto;}
- .serviceLogo .sec8_logoBox { padding: 15px 28px; margin-top: 80px; border-radius: 30px 30px 0 30px;}
+ .serviceLogo .sec8_logoBox { padding: 15px 28px; margin-top: 80px; border-radius: 40px 40px 0 40px;}
  .serviceLogo .sec8_logoBox img { width: 200px; }
 
  .serviceTypo { height: 50vh; }
@@ -133,15 +133,30 @@
  .service01 .subTitle::after { margin-left: -16px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
 
  .service01 article { flex-direction: column; }
- .service01 article h3 { font-size: 20px; }
- .service01 article h3 span { margin-bottom: 10px; font-size: 35px; }
- .service01 article p { font-size: 11px; line-height: 130%; }
+ .service01 article h3 { font-size: 22px; }
+ .service01 article h3 span { margin-bottom: 6px; font-size: 40px; }
+ .service01 article p { font-size: 13px; line-height: 130%; }
  .service01 .sec12_txt { margin-bottom: 50px; }
 
+ .service01 .sec12_mockup::before { margin: 100px 0 0 -40px; width: 220px; height: 220px; }
  .service01 .sec12_mockup { margin: 0; width: 100%; }
- .service01 .sec12_mockup div { width: 100%; }
- .service01 .sec12_mockup img { display: block; margin: 0 auto; width: 200px; height: 430px ;}
- .service01 #sec12_vid { display: inline-block; margin: 0; left: 0; max-width: fit-content; width: 200px; height: fit-content; }
+ .service01 .sec12_mockup div { position: relative; width: 100%; }
+ .service01 .sec12_mockup img { position: absolute; top: 0; left: 70px; margin: -10px 0 0 0; width: 210px; height: 440px ;}
+ .service01 #sec12_vid { margin: 0; top: 0; left: 80px; max-width: fit-content; width: 190px; height: fit-content; }
+
+ .service01 .stickerAll { margin-top: 300px; }
+ .service01 #sticker0,
+ .service01 #sticker1,
+ .service01 #sticker2,
+ .service01 #sticker3,
+ .service01 #sticker4  { width: 30%; }
+
+ .service01 #sticker1 { top: -40px; left: 0; }
+ .service01 #sticker2 { top: 130px; left: 30px; }
+ .service01 #sticker3 { top: 100px; left: 250px; }
+ .service01 #sticker4 { top: 30px; left: 280px; }
+
+
 
  }
 
