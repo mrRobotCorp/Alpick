@@ -123,11 +123,25 @@
  .serviceLogo .sec8_logoBox { padding: 15px 28px; margin-top: 80px; border-radius: 30px 30px 0 30px;}
  .serviceLogo .sec8_logoBox img { width: 200px; }
 
- .serviceTypo { height: 60vh; }
+ .serviceTypo { height: 50vh; }
  .serviceTypo ul .fontType { font-size: 15px; font-family: extraLight; }
  .serviceTypo ul .usedFont { font-size: 18px; }
  .serviceTypo article ul:last-child li:last-child { font-family: Pbold;}   
+ .serviceYong { height: 60vh; }
 
+ .service01 .subTitle { margin-bottom: 80px;}
+ .service01 .subTitle::after { margin-left: -16px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
+
+ .service01 article { flex-direction: column; }
+ .service01 article h3 { font-size: 20px; }
+ .service01 article h3 span { margin-bottom: 10px; font-size: 35px; }
+ .service01 article p { font-size: 11px; line-height: 130%; }
+ .service01 .sec12_txt { margin-bottom: 50px; }
+
+ .service01 .sec12_mockup { margin: 0; width: 100%; }
+ .service01 .sec12_mockup div { width: 100%; }
+ .service01 .sec12_mockup img { display: block; margin: 0 auto; width: 200px; height: 430px ;}
+ .service01 #sec12_vid { display: inline-block; margin: 0; left: 0; max-width: fit-content; width: 200px; height: fit-content; }
 
  }
 
