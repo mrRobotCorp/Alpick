@@ -160,12 +160,20 @@
  .service01 #sticker3 { top: 100px; left: 250px; }
  .service01 #sticker4 { top: 30px; left: 280px; }
 
+ .service02 { height: 80vh; }
  .service02 article .sec13_txt { align-items: flex-start;}
- .service02 .sec13_mockupAll::before { }
- .service02 .sec13_mockupAll .s02_mockup { margin-top: 50px; width: 108%; }
+ .service02 .sec13_mockupAll::before { margin: 30px 0 0 -70px; width: 210px; height: 210px; }
+ .service02 .sec13_mockupAll .s02_mockup { margin: 80px 0 0 -20px; width: 110%; }
  
- .service02 .sec13_keyword { padding: 7px 10px; font-size: 11px; border-radius: 20px; }
- .service02 .keyword0::after { }
+ .service02 .sec13_keyword::before { margin: 3px 0 0 -9px; width: 4px; height: 4px; border-radius: 5px;}
+ .service02 .sec13_keyword { padding: 7px 11px 7px 18px; font-size: 12px; border-radius: 20px; }
+
+ .service02 .keyword0 { top: 15px; left: 135px; } 
+ .service02 .keyword0::after { margin-left: -48px; height: 140px; }
+ .service02 .keyword1 { top: -30px; left: 210px; } 
+ .service02 .keyword1::after { margin-left: -25px; height: 140px; }
+ .service02 .keyword2 { top: 60px; left: 210px; } 
+ .service02 .keyword2::after { margin-left: -35px; height: 143px; }
 
 
 
