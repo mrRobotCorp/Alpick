@@ -130,16 +130,24 @@
  .serviceTypo article ul:last-child li:last-child { font-family: Pbold;}   
  .serviceYong { height: 60vh; }
 
+ .service01 { height: 130vh; }
  .service01 .subTitle { margin-bottom: 80px;}
  .service01 .subTitle::after { margin-left: -16px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
 
  .service01 article { flex-direction: column; }
  .service01 article h3,
- .service02 article h3 { font-size: 22px; }
+ .service02 article h3,
+ .service03 article h3,
+ .service04 article h3 { font-size: 22px; }
  .service01 article h3 span,
- .service02 article h3 span { margin-bottom: 6px; font-size: 40px; }
+ .service02 article h3 span,
+ .service03 article h3 span,
+ .service04 article h3 span { margin-bottom: 6px; font-size: 40px; }
  .service01 article p,
- .service02 article p { font-size: 13px; line-height: 130%; }
+ .service02 article p,
+ .service03 article p,
+ .service04 article p { font-size: 13px; line-height: 130%; }
+ .service04 article p { margin-right: 0; text-align: right; }
  .service01 .sec12_txt { margin-bottom: 50px; }
 
  .service01 .sec12_mockup::before { margin: 100px 0 0 -40px; width: 220px; height: 220px; }
@@ -160,7 +168,7 @@
  .service01 #sticker3 { top: 100px; left: 250px; }
  .service01 #sticker4 { top: 30px; left: 280px; }
 
- .service02 { height: 80vh; }
+ .service02 { height: 90vh; }
  .service02 article .sec13_txt { align-items: flex-start;}
  .service02 .sec13_mockupAll::before { margin: 30px 0 0 -70px; width: 210px; height: 210px; }
  .service02 .sec13_mockupAll .s02_mockup { margin: 80px 0 0 -20px; width: 110%; }
@@ -170,12 +178,45 @@
 
  .service02 .keyword0 { top: 15px; left: 135px; } 
  .service02 .keyword0::after { margin-left: -48px; height: 140px; }
- .service02 .keyword1 { top: -30px; left: 210px; } 
+ .service02 .keyword1 { top: -30px; left: 200px; right:-10px; } 
  .service02 .keyword1::after { margin-left: -25px; height: 140px; }
  .service02 .keyword2 { top: 60px; left: 210px; } 
  .service02 .keyword2::after { margin-left: -35px; height: 143px; }
 
+ .voiceService { height: 50vh; }
+ .voiceService .sec14_mask img { margin: -250px 0 40px 0; width: 240px;}
+ .voiceService article h3 { font-size: 25px; }
+ .voiceService article .sec14_bold { font-family: extraBlod;}
+ .voiceService article p { font-size: 15px; }
 
+ .service03 { padding-top: 260px; height: 110vh; }
+ .service03 .sec15_txt { width: 100%; }
+ .service03 article { flex-direction: column; }
+ .service03 article .s03_mockup { margin-top: 50px; width: 100%; }
+
+ .service03 .sec15_left0 { top: -390px; left: 170px; width: 230px; height: 80px; background-size: cover;}
+ .service03 .sec15_left1 { top: -40px; left: 30px; width: 230px; height: 85px; background-size: cover; filter: drop-shadow(0 0 2px #1111117a);}
+
+ .service04 .sec16_mockup { margin-top: 120px;}
+ .service04 .sec16_mockup .sec16_mockup0 { width: 70%; }
+ .service04 .sec16_mockup>div { width: 70%; }
+
+ .service04 .sec16_mockup .sec16_mockup1 .sec16_frame { top: -100px; left: 0; }
+
+ .service04 .sec16_mockup .sec16_mockup2 .sec16_frame { top: -100px; left: 155px;}
+
+
+
+
+
+
+
+
+
+ #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 30px; right: 25px;  border-radius: 50%; text-align: center; font-size: 12px; position: fixed; cursor: pointer; z-index: 50; } 
+ #scrollTop::before { content: "\2303"; position: absolute; top: 8px; left: 15px; color: #171717; font-family: pLight; font-size: 18px; } 
+ #scrollTop:hover { background-color: #fff; } 
+ #scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
 
  }
 
