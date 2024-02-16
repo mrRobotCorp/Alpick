@@ -55,8 +55,8 @@
  .research #interviewAll .profile p { font-size: 10px; }
  
  .searchResult { height: 78vh;}
- .searchResult article #sec5_txt { padding: 5px 15px; margin: 0 auto 40px auto; width: 75%;}
- .searchResult article #sec5_txt h3 { font-size: 14px; }
+ .searchResult article #sec5_txt { padding: 10px 17px; margin: 0 auto 40px auto; width: 79%; border-radius: 50px;}
+ .searchResult article #sec5_txt h3 { font-size: 18px; }
  .searchResult article #sec5_txt p { font-size: 11px; font-family: regular; line-height: 130%;}
  .searchResult article #handMockup img { width: 65%; }
 
@@ -138,15 +138,18 @@
  .service01 article h3,
  .service02 article h3,
  .service03 article h3,
- .service04 article h3 { font-size: 22px; }
+ .service04 article h3,
+ .service05 article h3 { font-size: 22px; }
  .service01 article h3 span,
  .service02 article h3 span,
  .service03 article h3 span,
- .service04 article h3 span { margin-bottom: 6px; font-size: 40px; }
+ .service04 article h3 span,
+ .service05 article h3 span { margin-bottom: 6px; font-size: 40px; }
  .service01 article p,
  .service02 article p,
  .service03 article p,
- .service04 article p { font-size: 13px; line-height: 130%; }
+ .service04 article p, 
+ .service05 article p { font-size: 13px; line-height: 130%; }
  .service04 article p { margin-right: 0; text-align: right; }
  .service01 .sec12_txt { margin-bottom: 50px; }
 
@@ -197,15 +200,19 @@
  .service03 .sec15_left0 { top: -390px; left: 170px; width: 230px; height: 80px; background-size: cover;}
  .service03 .sec15_left1 { top: -40px; left: 30px; width: 230px; height: 85px; background-size: cover; filter: drop-shadow(0 0 2px #1111117a);}
 
+ .service04 { height: 100vh;}
  .service04 .sec16_mockup { margin-top: 120px;}
  .service04 .sec16_mockup .sec16_mockup0 { width: 60%; }
  .service04 .sec16_mockup>div { width: 60%; }
 
  .service04 .sec16_mockup .sec16_mockup1 .sec16_frame { top: -100px; left: 0; }
+ .service04 .sec16_mockup .sec16_pop0{ margin: -85px 0 0 5px; width: 125px; }
 
- .service04 .sec16_mockup .sec16_mockup2 .sec16_frame { top: -100px; left: 155px;}
+ .service04 .sec16_mockup .sec16_mockup2 .sec16_frame { top: -100px; left: 155px; }
+ .service04 .sec16_mockup .sec16_pop1 { margin: -30px 0 0 193px; width: 115px; filter: drop-shadow(0 0 5px #00000038); }
 
-
+ .service05 { position: relative; height: 90vh; border-radius: 0;}
+ .service05::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 40vh; background-color: #FF542F; border-radius: 0 0 50% 50%; }
 
 
 
