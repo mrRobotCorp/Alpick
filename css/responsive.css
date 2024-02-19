@@ -218,10 +218,12 @@
  .service05::after { content: ''; position: absolute; bottom: -42vh; left: 0; width: 100%; height: 42vh; background-color: #FF542F; border-radius: 0 0 50% 50%; }
 
  .service05 .sec17_mockup .sec17_frame { width: 190px; }
- .service05 .sec17_mockup .sec17_pop { width: 170px; margin: 180px 0 0 -150px; }
+ .service05 .sec17_mockup .sec17_pop { width: 160px; margin: 190px 0 0 -155px; }
 
  .service05 .sec17_keyword::before { margin: 3px 0 0 -9px; width: 4px; height: 4px; border-radius: 5px;}
  .service05 .sec17_keyword { padding: 7px 11px 7px 18px; font-size: 12px; border-radius: 20px; }
+ .service05 .sec17_keyword0 { width: 12%; left: 20px; right: 0; }
+ .service05 .sec17_keyword1 { width: 12%; top: 120px; right: 2cqh;}
 
  .service06 { height: 130vh; margin-top: 55vh; }
  .service06 .sec18_mockup { margin-top: 50px; flex-wrap: wrap; }
