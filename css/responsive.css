@@ -225,6 +225,20 @@
  #scrollTop:hover { background-color: #fff; } 
  #scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
 
+ footer { height: 50vh; padding: 50px 0; }
+ footer .teamAll { height: 90%; }
+ footer #team { height: 100%; flex-wrap: wrap; justify-content: space-evenly;}
+ footer .member .memberPart { margin-bottom: 10px; font-size: 15px; }
+ footer .member .memoticon { margin-bottom: 7px; width: 70px; }
+ footer .member .name { font-size: 13px; }
+ footer .member li { margin: 0;}
+ footer .member li:last-child a { font-size: 10px; }
+ 
+ footer .source .src { font-size: 11px; }
+ footer .source .srcLink { font-size: 9px; }
+ footer .footerBtm .file { width: auto; padding: 5px 8px; font-size: 11px; border-radius: 7px; }
+ footer .copyRight { font-size: 9px; }
+
  }
 
 @media screen and (min-width: 1024px) {}
