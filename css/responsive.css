@@ -139,17 +139,20 @@
  .service02 article h3,
  .service03 article h3,
  .service04 article h3,
- .service05 article h3 { font-size: 22px; }
+ .service05 article h3,
+ .service06 article h3 { font-size: 22px; }
  .service01 article h3 span,
  .service02 article h3 span,
  .service03 article h3 span,
  .service04 article h3 span,
- .service05 article h3 span { margin-bottom: 6px; font-size: 40px; }
+ .service05 article h3 span,
+ .service06 article h3 span { margin-bottom: 6px; font-size: 40px; }
  .service01 article p,
  .service02 article p,
  .service03 article p,
  .service04 article p, 
- .service05 article p { font-size: 13px; line-height: 130%; }
+ .service05 article p,
+ .service06 article p { font-size: 13px; line-height: 130%; }
  .service04 article p { margin-right: 0; text-align: right; }
  .service01 .sec12_txt { margin-bottom: 50px; }
 
@@ -200,7 +203,7 @@
  .service03 .sec15_left0 { top: -390px; left: 170px; width: 230px; height: 80px; background-size: cover;}
  .service03 .sec15_left1 { top: -40px; left: 30px; width: 230px; height: 85px; background-size: cover; filter: drop-shadow(0 0 2px #1111117a);}
 
- .service04 { height: 100vh;}
+ .service04 { height: 90vh;}
  .service04 .sec16_mockup { margin-top: 120px;}
  .service04 .sec16_mockup .sec16_mockup0 { width: 60%; }
  .service04 .sec16_mockup>div { width: 60%; }
@@ -212,11 +215,24 @@
  .service04 .sec16_mockup .sec16_pop1 { margin: -30px 0 0 193px; width: 115px; filter: drop-shadow(0 0 5px #00000038); }
 
  .service05 { position: relative; height: 90vh; border-radius: 0;}
- .service05::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 40vh; background-color: #FF542F; border-radius: 0 0 50% 50%; }
+ .service05::after { content: ''; position: absolute; bottom: -42vh; left: 0; width: 100%; height: 42vh; background-color: #FF542F; border-radius: 0 0 50% 50%; }
 
+ .service05 .sec17_mockup .sec17_frame { width: 190px; }
+ .service05 .sec17_mockup .sec17_pop { width: 170px; margin: 180px 0 0 -150px; }
 
+ .service05 .sec17_keyword::before { margin: 3px 0 0 -9px; width: 4px; height: 4px; border-radius: 5px;}
+ .service05 .sec17_keyword { padding: 7px 11px 7px 18px; font-size: 12px; border-radius: 20px; }
 
+ .service06 { height: 130vh; margin-top: 55vh; }
+ .service06 .sec18_mockup { margin-top: 50px; flex-wrap: wrap; }
+ .service06 .sec18_mockup img { width: 43%; height: 100%; }
+ .service06 .sec18_mockup img:last-child { width: 45%; }
 
+ .service07 { height: 130vh; }
+ .service07 article .sec19_txt h3 { font-size: 24px; }
+ .service07 article .sec19_txt p { font-size: 12px; }
+ .service07 article .sec19_mockup { padding-bottom: 0; }
+ .service07 article .sec19_mockup img { margin-top: 0; width: 200px; }
 
 
 
@@ -225,7 +241,7 @@
  #scrollTop:hover { background-color: #fff; } 
  #scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
 
- footer { height: 50vh; padding: 50px 0; }
+ footer { height: 55vh; padding: 60px 0; }
  footer .teamAll { height: 90%; }
  footer #team { height: 100%; flex-wrap: wrap; justify-content: space-evenly;}
  footer .member .memberPart { margin-bottom: 10px; font-size: 15px; }
