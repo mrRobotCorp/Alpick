@@ -38,7 +38,7 @@
  .overview article #sec2_box { margin: 60px 0 30px 0; } 
  .overview article #sec2_box div { width: 30%; } 
  .overview article #sec2_arrow { width: 6px; height: 6px; margin-top: 70px; }
- .overview article #sec2_arrow::before { left: 2px; bottom: 0; height: 40px; }
+ .overview article #sec2_arrow::before { left: 2px; bottom: 0; height: 40px; border-width: 2px; }
  .overview article #sec2_bottom { font-size: 17px; } 
 
  .searchResult::before { height: 58vh; border-radius: 45%; } 
@@ -97,13 +97,13 @@
  .mainService #sec7_vid { margin-left: 10px; max-width: 200px; }
 
  .mainService .sec7_box0, .mainService .sec7_box2 { padding-right: 20px; font-size: 11px; }
- .mainService .sec7_box0 { margin: -300px 0 0 160px; }
+ .mainService .sec7_box0 { margin: -280px 0 0 160px; }
  .mainService .sec7_box0::after,
  .mainService .sec7_box2::after { content: ''; right: -7px; top: 0; width: 27px; height: 27px; background: url(../source/audioIcon.png) center center; background-size: cover; filter: drop-shadow(0 0 3px #c4c4c4);}
 
  .mainService .sec7_box1::before { content: ''; width: 18px; height: 18px; margin-right: 6px; background: url(../source/sec7_icon.png) center center; background-size: cover;}
- .mainService .sec7_box1 { padding: 12px 15px; margin: -210px 0 0 220px; font-size: 11px; }
- .mainService .sec7_box2 { margin: -100px 0 0 160px; }
+ .mainService .sec7_box1 { padding: 12px 15px; margin: -190px 0 0 220px; font-size: 11px; }
+ .mainService .sec7_box2 { margin: -80px 0 0 160px; }
 
  .serviceColor { height: 85vh; padding: 150px 0 0 0;}
  .serviceColor .subTitle::after { margin-left: -37px; bottom: -12px; width: 6px; height: 6px; border-radius: 50%; }
@@ -111,7 +111,7 @@
  
  .serviceColor .sec8_txt h3,
  .serviceLogo .sec8_art1 h3,
- .serviceTypo h3  { font-size: 16px; font-family: semiBold; }
+ .serviceTypo h3  { font-size: 17px; font-family: semiBold; }
  .serviceColor .sec8_txt p,
  .serviceLogo .sec8_art1 p { font-size: 12px; font-family: extraLight; }
  
@@ -223,7 +223,9 @@
  .service05 .sec17_keyword::before { margin: 3px 0 0 -9px; width: 4px; height: 4px; border-radius: 5px;}
  .service05 .sec17_keyword { padding: 7px 11px 7px 18px; font-size: 12px; border-radius: 20px; }
  .service05 .sec17_keyword0 { width: 12%; left: 20px; right: 0; }
- .service05 .sec17_keyword1 { width: 12%; top: 120px; right: 2cqh;}
+ .service05 .sec17_keyword0::after { border-width: 2px; }
+ .service05 .sec17_keyword1 { width: 12%; top: 120px; right: 20px;}
+ .service05 .sec17_keyword1::after { border-width: 2px; z-index: -10; }
 
  .service06 { height: 130vh; margin-top: 55vh; }
  .service06 .sec18_mockup { margin-top: 50px; flex-wrap: wrap; }
