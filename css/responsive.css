@@ -235,8 +235,8 @@
  .service07 article .sec19_txt p { font-size: 12px; }
  .service07 article .sec19_mockup { padding-bottom: 0; }
  .service07 article .sec19_mockup img { margin-top: 0; width: 200px; }
-
-
+ 
+ .totalMockup { height: 50vh; background: url(../source/sec20_bg_mb.png) no-repeat center center fixed; }
 
  #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 30px; right: 25px;  border-radius: 50%; text-align: center; font-size: 12px; position: fixed; cursor: pointer; z-index: 50; } 
  #scrollTop::before { content: "\2303"; position: absolute; top: 8px; left: 15px; color: #171717; font-family: pLight; font-size: 18px; } 
