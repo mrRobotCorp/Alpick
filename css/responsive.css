@@ -81,15 +81,15 @@
  .totalGoal article .sec6_con0::before { margin: -80px 0 0 190px; width: 90px; height: 20px; }
  .totalGoal article .sec6_con0::after { margin: 200px 0 0 200px; width: 160px; height: 110px; }
  .totalGoal article .sec6_con div { padding: 5px 10px; margin-top: 5px; font-size: 13px; border-radius: 15px; }
- .totalGoal article .sec6_con p { margin-top: 10px; width: 100%; font-size: 8px; font-family: Plight; }
+ .totalGoal article .sec6_con p { margin-top: 10px; width: 100%; font-size: 10px; font-family: Plight; }
 
  .totalGoal h4 { margin-top: 120px; font-size: 17px; }
- .totalGoal #serviceBox { display: flex; flex-wrap: wrap; justify-content: center; margin: 30px auto 0 auto; width: 75%; border-radius: 35px;}
+ .totalGoal #serviceBox { display: flex; flex-wrap: wrap; justify-content: center; margin: 30px auto 0 auto; width: 78%; border-radius: 35px;}
  .totalGoal #serviceBox ul { width: 45%; }
  .totalGoal #serviceBox ul:first-child, .totalGoal #serviceBox ul:nth-child(2) { margin-bottom: 20px;}
  .totalGoal #serviceBox ul li img { width: 80px;}
- .totalGoal #serviceBox ul .serviceTitle { font-size: 12px; }
- .totalGoal #serviceBox ul .servieceEG { font-size: 8px; font-family: Plight; line-height: 110%; }
+ .totalGoal #serviceBox ul .serviceTitle { font-size: 14px; }
+ .totalGoal #serviceBox ul .servieceEG { width: 95%; font-size: 9px; font-family: Plight; line-height: 110%; }
 
  .mainService { margin-top: 130px; height: 85vh; }
  .mainService article h3 { font-size: 22px; line-height: 120%; }
@@ -243,18 +243,21 @@
  #scrollTop:hover { background-color: #fff; } 
  #scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
 
- footer { height: 55vh; padding: 60px 0; }
+ footer { height: 460px; padding: 50px 0; }
  footer .teamAll { height: 90%; }
  footer #team { height: 100%; flex-wrap: wrap; justify-content: space-evenly;}
- footer .member .memberPart { margin-bottom: 10px; font-size: 15px; }
+ footer .member .memberPart { display: inline-block; padding: 4px 10px; margin-bottom: 13px; color: #fff; border: 1.5px solid #fff; border-radius: 12px; font-size: 13px; }
  footer .member .memoticon { margin-bottom: 7px; width: 70px; }
- footer .member .name { font-size: 13px; }
+ footer .member .name { margin-bottom: 5px; font-size: 13px; }
  footer .member li { margin: 0;}
  footer .member li:last-child a { font-size: 10px; }
  
  footer .source .src { font-size: 11px; }
  footer .source .srcLink { font-size: 9px; }
- footer .footerBtm .file { width: auto; padding: 5px 8px; font-size: 11px; border-radius: 7px; }
+ footer .footerBtm .file::before { content: ''; position: absolute; top: 4px; left: 5px; width: 11px; height: 11px; background: url(../source/downIco.png) center center; background-size: cover;}
+ footer .footerBtm .file { position: relative; width: auto; padding: 5px 8px 5px 21px; font-size: 12px; border-radius: 5px; }
+ footer .footerBtm .file:hover { background-color: #FF542F;}
+ footer .footerBtm .file:hover a { color: #fff; }
  footer .copyRight { font-size: 9px; }
 
  }
